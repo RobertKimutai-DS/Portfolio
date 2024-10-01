@@ -1,0 +1,390 @@
+/* General Styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #cad4d9;
+  color: #333;
+  line-height: 1.7; /* Slightly increased line-height for better readability */
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: #343a40; /* Dark gray for a more elegant look */
+  border-bottom: 2px solid #f1c40f; /* A subtle gold border for a touch of professionalism */
+}
+
+.navbar .nav-item a {
+  color: #ffffff !important; /* White text for the navbar links */
+  font-weight: 500;
+}
+
+.navbar .nav-item a:hover {
+  background-color: #f1c40f !important; /* Gold highlight on hover for a professional touch */
+  border-radius: 5px;
+}
+
+/* Navbar Right Icons */
+.navbar .nav-item a[aria-label="email"],
+.navbar .nav-item a[aria-label="github"],
+.navbar .nav-item a[aria-label="linkedin"] {
+  font-size: 1.2rem; /* Slightly larger for better visibility */
+  color: #ffffff !important;
+}
+
+.navbar .nav-item a[aria-label="email"]:hover,
+.navbar .nav-item a[aria-label="github"]:hover,
+.navbar .nav-item a[aria-label="linkedin"]:hover {
+  color: #f1c40f !important; /* Gold color on hover for the icons */
+}
+
+/* Body Content */
+h1, h2, h3, h4 {
+  color: #2b2e4a; /* Consistent heading color with the navbar */
+  margin-bottom: 1rem; /* Add consistent bottom margin for spacing */
+}
+
+p {
+  line-height: 1.7; /* Increased line-height for better readability */
+  margin-bottom: 1rem;
+}
+
+a {
+  color: #6a67ce;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #2b2e4a;
+  text-decoration: underline;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #6a67ce;
+  border-color: #6a67ce;
+}
+
+.btn-primary:hover {
+  background-color: #4e4c8e;
+  border-color: #4e4c8e;
+}
+
+/* About Page Styling */
+.about-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  max-width: 800px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow for better aesthetics */
+}
+
+/* Font Size and Spacing Adjustments */
+.about-container h1 {
+  text-align: center;
+  font-size: 2.2rem; /* Smaller main heading */
+  color: #2b2e4a;
+  margin-bottom: 1rem;
+}
+
+.about-container h2 {
+  font-size: 1.6rem; /* Smaller subheading */
+  color: #34495e;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem; /* Reduced margin */
+  border-bottom: 2px solid #6a67ce; /* Border for emphasis */
+  padding-bottom: 8px;
+}
+
+.about-container p {
+  font-size: 0.95rem; /* Smaller font size for paragraphs */
+  margin-bottom: 1rem;
+  line-height: 1.4; /* Reduced line height for tighter spacing */
+  color: #555;
+}
+
+.about-container ul {
+  font-size: 0.95rem; /* Smaller font size for lists */
+  line-height: 1.4; /* Reduced line height */
+  list-style-type: disc;
+  margin-left: 1.2rem; /* Adjusted margin for alignment */
+  margin-bottom: 1rem;
+}
+
+/* Custom Values Section */
+.values-list li {
+  padding: 0.4rem 0;
+  font-size: 0.95rem; /* Reduced font size */
+  color: #2b2e4a;
+  line-height: 1.4; /* Tighter line spacing */
+}
+
+.values-list li::before {
+  content: "✓";
+  color: #3498db;
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+/* Custom Skills Section */
+.skills-list {
+  font-size: 0.95rem; /* Same font size as values list */
+  line-height: 1.4; /* Same line height as values list */
+  list-style-type: disc; /* Default list type */
+  margin-left: 1.2rem; /* Adjusted margin for alignment */
+  margin-bottom: 1rem;
+}
+
+.skills-list li {
+  padding: 0.4rem 0;
+  font-size: 0.95rem;
+  color: #2b2e4a;
+  line-height: 1.4;
+}
+
+.skills-list li::before {
+  content: "•";  /* Use a bullet point instead of a checkmark */
+  color: #6a67ce;  /* Using a purple color to match the theme */
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+
+/* Call to Action Button */
+.cta-button {
+  display: inline-block;
+  background-color: #3498db;
+  color: white;
+  padding: 0.7rem 1.3rem; /* Slightly smaller button padding */
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #2980b9;
+}
+
+
+/* Footer Styling */
+footer {
+  background-color: #2b2e4a;
+  color: #ffffff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+footer a {
+  color: #6a67ce;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+  padding: 2rem 0;
+  margin: 1rem 0;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Project Cards */
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h3 {
+  color: #2b2e4a;
+}
+
+.project-card a {
+  color: #6a67ce;
+}
+
+.project-card a:hover {
+  color: #2b2e4a;
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .navbar .nav-item {
+    display: block;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  section {
+    padding: 1rem;
+  }
+
+  .about-container {
+    padding: 1.5rem;
+  }
+
+  .cta-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Portfolio Page Styling */
+.portfolio-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Light shadow for better aesthetics */
+}
+
+/* Title Block Styling */
+.title-block h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #2b2e4a;
+}
+
+.title-block p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Post Listing Styling */
+.listing .listing-item {
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); /* Subtle shadow for post items */
+  transition: all 0.3s ease;
+}
+
+.listing .listing-item:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slight hover effect */
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.listing .listing-item-title {
+  font-size: 1.6rem;
+  color: #3498db; /* Blue for title links */
+  margin-bottom: 0.8rem;
+}
+
+.listing .listing-item-title:hover {
+  color: #2980b9; /* Darker blue on hover */
+}
+
+.listing .listing-item-description {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.listing .listing-item-date {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+/* Category Tags */
+.listing .listing-item-category {
+  display: inline-block;
+  background-color: #6a67ce;
+  color: #fff;
+  padding: 0.3rem 0.7rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+}
+
+.listing .listing-item-category:hover {
+  background-color: #4e4c8e; /* Darker on hover */
+}
+
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  .portfolio-container {
+    padding: 1.5rem;
+  }
+
+  .listing .listing-item {
+    padding: 1rem;
+  }
+
+  .title-block h1 {
+    font-size: 2rem;
+  }
+
+  .title-block p {
+    font-size: 1rem;
+  }
+
+  .listing .listing-item-title {
+    font-size: 1.4rem;
+  }
+
+  .listing .listing-item-description {
+    font-size: 0.95rem;
+  }
+}
+
+
+/* Contact Form Styling */
+form {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+input[type="submit"] {
+  font-size: 1.1rem;
+  padding: 0.7rem 1.5rem;
+  border-radius: 5px;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #004a9f;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #0056b3;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 86, 179, 0.2);
+}
+

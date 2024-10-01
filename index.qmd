@@ -1,0 +1,94 @@
+---
+title: "Robert Kimutai"
+image: assets/images/profile_pic.jpg
+about:
+  template: jolla
+  links:
+    - icon: twitter
+      text: Twitter
+      href: https://twitter.com
+    - icon: github
+      text: Github
+      href: https://github.com/Roking-R
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/robert-kimutai/
+    - icon: envelope
+      text: Email
+      href: "mailto:kimutairobert72@gmail.com" 
+includes:
+  before_body: |
+    <script src="assets/javascript/contact_form.js"></script>
+---
+
+::: about-container
+# Welcome to My World!
+
+Hello! I’m **Robert Kimutai**, a passionate **software systems designer**, **data scientist**, and **environmental statistician**. My mission is to deliver **data-driven solutions** that bridge **sustainability** and **technology** to solve real-world challenges.
+
+------------------------------------------------------------------------
+
+## About Me
+
+With an advanced degree in **Environmental and Biosystems Engineering** and several years of hands-on experience in **data science** and **software development**, I help clients build solutions that drive efficiency and sustainability.
+
+I believe in the power of **data** and **technology** to transform businesses and communities. My work spans various industries, from **zero-grazing dairy management systems** to **solar cooker performance analysis**—combining innovation, sustainability, and a results-oriented approach.
+
+------------------------------------------------------------------------
+
+### My Values
+
+<ul class="values-list">
+<li><strong>Integrity</strong>: I prioritize transparency, accountability, and trust in all my professional relationships.</li>
+<li><strong>Innovation</strong>: I believe that the best solutions come from challenging the status quo.</li>
+<li><strong>Sustainability</strong>: I’m committed to creating solutions that are not just effective but environmentally conscious.</li>
+</ul>
+
+------------------------------------------------------------------------
+
+## Core Skills & Expertise
+
+<ul class="skills-list">
+<li><strong>Data Science</strong>: Statistical analysis, machine learning, and data visualization.</li>
+<li><strong>Software Development</strong>: R programming, Shiny apps, web development, and system design.</li>
+<li><strong>Environmental Data Analysis</strong>: Ecosystem, health, and social impact analysis.</li>
+<li><strong>Project Management</strong>: Systems thinking and Agile methodologies.</li>
+<li><strong>Technical Expertise</strong>: R, SQL, QGIS, Arduino, Proteus, MATLAB, MySQL.</li>
+</ul>
+
+------------------------------------------------------------------------
+
+## Why Work with Me?
+
+As a professional who blends **technical expertise** with **real-world problem-solving**, I provide my clients with:
+
+- **Trust and Credibility**: Years of experience in environmental data science and sustainable technology.
+- **Proven Results**: Successful delivery of impactful projects like the **Zero-Grazing Dairy Management App** and **Solar Cooker Performance Analysis**.
+- **Client-Centered Solutions**: I work closely with clients to tailor solutions that meet their unique needs.
+
+------------------------------------------------------------------------
+
+## Let’s Collaborate
+
+I’m excited to explore new **collaborations** or **consulting opportunities**. If you're looking for a partner who is committed to **integrity**, **innovation**, and **sustainability**, let’s discuss how we can work together.
+
+```{=html}
+<form id="contactForm" onsubmit="return validateForm()">
+  <div class="form-group">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+  </div>
+  <div class="form-group">
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea><br>
+  </div>
+  <div>
+    <input type="submit" value="Contact me" class="btn-primary">
+  </div>
+</form>
+```
+:::

@@ -1,0 +1,114 @@
+---
+title: "Robert Kimutai"
+author: "Data Scientist | Software Developer | Environmental Specialist"
+date: "September 15, 2024"
+format:
+  html:
+    toc: false
+    theme: cosmo
+    css: resume.css
+    number-sections: false
+    page-layout: full
+  pdf:
+    documentclass: article
+    toc: false
+    toc-depth: 2
+---
+
+# Contact Information
+
+**Address**: Box 16029-00509 Galleria, Nairobi\
+**Phone**: [+254 723 493122](tel:+254723493122)\
+**Email**: [robert.kimutai.ds\@gmail.com](mailto:robert.kimutai.ds@gmail.com)\
+**LinkedIn**: [linkedin.com/in/robert-kimutai](https://www.linkedin.com/in/robert-kimutai/)\
+**GitHub**: [github.com/Roking-R](https://github.com/Roking-R)
+
+------------------------------------------------------------------------
+
+# Professional Summary
+
+An accomplished **Data Scientist**, **Software Developer**, and **Environmental Specialist** with a proven track record in developing data-driven solutions at the intersection of sustainability and technology. Experienced in managing complex projects, including zero-grazing dairy management systems and solar cooker performance analysis. Adept at extracting actionable insights to enhance business efficiency and decision-making processes. Deeply passionate about environmental sustainability and highly proficient in **R**, **QGIS**, **SQL**, and more.
+
+------------------------------------------------------------------------
+
+# Core Competencies
+
+-   **Data Science**: Statistical analysis, machine learning, data visualization\
+-   **Software Development**: R programming, Shiny apps, web development\
+-   **Environmental Statistics**: Ecosystem, health, and social benefit analysis\
+-   **Project Management**: Systems thinking, Agile methodologies\
+-   **Technical Expertise**: R, SQL, Arduino, QGIS, Proteus, MATLAB, MySQL\
+-   **Soft Skills**: Critical thinking, problem-solving, leadership, communication
+
+------------------------------------------------------------------------
+
+# Education
+
+-   **MSc in Environmental and Biosystems Engineering**\
+    *University of Nairobi, Kenya* \| *2021 – Present*\
+    **Thesis**: Solar Cooker Test Protocol Development based on ASAE S580.1 Standards
+
+-   **BSc in Agricultural Engineering**\
+    *Jomo Kenyatta University of Agriculture and Technology, Kenya* \| *2013 – 2018*\
+    **Thesis**: Automated Irrigation Scheduling for Small-Scale Farmers
+
+-   **Diploma in Machine Learning with R Studio**\
+    *Alison* \| *June 2023*
+
+------------------------------------------------------------------------
+
+# Certifications
+
+-   **Statistical Data Analysis using R Programming**\
+    *RUFORUM*, February 2022\
+-   **Machine Learning with R Studio**\
+    *Alison*, June 2023
+
+------------------------------------------------------------------------
+
+# Research Experience
+
+-   **Researcher** \| *Kenya School of Revenue Administration (KESRA)* \| *March 2021*
+    -   Led a study titled **"The Effects of Tax Reforms on Income Distribution in Kenya"** for the Department of Tax Administration.\
+    -   Analyzed 15 years of data from the Kenya Revenue Authority, World Bank, and the Kenya National Bureau of Statistics, focusing on tax reforms.\
+    -   Utilized **R** and statistical models to assess correlations between tax reforms and income distribution, providing policy recommendations for equitable distribution.
+-   **Graduate Research Assistant** \| *University of Nairobi* \| *2021 – Present*
+    -   Researched solar cooker performance and the environmental, health, and social impacts of solar cooker adoption.\
+    -   Developed an ASAE S580.1 compliant test protocol, collecting and analyzing data using **Arduino** and **R**.\
+    -   Presented findings at national conferences and contributed to policy briefs promoting solar cooker adoption.
+
+------------------------------------------------------------------------
+
+# Projects
+
+-   **Zero-Grazing Dairy Management App** \| *Freelance* \| *2021 – Present*
+    -   Created a web-based system for optimizing dairy farm operations, with modules for herd management, feed monitoring, and financial tracking.\
+    -   Leveraged **R Shiny** and **SQL** to build interactive dashboards, resulting in a 25% productivity increase for clients.
+-   **Solar Cooker Performance Analysis** \| *Freelance* \| *2021 – Present*
+    -   Designed a standardized test protocol using **Arduino** and **Proteus** to evaluate solar cooker performance.\
+    -   Conducted ecosystem, health, and social benefit analyses, contributing to national-level policy discussions.
+-   **Automated Irrigation System for Small-Scale Farmers** \| *BSc Project* \| *2018*
+    -   Developed an automated irrigation system using **Arduino** and **R** to optimize water use efficiency for small-scale farmers.\
+    -   Designed control algorithms to improve water distribution and crop yield.
+
+------------------------------------------------------------------------
+
+# Skills and Tools
+
+-   **Programming Languages**: R, SQL, HTML, CSS, JavaScript, Arduino\
+-   **Web Development**: R Shiny, Quarto, Git\
+-   **Data Analysis**: R, QGIS, ggplot2, dplyr, Shiny dashboards\
+-   **Simulation & Modeling**: Proteus, MATLAB\
+-   **Database Management**: RSQLite, MySQL
+
+------------------------------------------------------------------------
+
+# Personal Interests
+
+Outside of work, I am deeply passionate about health and fitness, actively participating in swimming, Taekwondo, chess, table tennis, and snooker. I also take pride in leading Church-infused Youth Centres that focus on the holistic development of young people, integrating physical, psychological, and spiritual growth.
+
+------------------------------------------------------------------------
+
+# References
+
+Available upon request.

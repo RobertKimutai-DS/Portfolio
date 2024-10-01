@@ -1,0 +1,142 @@
+[
+  {
+    "objectID": "resume_file.html",
+    "href": "resume_file.html",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Contact Information\nAddress: Box 16029-00509 Galleria, Nairobi\nPhone: +254 723 493122\nEmail: robert.kimutai.ds@gmail.com\nLinkedIn: linkedin.com/in/robert-kimutai\nGitHub: github.com/Roking-R\n\n\n\nProfessional Summary\nAn accomplished Data Scientist, Software Developer, and Environmental Specialist with a proven track record in developing data-driven solutions at the intersection of sustainability and technology. Experienced in managing complex projects, including zero-grazing dairy management systems and solar cooker performance analysis. Adept at extracting actionable insights to enhance business efficiency and decision-making processes. Deeply passionate about environmental sustainability and highly proficient in R, QGIS, SQL, and more.\n\n\n\nCore Competencies\n\nData Science: Statistical analysis, machine learning, data visualization\n\nSoftware Development: R programming, Shiny apps, web development\n\nEnvironmental Statistics: Ecosystem, health, and social benefit analysis\n\nProject Management: Systems thinking, Agile methodologies\n\nTechnical Expertise: R, SQL, Arduino, QGIS, Proteus, MATLAB, MySQL\n\nSoft Skills: Critical thinking, problem-solving, leadership, communication\n\n\n\n\nEducation\n\nMSc in Environmental and Biosystems Engineering\nUniversity of Nairobi, Kenya | 2021 – Present\nThesis: Solar Cooker Test Protocol Development based on ASAE S580.1 Standards\nBSc in Agricultural Engineering\nJomo Kenyatta University of Agriculture and Technology, Kenya | 2013 – 2018\nThesis: Automated Irrigation Scheduling for Small-Scale Farmers\nDiploma in Machine Learning with R Studio\nAlison | June 2023\n\n\n\n\nCertifications\n\nStatistical Data Analysis using R Programming\nRUFORUM, February 2022\n\nMachine Learning with R Studio\nAlison, June 2023\n\n\n\n\nResearch Experience\n\nResearcher | Kenya School of Revenue Administration (KESRA) | March 2021\n\nLed a study titled “The Effects of Tax Reforms on Income Distribution in Kenya” for the Department of Tax Administration.\n\nAnalyzed 15 years of data from the Kenya Revenue Authority, World Bank, and the Kenya National Bureau of Statistics, focusing on tax reforms.\n\nUtilized R and statistical models to assess correlations between tax reforms and income distribution, providing policy recommendations for equitable distribution.\n\nGraduate Research Assistant | University of Nairobi | 2021 – Present\n\nResearched solar cooker performance and the environmental, health, and social impacts of solar cooker adoption.\n\nDeveloped an ASAE S580.1 compliant test protocol, collecting and analyzing data using Arduino and R.\n\nPresented findings at national conferences and contributed to policy briefs promoting solar cooker adoption.\n\n\n\n\n\nProjects\n\nZero-Grazing Dairy Management App | Freelance | 2021 – Present\n\nCreated a web-based system for optimizing dairy farm operations, with modules for herd management, feed monitoring, and financial tracking.\n\nLeveraged R Shiny and SQL to build interactive dashboards, resulting in a 25% productivity increase for clients.\n\nSolar Cooker Performance Analysis | Freelance | 2021 – Present\n\nDesigned a standardized test protocol using Arduino and Proteus to evaluate solar cooker performance.\n\nConducted ecosystem, health, and social benefit analyses, contributing to national-level policy discussions.\n\nAutomated Irrigation System for Small-Scale Farmers | BSc Project | 2018\n\nDeveloped an automated irrigation system using Arduino and R to optimize water use efficiency for small-scale farmers.\n\nDesigned control algorithms to improve water distribution and crop yield.\n\n\n\n\n\nSkills and Tools\n\nProgramming Languages: R, SQL, HTML, CSS, JavaScript, Arduino\n\nWeb Development: R Shiny, Quarto, Git\n\nData Analysis: R, QGIS, ggplot2, dplyr, Shiny dashboards\n\nSimulation & Modeling: Proteus, MATLAB\n\nDatabase Management: RSQLite, MySQL\n\n\n\n\nPersonal Interests\nOutside of work, I am deeply passionate about health and fitness, actively participating in swimming, Taekwondo, chess, table tennis, and snooker. I also take pride in leading Church-infused Youth Centres that focus on the holistic development of young people, integrating physical, psychological, and spiritual growth.\n\n\n\nReferences\nAvailable upon request."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "portfolio.html",
+    "href": "portfolio.html",
+    "title": "My Portfolio",
+    "section": "",
+    "text": "Welcome to My Portfolio\nHere are some of the key projects I’ve worked on, demonstrating my skills in data science, software development, and environmental statistics. Each project reflects my passion for creating data-driven solutions that bridge sustainability and technology.\nFeel free to explore my work!\n\n\n\n\n\n\n\n\n\n\n  \n\n\n\n\nInterplay of various indicators\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\n\n\n\n\nSep 15, 2024\n\n\nRobert Kimutai\n\n\n\n\n\n\n  \n\n\n\n\nWelcome To My Blog\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\n\n\n\n\nSep 12, 2024\n\n\nRobert Kimutai\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Hello! I’m Robert Kimutai, a passionate software systems designer, data scientist, and environmental statistician. My mission is to deliver data-driven solutions that bridge sustainability and technology to solve real-world challenges.\n\n\n\nWith an advanced degree in Environmental and Biosystems Engineering and several years of hands-on experience in data science and software development, I help clients build solutions that drive efficiency and sustainability.\nI believe in the power of data and technology to transform businesses and communities. My work spans various industries, from zero-grazing dairy management systems to solar cooker performance analysis—combining innovation, sustainability, and a results-oriented approach.\n\n\n\n\n\nIntegrity: I prioritize transparency, accountability, and trust in all my professional relationships.\n\n\nInnovation: I believe that the best solutions come from challenging the status quo.\n\n\nSustainability: I’m committed to creating solutions that are not just effective but environmentally conscious.\n\n\n\n\n\n\n\n\n\nData Science: Statistical analysis, machine learning, and data visualization.\n\n\nSoftware Development: R programming, Shiny apps, web development, and system design.\n\n\nEnvironmental Data Analysis: Ecosystem, health, and social impact analysis.\n\n\nProject Management: Systems thinking and Agile methodologies.\n\n\nTechnical Expertise: R, SQL, QGIS, Arduino, Proteus, MATLAB, MySQL.\n\n\n\n\n\n\nAs a professional who blends technical expertise with real-world problem-solving, I provide my clients with:\n\nTrust and Credibility: Years of experience in environmental data science and sustainable technology.\nProven Results: Successful delivery of impactful projects like the Zero-Grazing Dairy Management App and Solar Cooker Performance Analysis.\nClient-Centered Solutions: I work closely with clients to tailor solutions that meet their unique needs.\n\n\n\n\n\nI’m excited to explore new collaborations or consulting opportunities. If you’re looking for a partner who is committed to integrity, innovation, and sustainability, let’s discuss how we can work together.\n\n  \n    Name:\n    \n  \n  \n    Email:\n    \n  \n  \n    Message:"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "With an advanced degree in Environmental and Biosystems Engineering and several years of hands-on experience in data science and software development, I help clients build solutions that drive efficiency and sustainability.\nI believe in the power of data and technology to transform businesses and communities. My work spans various industries, from zero-grazing dairy management systems to solar cooker performance analysis—combining innovation, sustainability, and a results-oriented approach.\n\n\n\n\n\nIntegrity: I prioritize transparency, accountability, and trust in all my professional relationships.\n\n\nInnovation: I believe that the best solutions come from challenging the status quo.\n\n\nSustainability: I’m committed to creating solutions that are not just effective but environmentally conscious."
+  },
+  {
+    "objectID": "index.html#core-skills-expertise",
+    "href": "index.html#core-skills-expertise",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Data Science: Statistical analysis, machine learning, and data visualization.\n\n\nSoftware Development: R programming, Shiny apps, web development, and system design.\n\n\nEnvironmental Data Analysis: Ecosystem, health, and social impact analysis.\n\n\nProject Management: Systems thinking and Agile methodologies.\n\n\nTechnical Expertise: R, SQL, QGIS, Arduino, Proteus, MATLAB, MySQL."
+  },
+  {
+    "objectID": "index.html#why-work-with-me",
+    "href": "index.html#why-work-with-me",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "As a professional who blends technical expertise with real-world problem-solving, I provide my clients with:\n\nTrust and Credibility: Years of experience in environmental data science and sustainable technology.\nProven Results: Successful delivery of impactful projects like the Zero-Grazing Dairy Management App and Solar Cooker Performance Analysis.\nClient-Centered Solutions: I work closely with clients to tailor solutions that meet their unique needs."
+  },
+  {
+    "objectID": "index.html#lets-collaborate",
+    "href": "index.html#lets-collaborate",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "I’m excited to explore new collaborations or consulting opportunities. If you’re looking for a partner who is committed to integrity, innovation, and sustainability, let’s discuss how we can work together.\n\n  \n    Name:\n    \n  \n  \n    Email:\n    \n  \n  \n    Message:"
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Interplay of various indicators",
+    "section": "",
+    "text": "Environmental, Economic, Social, and Health Interplay Analysis App\nExplore how environmental, economic, social, and health data interact through our interactive app here."
+  },
+  {
+    "objectID": "resume.html",
+    "href": "resume.html",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Address: Box 16029-00509 Galleria, Nairobi Phone: +254 723 493122 Email: robert.kimutai.ds@gmail.com LinkedIn: linkedin.com/in/robert-kimutai GitHub: github.com/Roking-R\n\n\n\n\nAn accomplished Data Scientist, Software Developer, and Environmental Specialist with a proven track record in developing data-driven solutions at the intersection of sustainability and technology. Experienced in managing complex projects, including zero-grazing dairy management systems and solar cooker performance analysis. Adept at extracting actionable insights to enhance business efficiency and decision-making processes. Deeply passionate about environmental sustainability and highly proficient in R, QGIS, SQL, and more.\n\n\n\n\n\nData Science: Statistical analysis, machine learning, data visualization\nSoftware Development: R programming, Shiny apps, web development\nEnvironmental Statistics: Ecosystem, health, and social benefit analysis\nProject Management: Systems thinking, Agile methodologies\nTechnical Expertise: R, SQL, Arduino, QGIS, Proteus, MATLAB, MySQL\nSoft Skills: Critical thinking, problem-solving, leadership, communication\n\n\n\n\n\nMSc in Environmental and Biosystems Engineering University of Nairobi, Kenya 2021 – Present Thesis: Solar Cooker Test Protocol Development based on ASAE S580.1 Standards\nBSc in Agricultural Engineering Jomo Kenyatta University of Agriculture and Technology, Kenya 2013 – 2018 Thesis: Automated Irrigation Scheduling for Small-Scale Farmers\nDiploma in Machine Learning with R Studio Alison June 2023\n\n\n\n\n\nStatistical Data Analysis using R Programming | RUFORUM, February 2022\nMachine Learning with R Studio | Alison, June 2023\n\n\n\n\n\nResearcher | Kenya School of Revenue Administration (KESRA) March 2021 - Led a study titled “The Effects of Tax Reforms on Income Distribution in Kenya” for the Department of Tax Administration. - Analyzed 15 years of data from the Kenya Revenue Authority, World Bank, and Kenya National Bureau of Statistics. - Utilized R and statistical models to assess correlations between tax reforms and income distribution, providing policy recommendations for equitable distribution.\nGraduate Research Assistant | University of Nairobi 2021 – Present - Researched solar cooker performance and the environmental, health, and social impacts of solar cooker adoption. - Developed an ASAE S580.1 compliant test protocol, collecting and analyzing data using Arduino and R. - Presented findings at national conferences and contributed to policy briefs promoting solar cooker adoption.\n\n\n\n\nZero-Grazing Dairy Management App | Freelance 2021 – Present - Created a web-based system for optimizing dairy farm operations, with modules for herd management, feed monitoring, and financial tracking. - Leveraged R Shiny and SQL to build interactive dashboards, resulting in a 25% productivity increase for clients.\nSolar Cooker Performance Analysis | Freelance 2021 – Present - Designed a standardized test protocol using Arduino and Proteus to evaluate solar cooker performance. - Conducted ecosystem, health, and social benefit analyses, contributing to national-level policy discussions.\nAutomated Irrigation System for Small-Scale Farmers | BSc Project 2018 - Developed an automated irrigation system using Arduino and R to optimize water use efficiency for small-scale farmers. - Designed control algorithms to improve water distribution and crop yield.\n\n\n\n\n\nProgramming Languages: R, SQL, HTML, CSS, JavaScript, Arduino\nWeb Development: R Shiny, Quarto, Git\nData Analysis: R, QGIS, ggplot2, dplyr, Shiny dashboards\nSimulation & Modeling: Proteus, MATLAB\nDatabase Management: RSQLite, MySQL\n\n\n\n\n\nOutside of work, I am deeply passionate about health and fitness, actively participating in swimming, Taekwondo, chess, table tennis, and snooker. I also take pride in leading Church-infused Youth Centres that focus on the holistic development of young people, integrating physical, psychological, and spiritual growth.\n\n\n\n\nAvailable upon request."
+  },
+  {
+    "objectID": "resume.html#contact-information",
+    "href": "resume.html#contact-information",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Address: Box 16029-00509 Galleria, Nairobi Phone: +254 723 493122 Email: robert.kimutai.ds@gmail.com LinkedIn: linkedin.com/in/robert-kimutai GitHub: github.com/Roking-R"
+  },
+  {
+    "objectID": "resume.html#professional-summary",
+    "href": "resume.html#professional-summary",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "An accomplished Data Scientist, Software Developer, and Environmental Specialist with a proven track record in developing data-driven solutions at the intersection of sustainability and technology. Experienced in managing complex projects, including zero-grazing dairy management systems and solar cooker performance analysis. Adept at extracting actionable insights to enhance business efficiency and decision-making processes. Deeply passionate about environmental sustainability and highly proficient in R, QGIS, SQL, and more."
+  },
+  {
+    "objectID": "resume.html#core-competencies",
+    "href": "resume.html#core-competencies",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Data Science: Statistical analysis, machine learning, data visualization\nSoftware Development: R programming, Shiny apps, web development\nEnvironmental Statistics: Ecosystem, health, and social benefit analysis\nProject Management: Systems thinking, Agile methodologies\nTechnical Expertise: R, SQL, Arduino, QGIS, Proteus, MATLAB, MySQL\nSoft Skills: Critical thinking, problem-solving, leadership, communication"
+  },
+  {
+    "objectID": "resume.html#education",
+    "href": "resume.html#education",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "MSc in Environmental and Biosystems Engineering University of Nairobi, Kenya 2021 – Present Thesis: Solar Cooker Test Protocol Development based on ASAE S580.1 Standards\nBSc in Agricultural Engineering Jomo Kenyatta University of Agriculture and Technology, Kenya 2013 – 2018 Thesis: Automated Irrigation Scheduling for Small-Scale Farmers\nDiploma in Machine Learning with R Studio Alison June 2023"
+  },
+  {
+    "objectID": "resume.html#certifications",
+    "href": "resume.html#certifications",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Statistical Data Analysis using R Programming | RUFORUM, February 2022\nMachine Learning with R Studio | Alison, June 2023"
+  },
+  {
+    "objectID": "resume.html#research-experience",
+    "href": "resume.html#research-experience",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Researcher | Kenya School of Revenue Administration (KESRA) March 2021 - Led a study titled “The Effects of Tax Reforms on Income Distribution in Kenya” for the Department of Tax Administration. - Analyzed 15 years of data from the Kenya Revenue Authority, World Bank, and Kenya National Bureau of Statistics. - Utilized R and statistical models to assess correlations between tax reforms and income distribution, providing policy recommendations for equitable distribution.\nGraduate Research Assistant | University of Nairobi 2021 – Present - Researched solar cooker performance and the environmental, health, and social impacts of solar cooker adoption. - Developed an ASAE S580.1 compliant test protocol, collecting and analyzing data using Arduino and R. - Presented findings at national conferences and contributed to policy briefs promoting solar cooker adoption."
+  },
+  {
+    "objectID": "resume.html#projects",
+    "href": "resume.html#projects",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Zero-Grazing Dairy Management App | Freelance 2021 – Present - Created a web-based system for optimizing dairy farm operations, with modules for herd management, feed monitoring, and financial tracking. - Leveraged R Shiny and SQL to build interactive dashboards, resulting in a 25% productivity increase for clients.\nSolar Cooker Performance Analysis | Freelance 2021 – Present - Designed a standardized test protocol using Arduino and Proteus to evaluate solar cooker performance. - Conducted ecosystem, health, and social benefit analyses, contributing to national-level policy discussions.\nAutomated Irrigation System for Small-Scale Farmers | BSc Project 2018 - Developed an automated irrigation system using Arduino and R to optimize water use efficiency for small-scale farmers. - Designed control algorithms to improve water distribution and crop yield."
+  },
+  {
+    "objectID": "resume.html#skills-and-tools",
+    "href": "resume.html#skills-and-tools",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Programming Languages: R, SQL, HTML, CSS, JavaScript, Arduino\nWeb Development: R Shiny, Quarto, Git\nData Analysis: R, QGIS, ggplot2, dplyr, Shiny dashboards\nSimulation & Modeling: Proteus, MATLAB\nDatabase Management: RSQLite, MySQL"
+  },
+  {
+    "objectID": "resume.html#personal-interests",
+    "href": "resume.html#personal-interests",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Outside of work, I am deeply passionate about health and fitness, actively participating in swimming, Taekwondo, chess, table tennis, and snooker. I also take pride in leading Church-infused Youth Centres that focus on the holistic development of young people, integrating physical, psychological, and spiritual growth."
+  },
+  {
+    "objectID": "resume.html#references",
+    "href": "resume.html#references",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Available upon request."
+  }
+]

@@ -1,0 +1,47 @@
+project:
+  type: website
+
+website:
+  title: "Robert Kimutai"
+  description: "Systems Thinker, Data Scientist & Software Developer"
+  favicon: assets/images/favicon.png  # Ensure favicon is placed in the correct folder
+  navbar:
+    pinned: true
+    left: 
+      - text: "Home"
+        file: index.qmd
+      - text: "Portfolio"
+        file: portfolio.qmd
+      - text: "Resume"
+        file: resume.qmd
+    right:
+      - icon: github
+        href: https://github.com/Roking-R
+      - icon: twitter
+        href: https://twitter.com
+      - icon: linkedin
+        href: https://www.linkedin.com/in/robert-kimutai/
+      - icon: envelope
+        aria-label: email
+        href: "mailto:kimutairobert72@gmail.com"
+
+format:
+  html:
+    theme: cosmo
+    css: assets/css/styles.css  # Ensure custom CSS file is in the correct location
+    meta:
+      description: "Data Scientist & Software Developer Portfolio"
+      keywords: "Data Science, R, Environmental and Systems Engineering, Software Development"
+      author: "Robert Kimutai"
+      og:title: "Robert Kimutai - Environmental Data Scientist"
+      og:type: website
+      og:image: assets/images/profile_pic.jpg  # Ensure the correct path to profile picture
+      og:url: https://yourwebsite.com  # Replace with your actual website URL
+      twitter:
+        card: summary_large_image
+        site: "@your_twitter_handle"  # Replace with your actual Twitter handle
+
+editor: visual
+
+# Output directory for GitHub Pages
+output-dir: docs
