@@ -1,0 +1,11 @@
+---
+title: "Interplay of various indicators"
+author: "Robert Kimutai"
+date: "2024-09-15"
+categories: [code, analysis]
+image: "image.jpg"
+---
+
+### Environmental, Economic, Social, and Health Interplay Analysis App
+
+Explore how environmental, economic, social, and health data interact through our interactive app [here](link-to-your-hosted-app).

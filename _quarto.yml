@@ -11,9 +11,9 @@ website:
       - text: "Home"
         file: index.qmd
       - text: "Portfolio"
-        file: portfolio.qmd
+        file: portfolio/portfolio.qmd
       - text: "Resume"
-        file: resume.qmd
+        file: resume/resume.qmd
     right:
       - icon: github
         href: https://github.com/Roking-R

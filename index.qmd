@@ -6,7 +6,7 @@ about:
   links:
     - icon: twitter
       text: Twitter
-      href: https://twitter.com
+      href: https://twitter.com/yourusername
     - icon: github
       text: Github
       href: https://github.com/Roking-R
@@ -20,75 +20,76 @@ includes:
   before_body: |
     <script src="assets/javascript/contact_form.js"></script>
 ---
-
 ::: about-container
-# Welcome to My World!
 
-Hello! I’m **Robert Kimutai**, a passionate **software systems designer**, **data scientist**, and **environmental statistician**. My mission is to deliver **data-driven solutions** that bridge **sustainability** and **technology** to solve real-world challenges.
+# Welcome
 
-------------------------------------------------------------------------
+Hello! I’m **Robert Kimutai**, a dedicated **software systems designer**, **data scientist**, and **environmental statistician** committed to delivering **data-driven solutions** that integrate **sustainability** and **technology** to address real-world challenges.
+
+---
 
 ## About Me
 
-With an advanced degree in **Environmental and Biosystems Engineering** and several years of hands-on experience in **data science** and **software development**, I help clients build solutions that drive efficiency and sustainability.
+Holding an advanced degree in **Environmental and Biosystems Engineering** and several years of hands-on experience in **data science** and **software development**, I assist clients in building solutions that drive efficiency and promote sustainability.
 
-I believe in the power of **data** and **technology** to transform businesses and communities. My work spans various industries, from **zero-grazing dairy management systems** to **solar cooker performance analysis**—combining innovation, sustainability, and a results-oriented approach.
+I firmly believe in the transformative power of **data** and **technology** for businesses and communities alike. My professional experience spans various industries, including the development of **zero-grazing dairy management systems** and conducting **solar cooker performance analyses**, always integrating innovation, sustainability, and a results-oriented approach.
 
-------------------------------------------------------------------------
+---
 
-### My Values
+### Core Values
 
 <ul class="values-list">
-<li><strong>Integrity</strong>: I prioritize transparency, accountability, and trust in all my professional relationships.</li>
-<li><strong>Innovation</strong>: I believe that the best solutions come from challenging the status quo.</li>
-<li><strong>Sustainability</strong>: I’m committed to creating solutions that are not just effective but environmentally conscious.</li>
+  <li><strong>Integrity</strong>: Upholding transparency, accountability, and trust in all professional relationships.</li>
+  <li><strong>Innovation</strong>: Believing that the best solutions emerge from challenging conventional thinking.</li>
+  <li><strong>Sustainability</strong>: Committed to creating solutions that are effective and environmentally responsible.</li>
 </ul>
 
-------------------------------------------------------------------------
+---
 
 ## Core Skills & Expertise
 
 <ul class="skills-list">
-<li><strong>Data Science</strong>: Statistical analysis, machine learning, and data visualization.</li>
-<li><strong>Software Development</strong>: R programming, Shiny apps, web development, and system design.</li>
-<li><strong>Environmental Data Analysis</strong>: Ecosystem, health, and social impact analysis.</li>
-<li><strong>Project Management</strong>: Systems thinking and Agile methodologies.</li>
-<li><strong>Technical Expertise</strong>: R, SQL, QGIS, Arduino, Proteus, MATLAB, MySQL.</li>
+  <li><strong>Data Science</strong>: Expertise in statistical analysis, machine learning, and data visualization.</li>
+  <li><strong>Software Development</strong>: Proficient in R programming, Shiny apps, web development, and system design.</li>
+  <li><strong>Environmental Data Analysis</strong>: Skilled in ecosystem evaluation, health metrics, and social impact analysis.</li>
+  <li><strong>Project Management</strong>: Experienced in systems thinking and Agile methodologies.</li>
+  <li><strong>Technical Proficiencies</strong>: R, SQL, QGIS, Arduino, Proteus, MATLAB, MySQL.</li>
 </ul>
 
-------------------------------------------------------------------------
+---
 
 ## Why Work with Me?
 
-As a professional who blends **technical expertise** with **real-world problem-solving**, I provide my clients with:
+As a professional who combines **technical expertise** with **practical problem-solving**, I offer:
 
-- **Trust and Credibility**: Years of experience in environmental data science and sustainable technology.
-- **Proven Results**: Successful delivery of impactful projects like the **Zero-Grazing Dairy Management App** and **Solar Cooker Performance Analysis**.
-- **Client-Centered Solutions**: I work closely with clients to tailor solutions that meet their unique needs.
+- **Trust and Credibility**: Leveraging years of experience in environmental data science and sustainable technology.
+- **Proven Results**: Successfully delivering impactful projects such as the **Zero-Grazing Dairy Management App** and conducting **solar cooker performance analyses**.
+- **Client-Centered Solutions**: Collaborating closely with clients to tailor solutions that meet their specific needs.
 
-------------------------------------------------------------------------
+---
 
-## Let’s Collaborate
+## Let's Collaborate
 
-I’m excited to explore new **collaborations** or **consulting opportunities**. If you're looking for a partner who is committed to **integrity**, **innovation**, and **sustainability**, let’s discuss how we can work together.
+I am eager to explore new **collaborations** and **consulting opportunities**. If you are seeking a partner committed to **integrity**, **innovation**, and **sustainability**, let's discuss how we can work together to achieve your goals.
 
 ```{=html}
 <form id="contactForm" onsubmit="return validateForm()">
   <div class="form-group">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+    <label for="name"><i class="fas fa-user"></i> Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required class="form-control">
   </div>
   <div class="form-group">
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required class="form-control">
   </div>
   <div class="form-group">
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="4" placeholder="Your message" required></textarea><br>
+    <label for="message"><i class="fas fa-comment"></i> Message:</label>
+    <textarea id="message" name="message" rows="4" placeholder="Your message" required class="form-control"></textarea>
   </div>
   <div>
-    <input type="submit" value="Contact me" class="btn-primary">
+    <input type="submit" value="Contact Me" class="btn btn-primary">
   </div>
 </form>
 ```
+
 :::

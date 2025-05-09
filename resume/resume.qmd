@@ -1,0 +1,139 @@
+---
+title: "Robert Kimutai"
+author: "Data Scientist | Software Developer | Systems Engineer"
+date: "September 15, 2024"
+format:
+  html:
+    toc: true
+    toc-location: left
+    theme: cosmo
+    css: "assets/css/resume.css"
+    number-sections: false
+    page-layout: full
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  pdf:
+    output: pagedpdf
+    css: "assets/css/resume.css"
+    number-sections: false
+    toc: false
+    keep-md: true
+    keep-html: true
+---
+
+::: resume-section
+# Contact Information
+
+<i class="fas fa-home"></i> **Address**: Box 16029-00509 Galleria, Nairobi\
+<i class="fas fa-phone"></i> **Phone**: +254 723 493122\
+<i class="fas fa-envelope"></i> **Email**: [robert.kimutai.ds\@gmail.com](mailto:robert.kimutai.ds@gmail.com)\
+<i class="fab fa-linkedin"></i> **LinkedIn**: [linkedin.com/in/robert-kimutai](https://linkedin.com/in/robert-kimutai)\
+<i class="fab fa-github"></i> **GitHub**: [github.com/Roking-R](https://github.com/Roking-R)
+:::
+
+------------------------------------------------------------------------
+
+# Professional Summary
+
+An accomplished **Data Scientist**, **Software Developer**, and **Environmental Specialist** with a proven track record in developing data-driven solutions at the intersection of sustainability and technology. Experienced in managing complex projects, including zero-grazing dairy management systems and solar cooker performance analysis. Adept at extracting actionable insights to enhance business efficiency and decision-making processes. Deeply passionate about environmental sustainability and highly proficient in R, QGIS, SQL, and more.
+
+------------------------------------------------------------------------
+
+# Core Competencies
+
+-   **Data Science**: Statistical analysis, machine learning, data visualization
+-   **Software Development**: R programming, Shiny apps, web development
+-   **Environmental Statistics**: Ecosystem, health, and social benefit analysis
+-   **Project Management**: Systems thinking, Agile methodologies
+-   **Technical Expertise**: R, SQL, Arduino, QGIS, Proteus, MATLAB, MySQL
+-   **Soft Skills**: Critical thinking, problem-solving, leadership, communication
+
+------------------------------------------------------------------------
+
+# Education
+
+**MSc in Environmental and Biosystems Engineering**\
+University of Nairobi, Kenya *2021 – Present*\
+*Thesis: Solar Cooker Test Protocol Development based on ASAE S580.1 Standards*
+
+**BSc in Agricultural Engineering**\
+Jomo Kenyatta University of Agriculture and Technology, Kenya *2013 – 2018*\
+*Thesis: Automated Irrigation Scheduling for Small-Scale Farmers*
+
+**Diploma in Machine Learning with R Studio**\
+Alison *June 2023*
+
+------------------------------------------------------------------------
+
+# Certifications
+
+-   **Statistical Data Analysis using R Programming** \| RUFORUM, February 2022
+-   **Machine Learning with R Studio** \| Alison, June 2023
+
+------------------------------------------------------------------------
+
+# Research Experience
+
+**Researcher** \| Kenya School of Revenue Administration (KESRA) *March 2021*
+
+-   Led a study titled "The Effects of Tax Reforms on Income Distribution in Kenya" for the Department of Tax Administration.
+-   Analyzed 15 years of data from the Kenya Revenue Authority, World Bank, and Kenya National Bureau of Statistics.
+-   Utilized R and statistical models to assess correlations between tax reforms and income distribution, providing policy recommendations for equitable distribution.
+
+**Graduate Research Assistant** \| University of Nairobi *2021 – Present*
+
+-   Researched solar cooker performance and the environmental, health, and social impacts of solar cooker adoption.
+-   Developed an ASAE S580.1 compliant test protocol, collecting and analyzing data using Arduino and R.
+-   Presented findings at national conferences and contributed to policy briefs promoting solar cooker adoption.
+
+------------------------------------------------------------------------
+
+# Projects
+
+**Zero-Grazing Dairy Management App** \| Freelance *2021 – Present*
+
+-   Created a web-based system for optimizing dairy farm operations.
+-   Included modules for herd management, feed monitoring, and financial tracking.
+-   Leveraged R Shiny and SQL to build interactive dashboards, resulting in a 25% productivity increase.
+
+**Solar Cooker Performance Analysis** \| Freelance *2021 – Present*
+
+-   Designed a standardized solar cooker test protocol for evaluating cooker performance.
+-   Used Arduino and Proteus to design the prototype.
+-   Conducted ecosystem, health, and social benefit analyses, contributing to national-level policy discussions.
+
+**Automated Irrigation System for Small-Scale Farmers** \| BSc Project *2018*
+
+-   Developed an automated irrigation system optimize water use efficiency for small-scale farmers.
+-   Designed control algorithms to improve water distribution and crop yield.
+
+------------------------------------------------------------------------
+
+# Skills and Tools
+
+-   **Programming Languages**:
+    -   [R]{title="Expert in data manipulation and visualization"}
+    -   [SQL]{title="Experienced with database queries and management"}
+    -   [JavaScript]{title="Skilled in creating dynamic web content"}
+    -   [HTML]{title="Proficient in creating responsive and styled layouts"}
+    -   [CSS]{title="Expert in customizing the look and feel of web pages"}
+    -   [Arduino]{title="Experienced in hardware programming and prototyping"}
+-   **Web Development**: R Shiny, Quarto, Git
+-   **Data Analysis**: R, QGIS, ggplot2, dplyr, Shiny dashboards
+-   **Simulation & Modeling**: R, Proteus, MATLAB
+-   **Database Management**: RSQLite, MySQL
+
+------------------------------------------------------------------------
+
+# Personal Interests
+
+Outside of work, I am deeply passionate about health and fitness, actively participating in swimming, Taekwondo, chess, table tennis, and snooker. I also take pride in leading church-infused youth centers that focus on the holistic development of young people, integrating physical, psychological, and spiritual growth.
+
+------------------------------------------------------------------------
+
+# References
+
+Available upon request.
+
+------------------------------------------------------------------------

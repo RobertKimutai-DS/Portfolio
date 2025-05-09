@@ -1,10 +1,11 @@
 /* General Body Styling */
 body {
-  font-family: 'Arial', sans-serif;
-  color: #333;
+  font-family: 'Open Sans', Arial, sans-serif;
+  color: #222;
   line-height: 1.6;
   background-color: #f9f9f9;
   padding: 2rem;
+  margin: 0;
 }
 
 /* Headings */
@@ -50,7 +51,9 @@ ul {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 2rem;
   max-width: 800px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px; /* Add more space from the left */
 }
 
 /* Section Headings */
@@ -65,57 +68,14 @@ ul {
 }
 
 /* Contact Information */
-.resume-section .contact-info {
+.contact-info {
   font-size: 1.1rem;
   line-height: 1.8;
 }
 
-/* Buttons for Download Links */
-.resume-download a {
-  font-size: 1.1rem;
-  padding: 0.7rem 1.5rem;
-  border-radius: 5px;
-  display: inline-block;
-  margin-right: 10px;
-  text-align: center;
-}
-
-.btn-primary {
-  background-color: #0056b3;
-  color: #fff;
-  border: none;
-}
-
-.btn-primary:hover {
-  background-color: #004a9f;
-}
-
-.btn-outline-secondary {
-  background-color: #fff;
-  border: 1px solid #0056b3;
-  color: #0056b3;
-}
-
-.btn-outline-secondary:hover {
-  background-color: #0056b3;
-  color: #fff;
-}
-
-/* Footer */
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1rem 0;
-  text-align: center;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: underline;
-}
-
-footer a:hover {
-  color: #ddd;
+/* Accessibility Focus State */
+a:focus, button:focus {
+  outline: 2px solid #0056b3;
 }
 
 /* Media Queries for Responsiveness */
@@ -124,16 +84,91 @@ footer a:hover {
     padding: 1.5rem;
   }
 
-  .resume-download a {
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
-  }
-
   h1 {
     font-size: 1.8rem;
   }
 
   h2 {
     font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .resume-section h2 {
+    font-size: 1.4rem;
+  }
+
+  .resume-section {
+    padding: 1rem;
+  }
+}
+
+/* Paged.js Specific Styles */
+
+/* Set the page size and margins */
+@page {
+  size: A4;
+  margin: 1in;
+}
+
+/* Control page breaks */
+h1, h2 {
+  page-break-before: avoid;
+  page-break-after: avoid;
+}
+
+h1 {
+  page-break-before: always;
+}
+
+/* Avoid breaking paragraphs and lists across pages */
+p, ul, ol {
+  orphans: 3;
+  widows: 3;
+  page-break-inside: avoid;
+}
+
+/* Running Header and Footer */
+@page {
+  @top-center {
+    content: element(header);
+  }
+  @bottom-center {
+    content: counter(page) " of " counter(pages);
+  }
+}
+
+header {
+  position: running(header);
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+
+/* Header Content */
+.header-content {
+  display: none;
+}
+
+@media print {
+  body {
+    background-color: #fff;
+    padding: 0;
+  }
+  
+  .resume-section {
+    box-shadow: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Show header content */
+  .header-content {
+    display: block;
+  }
+
+  /* Remove margins for print */
+  body {
+    margin: 0;
   }
 }
