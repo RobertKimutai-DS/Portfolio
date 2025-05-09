@@ -1,0 +1,83 @@
+---
+title: "Churn Prediction in the Energy Sector"
+format: html
+page-layout: full
+---
+
+# ⚡ Churn Prediction in the Energy Sector (BCG Internship)
+
+![Churn Model Dashboard](../assets/images/churn_dashboard.jpg){.img-fluid .rounded .shadow-sm .mb-4}
+
+During my internship with the **Boston Consulting Group (BCG)**, I led the development of a robust **churn prediction framework** for an energy service provider. The objective was to identify high-risk customers and enable proactive, data-driven retention strategies.
+
+---
+
+## 🎯 Problem Statement
+
+The energy sector faces increasing competition and shifting customer expectations. A rising churn rate posed a threat to customer lifetime value and operational costs. The challenge was to:
+
+- Detect customers likely to churn  
+- Understand *why* they churn  
+- Enable actionable business strategies for retention  
+
+---
+
+## 🔍 Data & Features
+
+The dataset consisted of over **10,000 anonymized customer records** across 12 months, with features such as:
+
+- 📆 Price history (monthly pricing plans)  
+- 📞 Service interaction logs  
+- ⚡ Energy preference (clean vs. conventional)  
+- 🏷️ Demographics and usage behavior  
+- ⏱️ Tenure and contract type  
+
+> I engineered **54 features** after preprocessing, including volatility metrics, service score deltas, and churn flags.
+
+---
+
+## 🧠 Modeling Approach
+
+**Tools used**: R, `tidymodels`, `xgboost`, `vip`, `ggstatsplot`, `yardstick`
+
+**Workflow**:
+
+- Data preprocessing with `recipes`  
+- Stratified train/test split using `rsample`  
+- Model tuning with `tune_grid` and 5-fold CV  
+- Model interpretation with `vip`, `DALEX`  
+
+**Top model**: `xgboost` (AUC = 0.91)
+
+## 💡 Key Business Insights
+
+- 🎯 **Volatility in pricing** was a top predictor of churn.  
+- 🚫 Customers with **inconsistent service touchpoints** showed higher churn risk.  
+- 🌱 Customers preferring **clean energy** had lower churn probability, suggesting an opportunity for sustainability-aligned marketing.  
+
+---
+
+## 📈 Visual Highlights
+
+Visuals were generated using `vip`, `ggplot2`, and `ggstatsplot` to support deep feature understanding and stakeholder presentations.
+
+---
+
+## 💼 Outcome
+
+- ✅ Delivered a complete **churn prediction pipeline** in R.  
+- 📦 Packaged the codebase for handoff to the client-side data engineering team.  
+- 🧑‍💼 Presented results to consultants and client stakeholders with a focus on **business alignment** and **interpretability**.  
+
+---
+
+## 🔗 Resources
+
+- 📦 **GitHub Repo (sanitized version):** *Coming soon*  
+- 📄 **Slide Deck / Business Report:** *Available upon request*  
+
+---
+
+## 🤝 Let's Talk
+
+If you’re building churn models or customer analytics pipelines and need a **systems thinker** who combines **machine learning**, **business understanding**, and **communicative clarity** — let’s connect.

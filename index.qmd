@@ -4,73 +4,87 @@ image: assets/images/profile_pic.jpg
 about:
   template: jolla
   links:
-    - icon: twitter
-      text: Twitter
-      href: https://twitter.com/yourusername
     - icon: github
-      text: Github
-      href: https://github.com/Roking-R
+      text: GitHub
+      href: https://github.com/RobertKimutai-DS
+    - icon: kaggle
+      text: Kaggle
+      href: https://www.kaggle.com/kimutairobert
     - icon: linkedin
       text: LinkedIn
-      href: https://www.linkedin.com/in/robert-kimutai/
+      href: https://www.linkedin.com/in/robert-kimutai-921608330/
+    - icon: facebook
+      text: Facebook
+      href: https://www.facebook.com/profile.php?id=61576319121772
     - icon: envelope
       text: Email
-      href: "mailto:kimutairobert72@gmail.com" 
+      href: "mailto:kimutairobert72@gmail.com"
 includes:
   before_body: |
     <script src="assets/javascript/contact_form.js"></script>
 ---
+
 ::: about-container
+# 👋 Welcome
 
-# Welcome
+Hello! I’m **Robert Kimutai** — a **Researcher**, **Data Scientist**, and **Software Developer** passionate about building **sustainable, intelligent systems** that address real-world problems through **data**, **technology**, and **systems thinking**.
 
-Hello! I’m **Robert Kimutai**, a dedicated **software systems designer**, **data scientist**, and **environmental statistician** committed to delivering **data-driven solutions** that integrate **sustainability** and **technology** to address real-world challenges.
+------------------------------------------------------------------------
 
----
+## 🧬 About Me
 
-## About Me
+With an academic background in **Environmental and Biosystems Engineering** and a professional focus on **data science**, **software development**, and **impact modeling**, I specialize in delivering tools and insights that support **sustainability**, **efficiency**, and **decision-making**.
 
-Holding an advanced degree in **Environmental and Biosystems Engineering** and several years of hands-on experience in **data science** and **software development**, I assist clients in building solutions that drive efficiency and promote sustainability.
+I’ve designed and delivered projects ranging from a **zero-grazing dairy farm web app** to a **solar cooker testing platform** and **churn analysis models for the energy sector** — each one integrating innovation and measurable value.
 
-I firmly believe in the transformative power of **data** and **technology** for businesses and communities alike. My professional experience spans various industries, including the development of **zero-grazing dairy management systems** and conducting **solar cooker performance analyses**, always integrating innovation, sustainability, and a results-oriented approach.
+------------------------------------------------------------------------
 
----
-
-### Core Values
+## 💡 Core Values
 
 <ul class="values-list">
-  <li><strong>Integrity</strong>: Upholding transparency, accountability, and trust in all professional relationships.</li>
-  <li><strong>Innovation</strong>: Believing that the best solutions emerge from challenging conventional thinking.</li>
-  <li><strong>Sustainability</strong>: Committed to creating solutions that are effective and environmentally responsible.</li>
+
+<li><strong>Integrity</strong>: Transparency and trust in every project and partnership.</li>
+
+<li><strong>Innovation</strong>: Embracing new ideas and unconventional solutions.</li>
+
+<li><strong>Sustainability</strong>: Designing for long-term environmental and societal impact.</li>
+
 </ul>
 
----
+------------------------------------------------------------------------
 
-## Core Skills & Expertise
+## 🧠 Core Skills & Expertise
 
 <ul class="skills-list">
-  <li><strong>Data Science</strong>: Expertise in statistical analysis, machine learning, and data visualization.</li>
-  <li><strong>Software Development</strong>: Proficient in R programming, Shiny apps, web development, and system design.</li>
-  <li><strong>Environmental Data Analysis</strong>: Skilled in ecosystem evaluation, health metrics, and social impact analysis.</li>
-  <li><strong>Project Management</strong>: Experienced in systems thinking and Agile methodologies.</li>
-  <li><strong>Technical Proficiencies</strong>: R, SQL, QGIS, Arduino, Proteus, MATLAB, MySQL.</li>
+
+<li><strong>Data Science</strong>: EDA, ML modeling, feature engineering, and visual storytelling.</li>
+
+<li><strong>Software Development</strong>: R, Shiny apps, modular dashboards, RESTful APIs, Python (reticulate).</li>
+
+<li><strong>Environmental Analytics</strong>: Sensor-based data systems, sustainability metrics, impact modeling.</li>
+
+<li><strong>Project Management</strong>: Systems design, Agile, end-user-focused delivery.</li>
+
+<li><strong>Technical Stack</strong>: R, Python, SQL, Arduino, QGIS, MATLAB, Proteus, Git.</li>
+
 </ul>
 
----
+------------------------------------------------------------------------
 
-## Why Work with Me?
+## 🎯 Why Work with Me?
 
-As a professional who combines **technical expertise** with **practical problem-solving**, I offer:
+-   **Multidisciplinary Approach**: Bridging research, software, and sustainability.
+-   **Proven Results**:
+    -   Built the **Zero-Grazing Dairy Management Web App**
+    -   Led the **Solar Cooker Performance Platform** for academic and NGO use
+    -   Delivered churn modeling insights during my **BCG internship**
+-   **Client-Centered Design**: Solutions grounded in real needs, data, and usability.
 
-- **Trust and Credibility**: Leveraging years of experience in environmental data science and sustainable technology.
-- **Proven Results**: Successfully delivering impactful projects such as the **Zero-Grazing Dairy Management App** and conducting **solar cooker performance analyses**.
-- **Client-Centered Solutions**: Collaborating closely with clients to tailor solutions that meet their specific needs.
+------------------------------------------------------------------------
 
----
+## 🤝 Let’s Collaborate
 
-## Let's Collaborate
-
-I am eager to explore new **collaborations** and **consulting opportunities**. If you are seeking a partner committed to **integrity**, **innovation**, and **sustainability**, let's discuss how we can work together to achieve your goals.
+I’m open to **research collaborations**, **consulting projects**, or **custom software development** engagements. Whether you’re a government agency, nonprofit, or business, I’m ready to help you translate ideas into systems that **work and scale**.
 
 ```{=html}
 <form id="contactForm" onsubmit="return validateForm()">
@@ -91,5 +105,4 @@ I am eager to explore new **collaborations** and **consulting opportunities**. I
   </div>
 </form>
 ```
-
 :::

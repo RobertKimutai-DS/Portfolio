@@ -1,0 +1,77 @@
+---
+title: "Portfolio"
+format: html
+page-layout: full
+---
+
+# 🚀 Project Portfolio
+
+Welcome to my project portfolio. These highlights showcase my ability to integrate **research**, **data science**, and **software development** in creating real-world solutions that prioritize **sustainability**, **intelligence**, and **impact**.
+
+Each project is a reflection of my values — blending **innovation**, **rigor**, and **systems thinking**.
+
+---
+
+## 🔬 Featured Projects
+
+:::{.card-deck}
+
+### 🌞 Solar Cooker Performance Testing Platform
+
+![Solar Cooker Performance Testing Platform](../assets/images/solar_cooker.jpg){.card-img-top .rounded .shadow-sm .mb-2}
+
+**Role:** Researcher | Embedded Systems Developer | Data Scientist  
+**Technologies:** Arduino, R, Shiny, Proteus, DS18B20, BPW34, ggplot2, lubridate
+
+A flagship research project focused on developing a low-cost, open-source solar cooker performance testing platform, built to comply with the ASAE S580.1 standard.
+
+**Key components:**
+
+- 📡 Sensor-based data acquisition using DS18B20 (temperature) and BPW34 (irradiance) via Arduino  
+- 📊 Shiny web application for visualizing cooking power, standardizing results to 700 W/m², and modeling environmental/health benefits  
+- 🛠️ Simulation & calibration using Proteus 8 Professional for validation prior to hardware deployment  
+- 🌱 Impact-driven: Quantifies fuel savings, CO₂ reduction, and public health benefits for NGOs and field partners  
+
+This system empowers stakeholders in energy, development, and sustainability to perform affordable, standardized testing in low-resource settings.
+
+🔗 [View project details →](solar-cooker.qmd)
+
+### ⚡ Churn Analysis in the Energy Sector
+
+![Churn Prediction Model](../assets/images/churn_dashboard.jpg){.card-img-top .rounded .shadow-sm .mb-2}
+
+**Role:** Data Scientist (Intern, BCG)  
+**Technologies:** R, tidymodels, xgboost, ggstatsplot, vip
+
+Built a churn prediction model for an energy company to reduce customer attrition. Delivered actionable insights and a reusable modeling pipeline using the tidyverse ecosystem.
+
+**Highlights:**
+
+- 📈 Feature engineering across 12-month customer histories  
+- 🧠 XGBoost model with AUC of 0.91  
+- 🔍 Top predictors: price volatility, service interactions, clean energy preferences  
+- 📊 Business insights delivered to stakeholders with interpretable visuals  
+
+🔗 [View project details →](churn-analysis.qmd)
+
+---
+
+### 🐄 Zero-Grazing Dairy Farm Management App
+
+![Dairy App Dashboard](../assets/images/dairy_dashboard.jpg){.card-img-top .rounded .shadow-sm .mb-2}
+
+**Role:** Full Stack Developer | Systems Designer  
+**Technologies:** R, Shiny, SQLite, shinymanager, DT, plotly, gganimate
+
+Designed and deployed a modular SaaS-style Shiny app for dairy farmers, supporting operational efficiency and sustainable livestock management.
+
+**Features:**
+
+- 🐄 Herd health tracking, milk production logs, and medication history  
+- 📋 Inventory, labor, and feed management modules  
+- 📈 Interactive dashboards and PDF reports  
+- 🔐 User login and tiered subscriptions  
+
+🔗 [View project details →](dairy-app.qmd)
+
+:::

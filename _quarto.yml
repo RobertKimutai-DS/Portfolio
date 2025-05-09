@@ -1,47 +1,61 @@
 project:
   type: website
+  output-dir: docs  # Keeps GitHub Pages compatibility
 
 website:
   title: "Robert Kimutai"
-  description: "Systems Thinker, Data Scientist & Software Developer"
-  favicon: assets/images/favicon.png  # Ensure favicon is placed in the correct folder
+  site-url: https://robertkimutai.netlify.app  # Replace with your actual deployed URL
+  description: "Data Scientist | Systems Thinker | Software Developer"
+  favicon: assets/images/favicon.png
+
   navbar:
     pinned: true
-    left: 
+    background: light
+    logo: assets/images/profile_pic.jpg
+    left:
       - text: "Home"
         file: index.qmd
       - text: "Portfolio"
-        file: portfolio/portfolio.qmd
+        file: portfolio/index.qmd
       - text: "Resume"
-        file: resume/resume.qmd
+        file: resume/index.qmd
+      - text: "Blog"
+        file: blog/index.qmd  # section for posts, tutorials, thought leadership
     right:
       - icon: github
-        href: https://github.com/Roking-R
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/RobertKimutai-DS
+      - icon: kaggle
+        href: https://www.kaggle.com/kimutairobert
       - icon: linkedin
-        href: https://www.linkedin.com/in/robert-kimutai/
+        href: https://www.linkedin.com/in/robert-kimutai-921608330/
+      - icon: facebook
+        href: https://www.facebook.com/profile.php?id=61576319121772
       - icon: envelope
         aria-label: email
         href: "mailto:kimutairobert72@gmail.com"
 
+  page-footer:
+    left: |
+      © 2025 Robert Kimutai · Built with [Quarto](https://quarto.org)
+    right: |
+      [GitHub](https://github.com/RobertKimutai-DS) · [LinkedIn](https://www.linkedin.com/in/robert-kimutai-921608330/) · [Kaggle](https://www.kaggle.com/kimutairobert)
+
 format:
   html:
-    theme: cosmo
-    css: assets/css/styles.css  # Ensure custom CSS file is in the correct location
-    meta:
-      description: "Data Scientist & Software Developer Portfolio"
-      keywords: "Data Science, R, Environmental and Systems Engineering, Software Development"
-      author: "Robert Kimutai"
-      og:title: "Robert Kimutai - Environmental Data Scientist"
-      og:type: website
-      og:image: assets/images/profile_pic.jpg  # Ensure the correct path to profile picture
-      og:url: https://yourwebsite.com  # Replace with your actual website URL
-      twitter:
-        card: summary_large_image
-        site: "@your_twitter_handle"  # Replace with your actual Twitter handle
+    theme:
+      light: flatly
+      dark: darkly
+    css: assets/css/styles.css  # Add custom tweaks here (colors, spacing, fonts)
+    toc: true
+    toc-location: left
+    mainfont: "Segoe UI"
+    monofont: "Fira Code"
+    highlight-style: github
+    code-copy: true
+    smooth-scroll: true
+    page-layout: full
+    grid:
+      sidebar-width: 250px
+      body-width: 900px
 
 editor: visual
-
-# Output directory for GitHub Pages
-output-dir: docs

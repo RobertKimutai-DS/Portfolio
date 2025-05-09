@@ -1,0 +1,80 @@
+---
+title: "Zero-Grazing Dairy Farm Management App"
+format: html
+page-layout: full
+---
+
+# 🐄 Zero-Grazing Dairy Farm Management Web App
+
+![Dairy App Dashboard](../assets/images/dairy_dashboard.jpg){.img-fluid .rounded .shadow-sm .mb-4}
+
+This project is a comprehensive **Shiny web application** designed to help **zero-grazing dairy farmers** manage their operations efficiently. Built as a **modular SaaS solution**, it covers the entire lifecycle of herd and resource management, promoting **productivity**, **animal welfare**, and **sustainability**.
+
+---
+
+## 🧩 Motivation
+
+Smallholder dairy farmers face challenges with recordkeeping, herd health monitoring, feed optimization, and financial tracking. Most rely on **manual methods** or outdated systems.
+
+> This application provides a **data-driven digital platform** to streamline farm management using an easy-to-use interface and powerful analytics.
+
+---
+
+## 🧠 Modules & Features
+
+The app includes **13 core modules**:
+
+- 🐮 **Herd Management** – Animal tracking, health history, breeding records  
+- 🥛 **Milk Production** – Quantity, quality, and milk sales logs  
+- 🌾 **Feed Management** – Feed plans, consumption, and inventory  
+- 💊 **Medication & Inventory** – Stock control, treatments, alerts  
+- 👥 **Labor Management** – Staff assignments, time logs  
+- 📈 **Reports & Analytics** – Productivity charts, sustainability KPIs  
+- 🔐 **User Access** – Role-based login, multi-tiered subscriptions
+
+Additional features:
+- Responsive layout with **modular Shiny structure**
+- **SQLite backend** for offline-first storage
+- **ShinyManager** for authentication
+- Integrated dashboards using **plotly** and **DT**
+
+---
+
+## 🛠️ Tools & Technologies
+
+- **Frontend**: R + Shiny, `shinymanager`, `bslib`, `shinyWidgets`, `shinyjs`  
+- **Backend**: SQLite, modular server logic, session management  
+- **Visualization**: `plotly`, `ggplot2`, `gganimate`, `DT`, `reactable`  
+- **SaaS Design**: Subscription logic, farm-based data partitions
+
+---
+
+## 💼 Impact
+
+- 📊 Enables data-informed decisions at the farm level
+- 📋 Reduces paperwork and improves record consistency
+- 🌱 Supports sustainable agriculture through traceability and resource tracking
+
+---
+
+## 🖥️ Screenshots
+
+![Farm Summary Dashboard](../assets/images/farm_summary.jpg){.img-fluid .rounded .shadow-sm .mb-3}
+![Herd Records Module](../assets/images/herd_records.jpg){.img-fluid .rounded .shadow-sm .mb-3}
+
+---
+
+## 🔗 Resources
+
+- 🌐 Live Demo (Coming Soon)
+- 📦 GitHub Repo (Private – available on request)
+- 📘 User Guide (PDF): *Coming soon*
+
+---
+
+### 💬 Interested in using or customizing this system?
+
+Whether you're a farmer, cooperative, or agricultural NGO, I can tailor the app to your specific needs. [Email me](mailto:kimutairobert72@gmail.com) to explore a deployment or partnership.
+
+
+

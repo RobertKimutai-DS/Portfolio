@@ -1,0 +1,240 @@
+[
+  {
+    "objectID": "resume/index.html",
+    "href": "resume/index.html",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "📇 Contact Information\n\n Address: Box 16029-00509 Galleria, Nairobi\n\n Phone: +254 723 493122\n\n Email: robert.kimutai.ds@gmail.com\n\n LinkedIn: linkedin.com/in/robert-kimutai\n\n GitHub: github.com/RobertKimutai-DS\n\n\n\n\n🎯 Professional Summary\nA mission-driven Researcher, Data Scientist, and Developer with a unique blend of skills in sustainability modeling, statistical machine learning, and end-to-end software system development.\nI specialize in turning complex environmental and socio-technical challenges into scalable, data-driven solutions.\nProjects such as the Solar Cooker Performance Testing Platform, Energy Churn Prediction Model, and Zero-Grazing Dairy Web App demonstrate my ability to integrate research rigor, machine learning, and full-stack engineering in service of impact.\n\n\n\n🔍 Core Competencies\n\nResearch & Impact Analysis: Experimental design, survey analysis, sustainability indicators\n\nData Science & ML: Supervised learning, churn modeling, time series, interpretability tools\n\nSoftware Engineering: R & Python development, Shiny apps, APIs, modular codebases\n\nHardware Integration: Arduino + sensor systems (e.g., DS18B20, BPW34, SD logging)\n\nVisualization & Storytelling: Quarto, ggplot2, plotly, reporting dashboards\n\nSoft Skills: Systems thinking, communication, client engagement, project management\n\n\n\n\n🎓 Education\nMSc – Environmental and Biosystems Engineering\nUniversity of Nairobi (2021–Present)\nThesis: Development of a Solar Cooker Testing Platform using ASAE S580.1 Standards\nBSc – Agricultural Engineering\nJKUAT (2013–2018)\nThesis: Automated Irrigation Scheduling System for Smallholder Farmers\nDiploma – Machine Learning with R Studio\nAlison (2023)\n\n\n\n📜 Certifications\n\nStatistical Data Analysis Using R – RUFORUM (2022)\n\nMachine Learning with R Studio – Alison (2023)\n\n\n\n\n🧪 Research Experience\n\nUniversity of Nairobi – Graduate Research Assistant (2021–Present)\n\nDesigned and tested a solar cooker performance platform using Arduino, Shiny, and Proteus\n\nConducted environmental, health, and economic impact modeling\n\nAuthored technical papers and contributed to sustainability-focused policy briefs\n\n\n\nKESRA – Researcher (2021)\n\nAnalyzed 15 years of tax reform and income distribution data using R\n\nDeveloped models to evaluate tax policy effectiveness\n\nDelivered findings to stakeholders at Kenya School of Revenue Administration\n\n\n\n\n\n💻 Key Projects\n\n🌞 Solar Cooker Testing Platform\nRole: Researcher & Developer | 2021–Present\n- Built a standards-compliant system for measuring solar cooking performance\n- Developed a web-based Shiny dashboard with impact calculators\n- Simulated the system in Proteus and deployed with Arduino hardware\n\n\n⚡ Churn Analysis for Energy Sector (BCG Internship)\nRole: Data Scientist | 2024\n- Created a churn prediction model with 90%+ AUC using tidymodels and xgboost\n- Delivered actionable insights to reduce customer attrition\n- Visualized feature importance and model outputs with vip and ggstatsplot\n\n\n🐄 Zero-Grazing Dairy Management Web App\nRole: Full Stack R Developer | 2021–Present\n- Designed a Shiny SaaS platform with modules for herd, milk, inventory, and labor\n- Integrated SQLite, DT, and shinymanager for access control\n- Led architecture and dashboard design, increasing client productivity\n\n\n\n\n⚙️ Technical Skills\n\nProgramming: R, Python (via reticulate), SQL, Arduino (C/C++)\n\nWeb Dev & UI: Shiny, Quarto, HTML/CSS, JS\n\nModeling & Analytics: tidymodels, caret, DALEX, ggplot2, gganimate\n\nSimulation Tools: Proteus, MATLAB\n\nData Handling: RSQLite, MySQL, REST APIs, httr, jsonlite\n\nToolchains: Git, RStudio, VS Code, Netlify\n\n\n\n\n🧘 Personal Interests\nPassionate about community leadership, health and wellness, and youth empowerment.\nActive in swimming, Taekwondo, chess, and organizing church-based initiatives that nurture holistic youth development.\n\n\n\n📁 References\nAvailable upon request."
+  },
+  {
+    "objectID": "portfolio/posts/welcome/index.html",
+    "href": "portfolio/posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "This is the first post in a Quarto blog. Welcome!\n\nSince this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "portfolio/index.html",
+    "href": "portfolio/index.html",
+    "title": "Portfolio",
+    "section": "",
+    "text": "Welcome to my project portfolio. These highlights showcase my ability to integrate research, data science, and software development in creating real-world solutions that prioritize sustainability, intelligence, and impact.\nEach project is a reflection of my values — blending innovation, rigor, and systems thinking.\n\n\n\n\n\n\n\n\n\nSolar Cooker Performance Testing Platform\n\n\nRole: Researcher | Embedded Systems Developer | Data Scientist\nTechnologies: Arduino, R, Shiny, Proteus, DS18B20, BPW34, ggplot2, lubridate\nA flagship research project focused on developing a low-cost, open-source solar cooker performance testing platform, built to comply with the ASAE S580.1 standard.\nKey components:\n\n📡 Sensor-based data acquisition using DS18B20 (temperature) and BPW34 (irradiance) via Arduino\n\n📊 Shiny web application for visualizing cooking power, standardizing results to 700 W/m², and modeling environmental/health benefits\n\n🛠️ Simulation & calibration using Proteus 8 Professional for validation prior to hardware deployment\n\n🌱 Impact-driven: Quantifies fuel savings, CO₂ reduction, and public health benefits for NGOs and field partners\n\nThis system empowers stakeholders in energy, development, and sustainability to perform affordable, standardized testing in low-resource settings.\n🔗 View project details →\n\n\n\n\n\n\nChurn Prediction Model\n\n\nRole: Data Scientist (Intern, BCG)\nTechnologies: R, tidymodels, xgboost, ggstatsplot, vip\nBuilt a churn prediction model for an energy company to reduce customer attrition. Delivered actionable insights and a reusable modeling pipeline using the tidyverse ecosystem.\nHighlights:\n\n📈 Feature engineering across 12-month customer histories\n\n🧠 XGBoost model with AUC of 0.91\n\n🔍 Top predictors: price volatility, service interactions, clean energy preferences\n\n📊 Business insights delivered to stakeholders with interpretable visuals\n\n🔗 View project details →\n\n\n\n\n\n\n\nDairy App Dashboard\n\n\nRole: Full Stack Developer | Systems Designer\nTechnologies: R, Shiny, SQLite, shinymanager, DT, plotly, gganimate\nDesigned and deployed a modular SaaS-style Shiny app for dairy farmers, supporting operational efficiency and sustainable livestock management.\nFeatures:\n\n🐄 Herd health tracking, milk production logs, and medication history\n\n📋 Inventory, labor, and feed management modules\n\n📈 Interactive dashboards and PDF reports\n\n🔐 User login and tiered subscriptions\n\n🔗 View project details →"
+  },
+  {
+    "objectID": "portfolio/index.html#featured-projects",
+    "href": "portfolio/index.html#featured-projects",
+    "title": "Portfolio",
+    "section": "",
+    "text": "Solar Cooker Performance Testing Platform\n\n\nRole: Researcher | Embedded Systems Developer | Data Scientist\nTechnologies: Arduino, R, Shiny, Proteus, DS18B20, BPW34, ggplot2, lubridate\nA flagship research project focused on developing a low-cost, open-source solar cooker performance testing platform, built to comply with the ASAE S580.1 standard.\nKey components:\n\n📡 Sensor-based data acquisition using DS18B20 (temperature) and BPW34 (irradiance) via Arduino\n\n📊 Shiny web application for visualizing cooking power, standardizing results to 700 W/m², and modeling environmental/health benefits\n\n🛠️ Simulation & calibration using Proteus 8 Professional for validation prior to hardware deployment\n\n🌱 Impact-driven: Quantifies fuel savings, CO₂ reduction, and public health benefits for NGOs and field partners\n\nThis system empowers stakeholders in energy, development, and sustainability to perform affordable, standardized testing in low-resource settings.\n🔗 View project details →\n\n\n\n\n\n\nChurn Prediction Model\n\n\nRole: Data Scientist (Intern, BCG)\nTechnologies: R, tidymodels, xgboost, ggstatsplot, vip\nBuilt a churn prediction model for an energy company to reduce customer attrition. Delivered actionable insights and a reusable modeling pipeline using the tidyverse ecosystem.\nHighlights:\n\n📈 Feature engineering across 12-month customer histories\n\n🧠 XGBoost model with AUC of 0.91\n\n🔍 Top predictors: price volatility, service interactions, clean energy preferences\n\n📊 Business insights delivered to stakeholders with interpretable visuals\n\n🔗 View project details →\n\n\n\n\n\n\n\nDairy App Dashboard\n\n\nRole: Full Stack Developer | Systems Designer\nTechnologies: R, Shiny, SQLite, shinymanager, DT, plotly, gganimate\nDesigned and deployed a modular SaaS-style Shiny app for dairy farmers, supporting operational efficiency and sustainable livestock management.\nFeatures:\n\n🐄 Herd health tracking, milk production logs, and medication history\n\n📋 Inventory, labor, and feed management modules\n\n📈 Interactive dashboards and PDF reports\n\n🔐 User login and tiered subscriptions\n\n🔗 View project details →"
+  },
+  {
+    "objectID": "portfolio/churn-analysis.html",
+    "href": "portfolio/churn-analysis.html",
+    "title": "Churn Prediction in the Energy Sector",
+    "section": "",
+    "text": "Churn Model Dashboard\n\n\nDuring my internship with the Boston Consulting Group (BCG), I led the development of a robust churn prediction framework for an energy service provider. The objective was to identify high-risk customers and enable proactive, data-driven retention strategies.\n\n\n\nThe energy sector faces increasing competition and shifting customer expectations. A rising churn rate posed a threat to customer lifetime value and operational costs. The challenge was to:\n\nDetect customers likely to churn\n\nUnderstand why they churn\n\nEnable actionable business strategies for retention\n\n\n\n\n\nThe dataset consisted of over 10,000 anonymized customer records across 12 months, with features such as:\n\n📆 Price history (monthly pricing plans)\n\n📞 Service interaction logs\n\n⚡ Energy preference (clean vs. conventional)\n\n🏷️ Demographics and usage behavior\n\n⏱️ Tenure and contract type\n\n\nI engineered 54 features after preprocessing, including volatility metrics, service score deltas, and churn flags.\n\n\n\n\n\nTools used: R, tidymodels, xgboost, vip, ggstatsplot, yardstick\nWorkflow:\n\nData preprocessing with recipes\n\nStratified train/test split using rsample\n\nModel tuning with tune_grid and 5-fold CV\n\nModel interpretation with vip, DALEX\n\nTop model: xgboost (AUC = 0.91)\n\n\n\n\n🎯 Volatility in pricing was a top predictor of churn.\n\n🚫 Customers with inconsistent service touchpoints showed higher churn risk.\n\n🌱 Customers preferring clean energy had lower churn probability, suggesting an opportunity for sustainability-aligned marketing.\n\n\n\n\n\nVisuals were generated using vip, ggplot2, and ggstatsplot to support deep feature understanding and stakeholder presentations.\n\n\n\n\n\n✅ Delivered a complete churn prediction pipeline in R.\n\n📦 Packaged the codebase for handoff to the client-side data engineering team.\n\n🧑‍💼 Presented results to consultants and client stakeholders with a focus on business alignment and interpretability.\n\n\n\n\n\n\n📦 GitHub Repo (sanitized version): Coming soon\n\n📄 Slide Deck / Business Report: Available upon request\n\n\n\n\n\nIf you’re building churn models or customer analytics pipelines and need a systems thinker who combines machine learning, business understanding, and communicative clarity — let’s connect."
+  },
+  {
+    "objectID": "portfolio/churn-analysis.html#problem-statement",
+    "href": "portfolio/churn-analysis.html#problem-statement",
+    "title": "Churn Prediction in the Energy Sector",
+    "section": "",
+    "text": "The energy sector faces increasing competition and shifting customer expectations. A rising churn rate posed a threat to customer lifetime value and operational costs. The challenge was to:\n\nDetect customers likely to churn\n\nUnderstand why they churn\n\nEnable actionable business strategies for retention"
+  },
+  {
+    "objectID": "portfolio/churn-analysis.html#data-features",
+    "href": "portfolio/churn-analysis.html#data-features",
+    "title": "Churn Prediction in the Energy Sector",
+    "section": "",
+    "text": "The dataset consisted of over 10,000 anonymized customer records across 12 months, with features such as:\n\n📆 Price history (monthly pricing plans)\n\n📞 Service interaction logs\n\n⚡ Energy preference (clean vs. conventional)\n\n🏷️ Demographics and usage behavior\n\n⏱️ Tenure and contract type\n\n\nI engineered 54 features after preprocessing, including volatility metrics, service score deltas, and churn flags."
+  },
+  {
+    "objectID": "portfolio/churn-analysis.html#modeling-approach",
+    "href": "portfolio/churn-analysis.html#modeling-approach",
+    "title": "Churn Prediction in the Energy Sector",
+    "section": "",
+    "text": "Tools used: R, tidymodels, xgboost, vip, ggstatsplot, yardstick\nWorkflow:\n\nData preprocessing with recipes\n\nStratified train/test split using rsample\n\nModel tuning with tune_grid and 5-fold CV\n\nModel interpretation with vip, DALEX\n\nTop model: xgboost (AUC = 0.91)"
+  },
+  {
+    "objectID": "portfolio/churn-analysis.html#key-business-insights",
+    "href": "portfolio/churn-analysis.html#key-business-insights",
+    "title": "Churn Prediction in the Energy Sector",
+    "section": "",
+    "text": "🎯 Volatility in pricing was a top predictor of churn.\n\n🚫 Customers with inconsistent service touchpoints showed higher churn risk.\n\n🌱 Customers preferring clean energy had lower churn probability, suggesting an opportunity for sustainability-aligned marketing."
+  },
+  {
+    "objectID": "portfolio/churn-analysis.html#visual-highlights",
+    "href": "portfolio/churn-analysis.html#visual-highlights",
+    "title": "Churn Prediction in the Energy Sector",
+    "section": "",
+    "text": "Visuals were generated using vip, ggplot2, and ggstatsplot to support deep feature understanding and stakeholder presentations."
+  },
+  {
+    "objectID": "portfolio/churn-analysis.html#outcome",
+    "href": "portfolio/churn-analysis.html#outcome",
+    "title": "Churn Prediction in the Energy Sector",
+    "section": "",
+    "text": "✅ Delivered a complete churn prediction pipeline in R.\n\n📦 Packaged the codebase for handoff to the client-side data engineering team.\n\n🧑‍💼 Presented results to consultants and client stakeholders with a focus on business alignment and interpretability."
+  },
+  {
+    "objectID": "portfolio/churn-analysis.html#resources",
+    "href": "portfolio/churn-analysis.html#resources",
+    "title": "Churn Prediction in the Energy Sector",
+    "section": "",
+    "text": "📦 GitHub Repo (sanitized version): Coming soon\n\n📄 Slide Deck / Business Report: Available upon request"
+  },
+  {
+    "objectID": "portfolio/churn-analysis.html#lets-talk",
+    "href": "portfolio/churn-analysis.html#lets-talk",
+    "title": "Churn Prediction in the Energy Sector",
+    "section": "",
+    "text": "If you’re building churn models or customer analytics pipelines and need a systems thinker who combines machine learning, business understanding, and communicative clarity — let’s connect."
+  },
+  {
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "index",
+    "section": "",
+    "text": "Blog\nThis space will host articles, tutorials, and reflections on:\n\nResearch methods and experimental design\n\nR and Python analytics workflows\n\nSustainable systems, IoT, and open-source development\n\nStay tuned for future posts!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Hello! I’m Robert Kimutai — a Researcher, Data Scientist, and Software Developer passionate about building sustainable, intelligent systems that address real-world problems through data, technology, and systems thinking.\n\n\n\nWith an academic background in Environmental and Biosystems Engineering and a professional focus on data science, software development, and impact modeling, I specialize in delivering tools and insights that support sustainability, efficiency, and decision-making.\nI’ve designed and delivered projects ranging from a zero-grazing dairy farm web app to a solar cooker testing platform and churn analysis models for the energy sector — each one integrating innovation and measurable value.\n\n\n\n\n\n\nIntegrity: Transparency and trust in every project and partnership.\n\n\nInnovation: Embracing new ideas and unconventional solutions.\n\n\nSustainability: Designing for long-term environmental and societal impact.\n\n\n\n\n\n\n\n\nData Science: EDA, ML modeling, feature engineering, and visual storytelling.\n\n\nSoftware Development: R, Shiny apps, modular dashboards, RESTful APIs, Python (reticulate).\n\n\nEnvironmental Analytics: Sensor-based data systems, sustainability metrics, impact modeling.\n\n\nProject Management: Systems design, Agile, end-user-focused delivery.\n\n\nTechnical Stack: R, Python, SQL, Arduino, QGIS, MATLAB, Proteus, Git.\n\n\n\n\n\n\n\nMultidisciplinary Approach: Bridging research, software, and sustainability.\nProven Results:\n\nBuilt the Zero-Grazing Dairy Management Web App\nLed the Solar Cooker Performance Platform for academic and NGO use\nDelivered churn modeling insights during my BCG internship\n\nClient-Centered Design: Solutions grounded in real needs, data, and usability.\n\n\n\n\n\nI’m open to research collaborations, consulting projects, or custom software development engagements. Whether you’re a government agency, nonprofit, or business, I’m ready to help you translate ideas into systems that work and scale.\n\n  \n     Name:\n    \n  \n  \n     Email:\n    \n  \n  \n     Message:"
+  },
+  {
+    "objectID": "index.html#about-me",
+    "href": "index.html#about-me",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "With an academic background in Environmental and Biosystems Engineering and a professional focus on data science, software development, and impact modeling, I specialize in delivering tools and insights that support sustainability, efficiency, and decision-making.\nI’ve designed and delivered projects ranging from a zero-grazing dairy farm web app to a solar cooker testing platform and churn analysis models for the energy sector — each one integrating innovation and measurable value."
+  },
+  {
+    "objectID": "index.html#core-values",
+    "href": "index.html#core-values",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Integrity: Transparency and trust in every project and partnership.\n\n\nInnovation: Embracing new ideas and unconventional solutions.\n\n\nSustainability: Designing for long-term environmental and societal impact."
+  },
+  {
+    "objectID": "index.html#core-skills-expertise",
+    "href": "index.html#core-skills-expertise",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Data Science: EDA, ML modeling, feature engineering, and visual storytelling.\n\n\nSoftware Development: R, Shiny apps, modular dashboards, RESTful APIs, Python (reticulate).\n\n\nEnvironmental Analytics: Sensor-based data systems, sustainability metrics, impact modeling.\n\n\nProject Management: Systems design, Agile, end-user-focused delivery.\n\n\nTechnical Stack: R, Python, SQL, Arduino, QGIS, MATLAB, Proteus, Git."
+  },
+  {
+    "objectID": "index.html#why-work-with-me",
+    "href": "index.html#why-work-with-me",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "Multidisciplinary Approach: Bridging research, software, and sustainability.\nProven Results:\n\nBuilt the Zero-Grazing Dairy Management Web App\nLed the Solar Cooker Performance Platform for academic and NGO use\nDelivered churn modeling insights during my BCG internship\n\nClient-Centered Design: Solutions grounded in real needs, data, and usability."
+  },
+  {
+    "objectID": "index.html#lets-collaborate",
+    "href": "index.html#lets-collaborate",
+    "title": "Robert Kimutai",
+    "section": "",
+    "text": "I’m open to research collaborations, consulting projects, or custom software development engagements. Whether you’re a government agency, nonprofit, or business, I’m ready to help you translate ideas into systems that work and scale.\n\n  \n     Name:\n    \n  \n  \n     Email:\n    \n  \n  \n     Message:"
+  },
+  {
+    "objectID": "portfolio/dairy-app.html",
+    "href": "portfolio/dairy-app.html",
+    "title": "Zero-Grazing Dairy Farm Management App",
+    "section": "",
+    "text": "Dairy App Dashboard\n\n\nThis project is a comprehensive Shiny web application designed to help zero-grazing dairy farmers manage their operations efficiently. Built as a modular SaaS solution, it covers the entire lifecycle of herd and resource management, promoting productivity, animal welfare, and sustainability.\n\n\n\nSmallholder dairy farmers face challenges with recordkeeping, herd health monitoring, feed optimization, and financial tracking. Most rely on manual methods or outdated systems.\n\nThis application provides a data-driven digital platform to streamline farm management using an easy-to-use interface and powerful analytics.\n\n\n\n\n\nThe app includes 13 core modules:\n\n🐮 Herd Management – Animal tracking, health history, breeding records\n\n🥛 Milk Production – Quantity, quality, and milk sales logs\n\n🌾 Feed Management – Feed plans, consumption, and inventory\n\n💊 Medication & Inventory – Stock control, treatments, alerts\n\n👥 Labor Management – Staff assignments, time logs\n\n📈 Reports & Analytics – Productivity charts, sustainability KPIs\n\n🔐 User Access – Role-based login, multi-tiered subscriptions\n\nAdditional features: - Responsive layout with modular Shiny structure - SQLite backend for offline-first storage - ShinyManager for authentication - Integrated dashboards using plotly and DT\n\n\n\n\n\nFrontend: R + Shiny, shinymanager, bslib, shinyWidgets, shinyjs\n\nBackend: SQLite, modular server logic, session management\n\nVisualization: plotly, ggplot2, gganimate, DT, reactable\n\nSaaS Design: Subscription logic, farm-based data partitions\n\n\n\n\n\n\n📊 Enables data-informed decisions at the farm level\n📋 Reduces paperwork and improves record consistency\n🌱 Supports sustainable agriculture through traceability and resource tracking\n\n\n\n\n\n \n\n\n\n\n\n🌐 Live Demo (Coming Soon)\n📦 GitHub Repo (Private – available on request)\n📘 User Guide (PDF): Coming soon\n\n\n\n\nWhether you’re a farmer, cooperative, or agricultural NGO, I can tailor the app to your specific needs. Email me to explore a deployment or partnership."
+  },
+  {
+    "objectID": "portfolio/dairy-app.html#motivation",
+    "href": "portfolio/dairy-app.html#motivation",
+    "title": "Zero-Grazing Dairy Farm Management App",
+    "section": "",
+    "text": "Smallholder dairy farmers face challenges with recordkeeping, herd health monitoring, feed optimization, and financial tracking. Most rely on manual methods or outdated systems.\n\nThis application provides a data-driven digital platform to streamline farm management using an easy-to-use interface and powerful analytics."
+  },
+  {
+    "objectID": "portfolio/dairy-app.html#modules-features",
+    "href": "portfolio/dairy-app.html#modules-features",
+    "title": "Zero-Grazing Dairy Farm Management App",
+    "section": "",
+    "text": "The app includes 13 core modules:\n\n🐮 Herd Management – Animal tracking, health history, breeding records\n\n🥛 Milk Production – Quantity, quality, and milk sales logs\n\n🌾 Feed Management – Feed plans, consumption, and inventory\n\n💊 Medication & Inventory – Stock control, treatments, alerts\n\n👥 Labor Management – Staff assignments, time logs\n\n📈 Reports & Analytics – Productivity charts, sustainability KPIs\n\n🔐 User Access – Role-based login, multi-tiered subscriptions\n\nAdditional features: - Responsive layout with modular Shiny structure - SQLite backend for offline-first storage - ShinyManager for authentication - Integrated dashboards using plotly and DT"
+  },
+  {
+    "objectID": "portfolio/dairy-app.html#tools-technologies",
+    "href": "portfolio/dairy-app.html#tools-technologies",
+    "title": "Zero-Grazing Dairy Farm Management App",
+    "section": "",
+    "text": "Frontend: R + Shiny, shinymanager, bslib, shinyWidgets, shinyjs\n\nBackend: SQLite, modular server logic, session management\n\nVisualization: plotly, ggplot2, gganimate, DT, reactable\n\nSaaS Design: Subscription logic, farm-based data partitions"
+  },
+  {
+    "objectID": "portfolio/dairy-app.html#impact",
+    "href": "portfolio/dairy-app.html#impact",
+    "title": "Zero-Grazing Dairy Farm Management App",
+    "section": "",
+    "text": "📊 Enables data-informed decisions at the farm level\n📋 Reduces paperwork and improves record consistency\n🌱 Supports sustainable agriculture through traceability and resource tracking"
+  },
+  {
+    "objectID": "portfolio/dairy-app.html#resources",
+    "href": "portfolio/dairy-app.html#resources",
+    "title": "Zero-Grazing Dairy Farm Management App",
+    "section": "",
+    "text": "🌐 Live Demo (Coming Soon)\n📦 GitHub Repo (Private – available on request)\n📘 User Guide (PDF): Coming soon\n\n\n\n\nWhether you’re a farmer, cooperative, or agricultural NGO, I can tailor the app to your specific needs. Email me to explore a deployment or partnership."
+  },
+  {
+    "objectID": "portfolio/posts/post-with-code/index.html",
+    "href": "portfolio/posts/post-with-code/index.html",
+    "title": "Interplay of various indicators",
+    "section": "",
+    "text": "Environmental, Economic, Social, and Health Interplay Analysis App\nExplore how environmental, economic, social, and health data interact through our interactive app here."
+  },
+  {
+    "objectID": "portfolio/solar-cooker.html",
+    "href": "portfolio/solar-cooker.html",
+    "title": "Solar Cooker Performance Testing Platform",
+    "section": "",
+    "text": "Solar Cooker System\n\n\nThis project presents an open-source, low-cost solar cooker testing system aligned with the ASAE S580.1 standard. It combines sensor-based data acquisition, embedded electronics, and a web-based R Shiny dashboard to standardize cooking power evaluation and quantify sustainability impacts.\n\n\n\nIn many low-resource settings, solar cooking solutions lack affordable, standardized testing equipment, making it hard to validate performance or compare cookers. Traditional lab-grade equipment is cost-prohibitive, excluding local NGOs and researchers.\n\n\n\n\n\nMicrocontroller: Arduino Uno (ATmega328P)\nSensors:\n\nDS18B20 digital temperature sensors for ambient and water temperature\nBPW34 photodiode + PTFE cosine corrector for solar irradiance\n\nData Logging:\n\nSD Card module for timestamped logs\nRTC DS3232 for accurate timekeeping\n\nDisplay & Feedback:\n\n20x4 I2C LCD for real-time display\nHC-06 Bluetooth for wireless transmission\n\n\n\nThe system reads, logs, and transmits temperature and irradiance data in real-time while calculating cooking power and standardizing it to 700 W/m² per ASAE S580.1.\n\n\n\n\n\n\n\n\nShiny Dashboard Screenshot\n\n\nThe R Shiny dashboard provides:\n\n📈 Real-time data visualization\n📊 Cooking power analysis\n🌿 Sustainability metrics (fuel savings, CO₂ emissions avoided, health impact proxy)\n🧾 Downloadable reports in PDF or Excel\n\n\n\n\n\nTo ensure accuracy and repeatability:\n\nProteus 8 Professional was used to simulate DS18B20 and BPW34 sensor behavior\nPotentiometers emulated dynamic temperature and irradiance in real time\nSystem calibration ensured sensor readings aligned with empirical standards\n\n\n\n\n\n\n⚡ Empowers communities and NGOs to validate solar cooking technology affordably\n🌱 Models environmental benefits (e.g., CO₂ reduction)\n👩‍🔬 Supports academic and policy research through replicable, open-source methodology\n\n\n\n\n\n\n📦 GitHub Repository: Coming soon\n\n📃 IEEE-Style Research Report: To be published\n\n💡 Shiny App Demo: Coming soon\n\n\n\n\n\nI welcome NGOs, researchers, or developers to contribute to this platform or deploy it in field environments. Contact me to learn more or request access to the source files."
+  },
+  {
+    "objectID": "portfolio/solar-cooker.html#problem-statement",
+    "href": "portfolio/solar-cooker.html#problem-statement",
+    "title": "Solar Cooker Performance Testing Platform",
+    "section": "",
+    "text": "In many low-resource settings, solar cooking solutions lack affordable, standardized testing equipment, making it hard to validate performance or compare cookers. Traditional lab-grade equipment is cost-prohibitive, excluding local NGOs and researchers."
+  },
+  {
+    "objectID": "portfolio/solar-cooker.html#system-overview",
+    "href": "portfolio/solar-cooker.html#system-overview",
+    "title": "Solar Cooker Performance Testing Platform",
+    "section": "",
+    "text": "Microcontroller: Arduino Uno (ATmega328P)\nSensors:\n\nDS18B20 digital temperature sensors for ambient and water temperature\nBPW34 photodiode + PTFE cosine corrector for solar irradiance\n\nData Logging:\n\nSD Card module for timestamped logs\nRTC DS3232 for accurate timekeeping\n\nDisplay & Feedback:\n\n20x4 I2C LCD for real-time display\nHC-06 Bluetooth for wireless transmission\n\n\n\nThe system reads, logs, and transmits temperature and irradiance data in real-time while calculating cooking power and standardizing it to 700 W/m² per ASAE S580.1."
+  },
+  {
+    "objectID": "portfolio/solar-cooker.html#shiny-dashboard",
+    "href": "portfolio/solar-cooker.html#shiny-dashboard",
+    "title": "Solar Cooker Performance Testing Platform",
+    "section": "",
+    "text": "Shiny Dashboard Screenshot\n\n\nThe R Shiny dashboard provides:\n\n📈 Real-time data visualization\n📊 Cooking power analysis\n🌿 Sustainability metrics (fuel savings, CO₂ emissions avoided, health impact proxy)\n🧾 Downloadable reports in PDF or Excel"
+  },
+  {
+    "objectID": "portfolio/solar-cooker.html#simulation-validation",
+    "href": "portfolio/solar-cooker.html#simulation-validation",
+    "title": "Solar Cooker Performance Testing Platform",
+    "section": "",
+    "text": "To ensure accuracy and repeatability:\n\nProteus 8 Professional was used to simulate DS18B20 and BPW34 sensor behavior\nPotentiometers emulated dynamic temperature and irradiance in real time\nSystem calibration ensured sensor readings aligned with empirical standards"
+  },
+  {
+    "objectID": "portfolio/solar-cooker.html#impact-benefits",
+    "href": "portfolio/solar-cooker.html#impact-benefits",
+    "title": "Solar Cooker Performance Testing Platform",
+    "section": "",
+    "text": "⚡ Empowers communities and NGOs to validate solar cooking technology affordably\n🌱 Models environmental benefits (e.g., CO₂ reduction)\n👩‍🔬 Supports academic and policy research through replicable, open-source methodology"
+  },
+  {
+    "objectID": "portfolio/solar-cooker.html#resources",
+    "href": "portfolio/solar-cooker.html#resources",
+    "title": "Solar Cooker Performance Testing Platform",
+    "section": "",
+    "text": "📦 GitHub Repository: Coming soon\n\n📃 IEEE-Style Research Report: To be published\n\n💡 Shiny App Demo: Coming soon\n\n\n\n\n\nI welcome NGOs, researchers, or developers to contribute to this platform or deploy it in field environments. Contact me to learn more or request access to the source files."
+  }
+]

@@ -1,0 +1,81 @@
+---
+title: "Solar Cooker Performance Testing Platform"
+format: html
+page-layout: full
+---
+
+# 🌞 Solar Cooker Performance Testing Platform
+
+![Solar Cooker System](../assets/images/solar_cooker_diagram.jpg){.img-fluid .rounded .shadow-sm .mb-4}
+
+This project presents an **open-source, low-cost solar cooker testing system** aligned with the **ASAE S580.1** standard. It combines **sensor-based data acquisition**, **embedded electronics**, and a web-based **R Shiny dashboard** to standardize cooking power evaluation and quantify sustainability impacts.
+
+---
+
+## 🎯 Problem Statement
+
+In many low-resource settings, solar cooking solutions lack **affordable**, **standardized testing equipment**, making it hard to validate performance or compare cookers. Traditional lab-grade equipment is **cost-prohibitive**, excluding local NGOs and researchers.
+
+---
+
+## 🛠️ System Overview
+
+- **Microcontroller**: Arduino Uno (ATmega328P)
+- **Sensors**:
+  - DS18B20 digital temperature sensors for ambient and water temperature
+  - BPW34 photodiode + PTFE cosine corrector for solar irradiance
+- **Data Logging**:
+  - SD Card module for timestamped logs
+  - RTC DS3232 for accurate timekeeping
+- **Display & Feedback**:
+  - 20x4 I2C LCD for real-time display
+  - HC-06 Bluetooth for wireless transmission
+
+> The system reads, logs, and transmits temperature and irradiance data in real-time while calculating **cooking power** and standardizing it to 700 W/m² per ASAE S580.1.
+
+---
+
+## 💻 Shiny Dashboard
+
+![Shiny Dashboard Screenshot](../assets/images/shiny_dashboard.jpg){.img-fluid .rounded .shadow-sm .mb-3}
+
+The **R Shiny dashboard** provides:
+
+- 📈 **Real-time data visualization**
+- 📊 **Cooking power analysis**
+- 🌿 **Sustainability metrics** (fuel savings, CO₂ emissions avoided, health impact proxy)
+- 🧾 Downloadable reports in PDF or Excel
+
+---
+
+## 🔁 Simulation & Validation
+
+To ensure accuracy and repeatability:
+
+- **Proteus 8 Professional** was used to simulate DS18B20 and BPW34 sensor behavior
+- **Potentiometers** emulated dynamic temperature and irradiance in real time
+- System calibration ensured sensor readings aligned with empirical standards
+
+---
+
+## 🌍 Impact & Benefits
+
+- ⚡ Empowers communities and NGOs to validate solar cooking technology affordably
+- 🌱 Models environmental benefits (e.g., CO₂ reduction)
+- 👩‍🔬 Supports academic and policy research through replicable, open-source methodology
+
+---
+
+## 🔗 Resources
+
+- 📦 GitHub Repository: *Coming soon*  
+- 📃 IEEE-Style Research Report: *To be published*  
+- 💡 Shiny App Demo: *Coming soon*
+
+---
+
+### 📫 Interested in contributing or collaborating?
+
+> I welcome NGOs, researchers, or developers to contribute to this platform or deploy it in field environments. [Contact me](mailto:kimutairobert72@gmail.com) to learn more or request access to the source files.
+
+

@@ -1,0 +1,145 @@
+---
+title: "Robert Kimutai"
+author: "Researcher | Data Scientist | Developer"
+date: "September 15, 2024"
+format:
+  html:
+    toc: true
+    toc-location: left
+    theme: cosmo
+    css: "assets/css/resume.css"
+    number-sections: false
+    page-layout: full
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    include-after-body:
+      - text: |
+          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+          <script src="assets/javascript/resume.js"></script>
+  pdf:
+    output: pagedpdf
+    css: "assets/css/resume.css"
+    number-sections: false
+    toc: false
+    keep-md: true
+    keep-html: true
+---
+
+
+::: resume-section
+# 📇 Contact Information
+
+-   <i class="fas fa-home"></i> **Address**: Box 16029-00509 Galleria, Nairobi\
+-   <i class="fas fa-phone"></i> **Phone**: +254 723 493122\
+-   <i class="fas fa-envelope"></i> **Email**: [robert.kimutai.ds\@gmail.com](mailto:robert.kimutai.ds@gmail.com)\
+-   <i class="fab fa-linkedin"></i> **LinkedIn**: [linkedin.com/in/robert-kimutai](https://www.linkedin.com/in/robert-kimutai-921608330/)\
+-   <i class="fab fa-github"></i> **GitHub**: [github.com/RobertKimutai-DS](https://github.com/RobertKimutai-DS)
+:::
+
+------------------------------------------------------------------------
+
+# 🎯 Professional Summary
+
+A mission-driven **Researcher**, **Data Scientist**, and **Developer** with a unique blend of skills in **sustainability modeling**, **statistical machine learning**, and **end-to-end software system development**.\
+I specialize in turning complex environmental and socio-technical challenges into scalable, data-driven solutions.
+
+Projects such as the **Solar Cooker Performance Testing Platform**, **Energy Churn Prediction Model**, and **Zero-Grazing Dairy Web App** demonstrate my ability to integrate **research rigor**, **machine learning**, and **full-stack engineering** in service of impact.
+
+------------------------------------------------------------------------
+
+# 🔍 Core Competencies
+
+-   **Research & Impact Analysis**: Experimental design, survey analysis, sustainability indicators\
+-   **Data Science & ML**: Supervised learning, churn modeling, time series, interpretability tools\
+-   **Software Engineering**: R & Python development, Shiny apps, APIs, modular codebases\
+-   **Hardware Integration**: Arduino + sensor systems (e.g., DS18B20, BPW34, SD logging)\
+-   **Visualization & Storytelling**: Quarto, ggplot2, plotly, reporting dashboards\
+-   **Soft Skills**: Systems thinking, communication, client engagement, project management
+
+------------------------------------------------------------------------
+
+# 🎓 Education
+
+**MSc – Environmental and Biosystems Engineering**\
+University of Nairobi (2021–Present)\
+*Thesis: Development of a Solar Cooker Testing Platform using ASAE S580.1 Standards*
+
+**BSc – Agricultural Engineering**\
+JKUAT (2013–2018)\
+*Thesis: Automated Irrigation Scheduling System for Smallholder Farmers*
+
+**Diploma – Machine Learning with R Studio**\
+Alison (2023)
+
+------------------------------------------------------------------------
+
+# 📜 Certifications
+
+-   **Statistical Data Analysis Using R** – RUFORUM (2022)\
+-   **Machine Learning with R Studio** – Alison (2023)
+
+------------------------------------------------------------------------
+
+# 🧪 Research Experience
+
+### University of Nairobi – Graduate Research Assistant (2021–Present)
+
+-   Designed and tested a solar cooker performance platform using Arduino, Shiny, and Proteus\
+-   Conducted environmental, health, and economic impact modeling\
+-   Authored technical papers and contributed to sustainability-focused policy briefs
+
+### KESRA – Researcher (2021)
+
+-   Analyzed 15 years of tax reform and income distribution data using R\
+-   Developed models to evaluate tax policy effectiveness\
+-   Delivered findings to stakeholders at Kenya School of Revenue Administration
+
+------------------------------------------------------------------------
+
+# 💻 Key Projects
+
+### 🌞 Solar Cooker Testing Platform
+
+**Role**: Researcher & Developer \| 2021–Present\
+- Built a standards-compliant system for measuring solar cooking performance\
+- Developed a web-based Shiny dashboard with impact calculators\
+- Simulated the system in Proteus and deployed with Arduino hardware
+
+### ⚡ Churn Analysis for Energy Sector (BCG Internship)
+
+**Role**: Data Scientist \| 2024\
+- Created a churn prediction model with 90%+ AUC using `tidymodels` and `xgboost`\
+- Delivered actionable insights to reduce customer attrition\
+- Visualized feature importance and model outputs with `vip` and `ggstatsplot`
+
+### 🐄 Zero-Grazing Dairy Management Web App
+
+**Role**: Full Stack R Developer \| 2021–Present\
+- Designed a Shiny SaaS platform with modules for herd, milk, inventory, and labor\
+- Integrated SQLite, DT, and `shinymanager` for access control\
+- Led architecture and dashboard design, increasing client productivity
+
+------------------------------------------------------------------------
+
+# ⚙️ Technical Skills
+
+-   **Programming**: R, Python (via reticulate), SQL, Arduino (C/C++)\
+-   **Web Dev & UI**: Shiny, Quarto, HTML/CSS, JS\
+-   **Modeling & Analytics**: tidymodels, caret, DALEX, ggplot2, gganimate\
+-   **Simulation Tools**: Proteus, MATLAB\
+-   **Data Handling**: RSQLite, MySQL, REST APIs, `httr`, `jsonlite`\
+-   **Toolchains**: Git, RStudio, VS Code, Netlify
+
+------------------------------------------------------------------------
+
+# 🧘 Personal Interests
+
+Passionate about **community leadership**, **health and wellness**, and **youth empowerment**.\
+Active in swimming, Taekwondo, chess, and organizing church-based initiatives that nurture holistic youth development.
+
+------------------------------------------------------------------------
+
+# 📁 References
+
+Available upon request.
