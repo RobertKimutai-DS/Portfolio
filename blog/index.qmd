@@ -5,10 +5,12 @@ format: html
 
 # Blog
 
-This space will host articles, tutorials, and reflections on:
+🔗 [Understanding Classification and Clustering Techniques →](classification_vs_clustering.qmd)
 
-- Research methods and experimental design  
-- R and Python analytics workflows  
-- Sustainable systems, IoT, and open-source development
+This space will host more articles, tutorials, and reflections on:
+
+-   Research methods and experimental design\
+-   R and Python analytics workflows\
+-   Sustainable systems, IoT, and open-source development
 
 Stay tuned for future posts!

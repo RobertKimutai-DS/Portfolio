@@ -1,0 +1,633 @@
+---
+title: "Understanding Classification and Clustering: Decision Trees, Random Forests, SVM, Naive Bayes, and K-Means with Iris Data"
+author: "Robert Kimutai"
+format:
+  html:
+    toc: true
+    toc-location: left
+    theme: cosmo
+    code-fold: true
+    code-tools: true
+    page-layout: full
+execute:
+  echo: true
+  message: false
+  warning: false
+editor: visual
+---
+
+# Project Set up
+
+```{r}
+#| label: setup
+#| include: false
+
+required_packages <- c(
+  "tidyverse", "tidymodels", "kernlab", "e1071", "naivebayes","discrim", 
+  "rpart.plot", "sjPlot", "sjmisc", "sjlabelled", "cluster", "factoextra", "kableExtra", "vip", "ranger", "kknn"
+)
+
+# Install any packages not yet installed
+new_packages <- required_packages[!(required_packages %in% installed.packages()[, "Package"])]
+if (length(new_packages)) install.packages(new_packages)
+
+# Load all packages
+lapply(required_packages, library, character.only = TRUE)
+
+# Global theme and options
+theme_set(theme_minimal())
+options(scipen = 999)
+
+```
+
+# Introduction
+
+In this post, we compare five key machine learning models using the famous Iris dataset:
+
+-   Decision Tree
+
+-   Random Forest
+
+-   SVM
+
+-   Naive Bayes
+
+-   K-Means Clustering
+
+We combine tidy modeling workflows with visualizations from `sjPlot` for enhanced interpretability.
+
+# Load and Prepare Data
+
+```{r}
+data(iris)
+iris <- as_tibble(iris) %>% rename_with(make.names)
+
+set.seed(123)
+iris_split <- initial_split(iris, prop = 0.8, strata = Species)
+iris_train <- training(iris_split)
+iris_test  <- testing(iris_split)
+
+```
+
+# Model and Visualize the Data
+
+## Decision Trees
+
+**Concept**: A decision tree splits the data based on feature values, creating branches and leaves to classify new observations.
+
+```{r}
+#| label: decision_tree_analysis
+#| message: false
+
+# ---------------------------------------------
+# STEP 1: Define and Fit a Decision Tree Model
+# ---------------------------------------------
+tree_fit <- decision_tree() %>%
+  set_mode("classification") %>%
+  set_engine("rpart") %>%
+  fit(Species ~ ., data = iris_train)
+
+# --------------------------------------------------
+# STEP 2: Visualize the Tree Structure
+# --------------------------------------------------
+tree_fit$fit %>%
+  rpart.plot(extra = 104, roundint = FALSE)
+
+# ------------------------------------------------
+# STEP 3: Visualize Feature Importance
+# ------------------------------------------------
+tree_fit$fit$variable.importance %>%
+  enframe(name = "feature", value = "importance") %>%
+  ggplot(aes(x = fct_reorder(feature, importance), y = importance)) +
+  geom_col(fill = "#377eb8") +
+  coord_flip() +
+  labs(
+    title = "Feature Importance in Decision Tree",
+    x = "Feature",
+    y = "Importance Score"
+  ) +
+  theme_minimal()
+
+# --------------------------------------------
+# STEP 4: Predict on Test Set
+# --------------------------------------------
+tree_predictions <- predict(tree_fit, new_data = iris_test) %>%
+  bind_cols(iris_test)
+
+# --------------------------------------------
+# STEP 5: Evaluate Model Performance
+# --------------------------------------------
+tree_metrics <- tree_predictions %>%
+  metrics(truth = Species, estimate = .pred_class)
+
+# Show metrics table
+tree_metrics %>%
+  knitr::kable(
+    digits = 3,
+    caption = "Decision Tree Classification Performance on Test Data"
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+
+# --------------------------------------------
+# STEP 6: Show Confusion Matrix
+# --------------------------------------------
+
+# Confusion matrix table
+tree_predictions %>%
+  conf_mat(truth = Species, estimate = .pred_class) %>%
+  summary() %>%
+  knitr::kable(
+    digits = 3,
+    caption = "Confusion Matrix: Class-Level Metrics"
+  ) %>%
+  kable_styling(bootstrap_options = c("condensed", "hover"), full_width = FALSE)
+
+# Confusion matrix visualization (heatmap-style)
+tree_predictions %>%
+  conf_mat(truth = Species, estimate = .pred_class) %>%
+  autoplot(type = "heatmap") +
+  scale_fill_gradient(low = "white", high = "#377eb8") +
+  labs(title = "Confusion Matrix: Predicted vs. Actual Classes") +
+  theme_minimal()
+
+```
+
+## Random Forest
+
+**Concept**: A random forest is an ensemble of decision trees that improves accuracy by averaging many de-correlated trees.
+
+```{r}
+#| label: random_forest_analysis
+#| message: false
+
+# ---------------------------------------------
+# STEP 1: Define and Fit a Random Forest Model
+# ---------------------------------------------
+rf_fit <- rand_forest(trees = 500, mtry = 2, min_n = 5) %>%
+  set_mode("classification") %>%
+  set_engine("ranger", importance = "impurity") %>%
+  fit(Species ~ ., data = iris_train)
+
+# --------------------------------------------
+# STEP 2: Visualize Feature Importance
+# --------------------------------------------
+rf_fit %>%
+  extract_fit_engine() %>%
+  vip(num_features = 4, bar = TRUE, aesthetics = list(fill = "#4daf4a")) +
+  labs(
+    title = "Random Forest Feature Importance (Impurity-Based)",
+    x = "Importance",
+    y = "Feature"
+  ) +
+  theme_minimal()
+
+# --------------------------------------------
+# STEP 3: Predict on Test Set
+# --------------------------------------------
+rf_predictions <- predict(rf_fit, new_data = iris_test) %>%
+  bind_cols(iris_test)
+
+# --------------------------------------------
+# STEP 4: Evaluate Model Performance
+# --------------------------------------------
+rf_metrics <- rf_predictions %>%
+  metrics(truth = Species, estimate = .pred_class)
+
+# Display performance metrics
+rf_metrics %>%
+  knitr::kable(
+    digits = 3,
+    caption = "Random Forest Classification Performance on Test Data"
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+
+# --------------------------------------------
+# STEP 5: Show Confusion Matrix
+# --------------------------------------------
+
+# Tabular confusion matrix
+rf_predictions %>%
+  conf_mat(truth = Species, estimate = .pred_class) %>%
+  summary() %>%
+  knitr::kable(
+    digits = 3,
+    caption = "Confusion Matrix: Class-Level Metrics (Random Forest)"
+  ) %>%
+  kable_styling(bootstrap_options = c("condensed", "hover"), full_width = FALSE)
+
+# Visual confusion matrix (heatmap)
+rf_predictions %>%
+  conf_mat(truth = Species, estimate = .pred_class) %>%
+  autoplot(type = "heatmap") +
+  scale_fill_gradient(low = "white", high = "#4daf4a") +
+  labs(title = "Confusion Matrix: Random Forest Predictions vs. Actual") +
+  theme_minimal()
+
+```
+
+## Support Vector Machine(SVM)
+
+**Concept**: SVM finds an optimal hyperplane that separates classes with the largest margin in the feature space.
+
+```{r}
+#| label: svm_analysis
+#| message: false
+
+# ---------------------------------------------
+# STEP 1: Define and Fit an SVM Model (Radial Kernel)
+# ---------------------------------------------
+svm_fit <- svm_rbf(cost = 1, rbf_sigma = 0.1) %>%
+  set_mode("classification") %>%
+  set_engine("kernlab") %>%
+  fit(Species ~ ., data = iris_train)
+
+# --------------------------------------------
+# STEP 2: Predict on Test Set
+# --------------------------------------------
+svm_predictions <- predict(svm_fit, new_data = iris_test) %>%
+  bind_cols(iris_test)
+
+# --------------------------------------------
+# STEP 3: Evaluate Model Performance
+# --------------------------------------------
+svm_metrics <- svm_predictions %>%
+  metrics(truth = Species, estimate = .pred_class)
+
+# Show evaluation metrics in table
+svm_metrics %>%
+  knitr::kable(
+    digits = 3,
+    caption = "SVM Classification Performance on Test Data"
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+
+# --------------------------------------------
+# STEP 4: Confusion Matrix
+# --------------------------------------------
+
+# Confusion matrix as table
+svm_predictions %>%
+  conf_mat(truth = Species, estimate = .pred_class) %>%
+  summary() %>%
+  knitr::kable(
+    digits = 3,
+    caption = "Confusion Matrix: Class-Level Metrics (SVM)"
+  ) %>%
+  kable_styling(bootstrap_options = c("condensed", "hover"), full_width = FALSE)
+
+# Confusion matrix as heatmap
+svm_predictions %>%
+  conf_mat(truth = Species, estimate = .pred_class) %>%
+  autoplot(type = "heatmap") +
+  scale_fill_gradient(low = "white", high = "#984ea3") +
+  labs(title = "Confusion Matrix: SVM Predictions vs. Actual") +
+  theme_minimal()
+
+
+```
+
+## Naive Bayes
+
+**Concept**: Naive Bayes is a probabilistic model assuming independence between features given the class label.
+
+```{r}
+#| label: naive_bayes_analysis
+#| message: false
+
+# ---------------------------------------------
+# STEP 1: Define and Fit a Naive Bayes Model
+# ---------------------------------------------
+nb_fit <- naive_Bayes() %>%
+  set_mode("classification") %>%
+  set_engine("naivebayes") %>%
+  fit(Species ~ ., data = iris_train)
+
+# --------------------------------------------
+# STEP 2: Predict on Test Set
+# --------------------------------------------
+nb_predictions <- predict(nb_fit, new_data = iris_test) %>%
+  bind_cols(iris_test)
+
+# --------------------------------------------
+# STEP 3: Evaluate Model Performance
+# --------------------------------------------
+nb_metrics <- nb_predictions %>%
+  metrics(truth = Species, estimate = .pred_class)
+
+# Display evaluation metrics
+nb_metrics %>%
+  knitr::kable(
+    digits = 3,
+    caption = "Naive Bayes Classification Performance on Test Data"
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+
+# --------------------------------------------
+# STEP 4: Confusion Matrix
+# --------------------------------------------
+
+# Confusion matrix as table
+nb_predictions %>%
+  conf_mat(truth = Species, estimate = .pred_class) %>%
+  summary() %>%
+  knitr::kable(
+    digits = 3,
+    caption = "Confusion Matrix: Class-Level Metrics (Naive Bayes)"
+  ) %>%
+  kable_styling(bootstrap_options = c("condensed", "hover"), full_width = FALSE)
+
+# Confusion matrix heatmap
+nb_predictions %>%
+  conf_mat(truth = Species, estimate = .pred_class) %>%
+  autoplot(type = "heatmap") +
+  scale_fill_gradient(low = "white", high = "#ff7f00") +
+  labs(title = "Confusion Matrix: Naive Bayes Predictions vs. Actual") +
+  theme_minimal()
+
+
+```
+
+## KNN
+
+```{r}
+#| label: knn_analysis
+#| message: false
+
+# ---------------------------------------------
+# STEP 1: Define and Fit a KNN Model
+# ---------------------------------------------
+knn_fit <- nearest_neighbor(neighbors = 5, weight_func = "rectangular") %>%
+  set_mode("classification") %>%
+  set_engine("kknn") %>%
+  fit(Species ~ ., data = iris_train)
+
+# --------------------------------------------
+# STEP 2: Predict on Test Set
+# --------------------------------------------
+knn_predictions <- predict(knn_fit, new_data = iris_test) %>%
+  bind_cols(iris_test)
+
+# --------------------------------------------
+# STEP 3: Evaluate Model Performance
+# --------------------------------------------
+knn_metrics <- knn_predictions %>%
+  metrics(truth = Species, estimate = .pred_class)
+
+# Display performance metrics
+knn_metrics %>%
+  knitr::kable(
+    digits = 3,
+    caption = "K-Nearest Neighbors Classification Performance on Test Data"
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+
+# --------------------------------------------
+# STEP 4: Confusion Matrix
+# --------------------------------------------
+
+# Tabular confusion matrix
+knn_predictions %>%
+  conf_mat(truth = Species, estimate = .pred_class) %>%
+  summary() %>%
+  knitr::kable(
+    digits = 3,
+    caption = "Confusion Matrix: Class-Level Metrics (KNN)"
+  ) %>%
+  kable_styling(bootstrap_options = c("condensed", "hover"), full_width = FALSE)
+
+# Visual confusion matrix (heatmap)
+knn_predictions %>%
+  conf_mat(truth = Species, estimate = .pred_class) %>%
+  autoplot(type = "heatmap") +
+  scale_fill_gradient(low = "white", high = "#e41a1c") +
+  labs(title = "Confusion Matrix: KNN Predictions vs. Actual") +
+  theme_minimal()
+
+```
+
+## K-Means Clustering
+
+**Concept**: K-means is an **unsupervised** method that groups observations into **k clusters** based on similarity.
+
+```{r}
+#| label: kmeans_full_analysis
+#| message: false
+
+# ---------------------------------------------
+# STEP 1: Scale Data (Exclude labels)
+# ---------------------------------------------
+iris_scaled <- iris %>%
+  select(-Species) %>%
+  scale()
+
+# ---------------------------------------------
+# STEP 2: Apply K-Means Clustering (k = 3)
+# ---------------------------------------------
+set.seed(123)
+kmeans_fit <- kmeans(iris_scaled, centers = 3, nstart = 25)
+
+# Add cluster assignments to original data
+iris_clustered <- iris %>%
+  mutate(
+    cluster = as.factor(kmeans_fit$cluster),
+    pca1 = prcomp(iris_scaled)$x[, 1],
+    pca2 = prcomp(iris_scaled)$x[, 2]
+  )
+
+# ---------------------------------------------
+# STEP 3: Visualize K-Means Clusters via PCA
+# ---------------------------------------------
+fviz_cluster(
+  kmeans_fit,
+  data = iris_scaled,
+  geom = "point",
+  ellipse.type = "norm",
+  show.clust.cent = TRUE,
+  palette = "jco",
+  ggtheme = theme_minimal()
+) +
+  labs(
+    title = "K-Means Clustering of Iris Data",
+    subtitle = "Clusters visualized with PCA"
+  )
+
+# ---------------------------------------------
+# STEP 4: Compare Clusters to True Species
+# ---------------------------------------------
+table(True_Label = iris$Species, Cluster = iris_clustered$cluster) %>%
+  as.data.frame() %>%
+  pivot_wider(names_from = Cluster, values_from = Freq) %>%
+  knitr::kable(
+    caption = "Cluster Composition by True Iris Species",
+    align = "lccc"
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+
+# ---------------------------------------------
+# STEP 5: Visualize True Species in PCA Space
+# ---------------------------------------------
+ggplot(iris_clustered, aes(x = pca1, y = pca2, color = Species)) +
+  geom_point(size = 2, alpha = 0.8) +
+  labs(
+    title = "True Iris Species Visualized in PCA Space",
+    x = "Principal Component 1",
+    y = "Principal Component 2"
+  ) +
+  theme_minimal()
+
+# ---------------------------------------------
+# STEP 6: Visualize K-Means Clusters in PCA Space
+# ---------------------------------------------
+ggplot(iris_clustered, aes(x = pca1, y = pca2, color = cluster)) +
+  geom_point(size = 2, alpha = 0.8) +
+  labs(
+    title = "K-Means Cluster Assignments in PCA Space",
+    x = "Principal Component 1",
+    y = "Principal Component 2"
+  ) +
+  theme_minimal()
+
+# ---------------------------------------------
+# STEP 7: Silhouette Score Evaluation
+# ---------------------------------------------
+silhouette_score <- silhouette(kmeans_fit$cluster, dist(iris_scaled))
+
+fviz_silhouette(silhouette_score) +
+  labs(title = "Silhouette Plot for K-Means Clustering")
+
+```
+
+## Hierarchical Clustering
+
+```{r}
+#| label: hierarchical_clustering
+#| message: false
+
+# ---------------------------------------------
+# STEP 1: Prepare and Scale Data
+# ---------------------------------------------
+iris_scaled <- iris %>%
+  select(-Species) %>%
+  scale()
+
+# ---------------------------------------------
+# STEP 2: Compute Distance Matrix
+# ---------------------------------------------
+iris_dist <- dist(iris_scaled, method = "euclidean")
+
+# ---------------------------------------------
+# STEP 3: Apply Hierarchical Clustering (Complete Linkage)
+# ---------------------------------------------
+hc_fit <- hclust(iris_dist, method = "complete")
+
+# ---------------------------------------------
+# STEP 4: Plot the Dendrogram
+# ---------------------------------------------
+fviz_dend(
+  hc_fit,
+  k = 3,                            # cut tree into 3 clusters
+  cex = 0.7,                        # label size
+  k_colors = c("#00AFBB", "#E7B800", "#FC4E07"),
+  color_labels_by_k = TRUE,
+  rect = TRUE,
+  rect_border = "gray30",
+  rect_fill = TRUE
+) +
+  labs(title = "Hierarchical Clustering Dendrogram (Complete Linkage)")
+
+# ---------------------------------------------
+# STEP 5: Assign Clusters and Add to Original Data
+# ---------------------------------------------
+iris_clustered <- iris %>%
+  mutate(
+    cluster = as.factor(cutree(hc_fit, k = 3)),
+    pca1 = prcomp(iris_scaled)$x[, 1],
+    pca2 = prcomp(iris_scaled)$x[, 2]
+  )
+
+# ---------------------------------------------
+# STEP 6: Visualize Cluster Assignments in PCA Space
+# ---------------------------------------------
+ggplot(iris_clustered, aes(x = pca1, y = pca2, color = cluster)) +
+  geom_point(size = 2, alpha = 0.8) +
+  labs(
+    title = "Hierarchical Cluster Assignments in PCA Space",
+    x = "Principal Component 1",
+    y = "Principal Component 2"
+  ) +
+  theme_minimal()
+
+# ---------------------------------------------
+# STEP 7: Compare Clusters to True Species
+# ---------------------------------------------
+table(True_Label = iris$Species, Cluster = iris_clustered$cluster) %>%
+  as.data.frame() %>%
+  pivot_wider(names_from = Cluster, values_from = Freq) %>%
+  knitr::kable(
+    caption = "Cluster Composition by True Iris Species (Hierarchical Clustering)",
+    align = "lccc"
+  ) %>%
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE)
+
+```
+
+# Final Thoughts
+
+## Conclusion
+
+This exploration showcases how various machine learning models differ in their **assumptions**, **complexity**, and **ideal use cases**. There’s no single *"best"* model — the right choice depends on your **goals**, **data**, and **constraints**.
+
+Here’s a practical guide:
+
+-   **Use Decision Trees** when interpretability and clear rules are a priority.
+-   **Use Random Forests** for higher accuracy, especially when variance is a concern.
+-   **Use Support Vector Machines (SVMs)** when decision boundaries are complex or nonlinear.
+-   **Use Naive Bayes** when you need a fast, simple, and often surprisingly effective baseline.
+-   **Use K-Nearest Neighbors (KNN)** for intuitive distance-based predictions — but be cautious with scaling and noisy features.
+-   **Use K-Means or Hierarchical Clustering** when your data is unlabeled, but you suspect structure or groupings.K-Means is fast and intuitive, but assumes spherical clusters while Hierarchical Clustering gives a dendrogram you can interpret visually, useful for small to medium datasets.
+
+## Summary Table
+
+```{r}
+model_performance <- bind_rows(
+  tree_metrics %>% mutate(model = "Decision Tree"),
+  rf_metrics %>% mutate(model = "Random Forest"),
+  svm_metrics %>% mutate(model = "SVM"),
+  nb_metrics %>% mutate(model = "Naive Bayes"),
+  knn_metrics %>% mutate(model = "KNN")
+)
+
+model_performance %>%
+  filter(.metric == "accuracy") %>%
+  ggplot(aes(x = model, y = .estimate, fill = model)) +
+  geom_col(show.legend = FALSE) +
+  labs(title = "Model Accuracy Comparison", x = NULL, y = "Accuracy") +
+  theme_minimal()
+
+```
+
+::: info
+The table below summarizes the key differences in modeling approaches explored in this post:
+:::
+
+```{r}
+#| label: model_table
+#| echo: false
+
+model_comparison <- tribble(
+  ~Model,         ~Type,         ~`Key Idea`,                                   ~Strengths,                       ~Weaknesses,
+  "Decision Tree", "Supervised",   "Rule-based split on features",               "Interpretable, fast",           "Can overfit",
+  "Random Forest", "Supervised",   "Ensemble of decision trees",                 "High accuracy, handles variance", "Less interpretable",
+  "SVM",           "Supervised",   "Optimal separating hyperplane",              "Great for complex boundaries",  "Sensitive to tuning",
+  "Naive Bayes",   "Supervised",   "Probabilistic with independence assumption", "Simple, interpretable",         "Assumes independence",
+  "KNN",           "Supervised",   "Majority vote among k-nearest neighbors",    "Simple, no training needed",    "Sensitive to scale and noise",
+  "K-Means",       "Unsupervised", "Centroid-based clustering",                  "Fast, intuitive",               "Needs predefined k, sensitive to scaling",
+  "Hierarchical Clustering", "Unsupervised", "Nested tree of similarities",      "No need to pre-specify k, interpretable dendrogram", "Computationally expensive for large datasets"
+)
+
+model_comparison |>
+  kable("html", escape = FALSE, align = "l", caption = "Comparison of Classification and Clustering Models") |>
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"), full_width = FALSE, position = "left")
+
+
+```
