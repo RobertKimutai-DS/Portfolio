@@ -1,0 +1,120 @@
+---
+title: "About Me"
+description: "Engineer, data scientist, and systems builder based in Nairobi, Kenya."
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="about-hero" data-aos="fade-up">
+  <img src="assets/images/profile_pic.jpg" class="about-photo" alt="Robert Kimutai" />
+  <h1>Robert Kimutai</h1>
+  <div class="typed-tagline" style="margin-bottom: 0.8rem;">
+    <span style="font-size: 0.95rem; color: var(--text-secondary);">Engineer &bull; Data Scientist &bull; Researcher &bull; Developer</span>
+  </div>
+</div>
+```
+
+::: {.case-study-section data-aos="fade-up"}
+## My Story
+
+I'm an engineer who builds complete systems — from hardware sensor nodes to national-scale software platforms. My path started in biomechanical and processing engineering at JKUAT, where I designed an automated irrigation system based on crop water stress index for my undergraduate thesis. That project planted a seed: I saw how combining sensor data with smart decision-making could solve real problems in agriculture and resource management.
+
+After graduating, I spent years in the field — designing solar water pumping systems at Kupate Technologies, then supervising earth dam construction and solar borehole installations across multiple Kenyan counties with the Ministry of Agriculture. These roles taught me what no classroom could: how systems fail in the real world, why design assumptions break under field conditions, and how critical good data infrastructure is for public projects.
+
+That field experience drove me to data science. I taught myself R and Python, earned certifications in machine learning and statistical analysis, and enrolled in an MSc in Environmental and Biosystems Engineering at the University of Nairobi. Today, I bring an engineer's systems thinking to every software project I build — whether it's a health insurance platform designed for 54 million citizens or an IoT sensor node that replaces $10,000 lab equipment for under $100.
+:::
+
+::: {.case-study-section data-aos="fade-up"}
+## What I Do Now
+
+As a freelance researcher, data scientist, and developer based in Nairobi, I design and build end-to-end platforms for institutions that need robust, production-grade systems:
+
+- **National-scale health systems** — architecting claims processing, fraud detection, and spatial analytics for Kenya's Social Health Authority
+- **County government infrastructure** — digitizing revenue collection, business licensing, and compliance monitoring
+- **Research instrumentation** — building open-source IoT systems that make standardized testing affordable for researchers in the Global South
+- **Data science & ML** — from Isolation Forest anomaly detection to spatial analytics with PostGIS, always in service of a real decision-making need
+
+I work primarily in **R**, **Python**, and **TypeScript**, and I use AI-augmented development (Claude Code + Quarto + R) as standard daily practice.
+:::
+
+::: {.case-study-section data-aos="fade-up"}
+## How I Think About Building Systems
+
+```{=html}
+<div class="about-values">
+  <div class="about-value-card" data-aos="fade-up" data-aos-delay="0">
+    <h4>Engineer First</h4>
+    <p>Every system I build starts with understanding the physical, institutional, and human constraints — not just the tech stack.</p>
+  </div>
+  <div class="about-value-card" data-aos="fade-up" data-aos-delay="100">
+    <h4>End-to-End Ownership</h4>
+    <p>From database schema to frontend UX to deployment pipelines — I design and build the whole thing, not just one layer.</p>
+  </div>
+  <div class="about-value-card" data-aos="fade-up" data-aos-delay="200">
+    <h4>Context-Driven Design</h4>
+    <p>Building for Kenya means designing for M-Pesa payments, USSD access on feature phones, and intermittent connectivity.</p>
+  </div>
+  <div class="about-value-card" data-aos="fade-up" data-aos-delay="300">
+    <h4>Reproducibility</h4>
+    <p>Quarto reports, version-controlled pipelines, Docker containers, and automated testing — every output is reproducible.</p>
+  </div>
+</div>
+```
+:::
+
+::: {.case-study-section data-aos="fade-up"}
+## Education
+
+```{=html}
+<div class="timeline" data-aos="fade-up">
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <span class="timeline-date">Sept 2023 – Present</span>
+      <h3>MSc Environmental and Biosystems Engineering</h3>
+      <h4>University of Nairobi</h4>
+      <ul>
+        <li>Thesis: A Low-Cost, IoT-Based Framework for Linking Standardized Performance to the Multidimensional Impacts of Solar Cookers</li>
+        <li>Erasmus Mobility Traineeship at Çukurova University, Turkey (Oct–Dec 2025) — Hydrological Modeling & Precision Agriculture</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <span class="timeline-date">2016 – 2018</span>
+      <h3>Double Degree Program — Agricultural Engineering</h3>
+      <h4>JKUAT</h4>
+    </div>
+  </div>
+
+  <div class="timeline-item">
+    <div class="timeline-content">
+      <span class="timeline-date">2009 – 2014</span>
+      <h3>BSc Biomechanical and Processing Engineering</h3>
+      <h4>JKUAT</h4>
+      <ul>
+        <li>Thesis: Development of an Automated Irrigation System Based on Crop Water Stress Index</li>
+      </ul>
+    </div>
+  </div>
+</div>
+```
+:::
+
+::: {.case-study-section data-aos="fade-up"}
+## Professional Registration
+
+**Registered Graduate Engineer** — Engineers Board of Kenya (ERB), Registration No. B16657 (2019 – Present)
+:::
+
+```{=html}
+<div class="contact-section" data-aos="fade-up">
+  <h2>Let's Work Together</h2>
+  <p>I'm available for engineering roles, research collaborations, data science consulting, and custom software development.</p>
+  <div class="contact-links">
+    <a href="mailto:robert.kimutai.ds@gmail.com" class="contact-link email">Email Me</a>
+    <a href="https://www.linkedin.com/in/robert-kimutai-921608330/" class="contact-link linkedin">Connect on LinkedIn</a>
+  </div>
+</div>
+```

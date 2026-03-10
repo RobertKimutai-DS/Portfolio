@@ -3,8 +3,8 @@ title: ""
 format:
   typst:
     margin:
-      top: 0.4in
-      bottom: 0.4in
+      top: 0.35in
+      bottom: 0.35in
       left: 0.5in
       right: 0.5in
     font-size: 9pt
@@ -12,64 +12,102 @@ format:
 ---
 
 ```{=typst}
-#set text(size: 9pt)
+#set text(size: 9pt, fill: rgb("#333"))
 #set par(justify: true, leading: 0.52em)
 #set list(indent: 0.3em, body-indent: 0.4em, spacing: 3.5pt)
 
-// Header
-#align(center)[
-  #text(size: 20pt, weight: "bold")[Robert Kimutai] \
-  #text(size: 9.5pt, fill: rgb("#666"))[Engineer · Data Scientist · Researcher · Developer] \
-  #v(2pt)
-  #text(size: 8pt)[
-    #link("mailto:robert.kimutai.ds@gmail.com")[robert.kimutai.ds\@gmail.com] ·
-    +254 723 493122 ·
-    #link("https://www.linkedin.com/in/robert-kimutai-921608330/")[LinkedIn] ·
-    #link("https://github.com/RobertKimutai-DS")[GitHub] ·
-    #link("https://robertkimutai-ds.github.io/Portfolio/")[Portfolio Website] ·
-    Nairobi, Kenya
+// Color palette
+#let primary = rgb("#2c3e50")
+#let accent = rgb("#3498db")
+#let light-bg = rgb("#f0f4f8")
+#let muted = rgb("#555")
+#let light-border = rgb("#dce1e6")
+
+// ── Header banner ──
+#block(
+  width: 100%,
+  fill: primary,
+  radius: 4pt,
+  inset: (x: 16pt, y: 12pt),
+)[
+  #align(center)[
+    #text(size: 20pt, weight: "bold", fill: white)[Robert Kimutai]
+    #v(-2pt)
+    #text(size: 9.5pt, fill: rgb("#b0c4d8"))[Engineer · Data Scientist · Researcher · Developer]
+    #v(4pt)
+    #text(size: 7.5pt, fill: rgb("#d0dce8"), tracking: 0.3pt)[
+      #link("mailto:robert.kimutai.ds@gmail.com")[robert.kimutai.ds\@gmail.com]  ·  +254 723 493122  ·  #link("https://www.linkedin.com/in/robert-kimutai-921608330/")[LinkedIn]  ·  #link("https://github.com/RobertKimutai-DS")[GitHub]  ·  #link("https://robertkimutai-ds.github.io/Portfolio/")[Portfolio Website]  ·  Nairobi, Kenya
+    ]
   ]
 ]
 
-#v(3pt)
-#line(length: 100%, stroke: 0.5pt + rgb("#E84C3D"))
+#v(5pt)
 
-// Helpers
+// ── Helpers ──
 #let section(title) = {
-  v(7pt)
-  text(size: 11pt, weight: "bold", fill: rgb("#E84C3D"))[#title]
-  v(-3pt)
-  line(length: 100%, stroke: 0.3pt + rgb("#ccc"))
+  v(6pt)
+  block(width: 100%)[
+    #grid(
+      columns: (auto, 1fr),
+      column-gutter: 8pt,
+      align: (left + horizon, horizon),
+      text(size: 10.5pt, weight: "bold", fill: primary, tracking: 0.5pt)[#upper(title)],
+      line(length: 100%, stroke: 0.6pt + light-border),
+    )
+  ]
   v(3pt)
 }
 
 #let entry(title, subtitle, date, location: none, details: none) = {
-  grid(
-    columns: (1fr, auto),
-    align: (left, right),
-    text(weight: "bold", size: 9pt)[#title],
-    text(fill: rgb("#E84C3D"), size: 8pt)[#date],
-  )
-  if subtitle != none {
-    grid(
+  block(
+    width: 100%,
+    inset: (left: 6pt),
+    stroke: (left: 2pt + accent),
+  )[
+    #grid(
       columns: (1fr, auto),
       align: (left, right),
-      text(style: "italic", size: 8.5pt)[#subtitle],
-      if location != none { text(style: "italic", fill: rgb("#E84C3D"), size: 8pt)[#location] },
+      text(weight: "bold", size: 9pt, fill: primary)[#title],
+      text(fill: accent, weight: "semibold", size: 7.5pt)[#date],
     )
-  }
-  if details != none {
-    v(1pt)
-    details
-  }
-  v(5pt)
+    #if subtitle != none {
+      grid(
+        columns: (1fr, auto),
+        align: (left, right),
+        text(style: "italic", size: 8.5pt, fill: muted)[#subtitle],
+        if location != none { text(style: "italic", fill: muted, size: 7.5pt)[#location] },
+      )
+    }
+    #if details != none {
+      v(1pt)
+      details
+    }
+  ]
+  v(4pt)
 }
 
-// ===================== CONTENT =====================
+#let skill-row(category, items) = {
+  grid(
+    columns: (130pt, 1fr),
+    align: (left, left),
+    text(weight: "bold", size: 8.5pt, fill: primary)[#category],
+    text(size: 8pt, fill: rgb("#444"))[#items],
+  )
+  v(2pt)
+}
+
+// ══════════════════ CONTENT ══════════════════
 
 #section[Professional Summary]
 
-#text(size: 8.5pt)[Software engineer with a technical background in environmental, water, and renewable energy systems. Designs and builds complete platforms end-to-end: a national health insurance system architected for 54M citizens (28 API endpoints), county government revenue tools, and IoT sensor networks. Combines systems thinking with automation at every layer, from multi-package R backends with CI/CD pipelines to 9-stage hardware simulation workflows. Works primarily in R, Python, and TypeScript with AI-augmented development as standard practice.]
+#block(
+  width: 100%,
+  fill: light-bg,
+  radius: 3pt,
+  inset: 8pt,
+)[
+  #text(size: 8.5pt)[Software engineer with a technical background in environmental, water, and renewable energy systems. Designs and builds complete platforms end-to-end: a national health insurance system architected for 54M citizens (28 API endpoints), county government revenue tools, and IoT sensor networks. Combines systems thinking with automation at every layer, from multi-package R backends with CI/CD pipelines to 9-stage hardware simulation workflows. Works primarily in R, Python, and TypeScript with AI-augmented development as standard practice.]
+]
 
 #section[Work Experience]
 
@@ -79,15 +117,15 @@ format:
   [Jan 2025 -- Present],
   location: [Nairobi],
   details: list(
-    [Architected SHA Health System - 4-package R platform (Plumber API, Golem/Shiny, React PWA) with Isolation Forest fraud detection, PostGIS spatial analytics, and 28 JWT endpoints targeting 54M citizens],
-    [Built SmartLicenSync - 11-module Golem/Shiny revenue platform for Kericho County with PostgreSQL/PostGIS, M-Pesa integration, and RBAC audit logging],
+    [Architected SHA Health System -- 4-package R platform (Plumber API, Golem/Shiny, React PWA) with Isolation Forest fraud detection, PostGIS spatial analytics, and 28 JWT endpoints targeting 54M citizens],
+    [Built SmartLicenSync -- 11-module Golem/Shiny revenue platform for Kericho County with PostgreSQL/PostGIS, M-Pesa integration, and RBAC audit logging],
     [Developing ESP32 IoT sensor node with custom KiCad PCB and Python/PySpice simulation pipeline for ASAE S580.1 solar cooker testing],
     [Producing reproducible reports and dashboards using Quarto, R Markdown, and Git-based workflows],
   )
 )
 
 #entry(
-  [Clerk of Works - Water & Solar Infrastructure],
+  [Clerk of Works -- Water & Solar Infrastructure],
   [SIVAP, Ministry of Agriculture],
   [Feb 2022 -- Nov 2024],
   location: [Various Counties],
@@ -100,7 +138,7 @@ format:
 
 #entry(
   [Design Engineer],
-  [Kupate Technologies],
+  [Kupata Technologies],
   [May 2019 -- Dec 2021],
   location: [Nairobi],
   details: list(
@@ -139,7 +177,7 @@ format:
 #section[Traineeships & Certifications]
 
 #entry(
-  [Erasmus Mobility Traineeship - Hydrological Modeling & Precision Agriculture],
+  [Erasmus Mobility Traineeship -- Hydrological Modeling & Precision Agriculture],
   [Çukurova University, Turkey],
   [Oct -- Dec 2025],
   details: list(
@@ -178,28 +216,70 @@ format:
 #section[Technical Skills]
 
 #v(2pt)
-*AI/ML & Data Science:* #text(size: 8.5pt)[R, Python, tidymodels, XGBoost, Isolation Forest, DALEX, ggplot2, Feature Engineering, Time Series Analysis] \
-*Systems & Software Engineering:* #text(size: 8.5pt)[Golem/Shiny, Plumber REST API, React/TypeScript, PostgreSQL/PostGIS, Docker Compose, JWT/RBAC, Git/GitHub Actions, nginx] \
-*Hardware & IoT:* #text(size: 8.5pt)[ESP32/Arduino, KiCad PCB Design, Proteus 8, PySpice/LTspice, MicroPython, Sensor Systems (BPW34, PT100, DHT22)] \
-*Data, Reporting & Research:* #text(size: 8.5pt)[Quarto/R Markdown, LaTeX, Excel, Zotero, Reproducible Pipelines, Technical Report Writing, Plotly/Leaflet] \
-*Engineering & Domain:* #text(size: 8.5pt)[ArcSWAT, QGIS, AutoCAD, Systems Thinking, Process Automation, Sustainability Modeling, Impact Analysis, Experimental Design] \
-*Project Management:* #text(size: 8.5pt)[Site inspection & supervision, BOQ validation, Milestone reporting, Stakeholder documentation, Field logistics]
+#block(
+  width: 100%,
+  fill: light-bg,
+  radius: 3pt,
+  inset: 8pt,
+)[
+  #skill-row([AI/ML & Data Science], [R, Python, tidymodels, XGBoost, Isolation Forest, DALEX, ggplot2, Feature Engineering, Time Series Analysis])
+  #skill-row([Systems & Software], [Golem/Shiny, Plumber REST API, React/TypeScript, PostgreSQL/PostGIS, Docker Compose, JWT/RBAC, Git/GitHub Actions, nginx])
+  #skill-row([Hardware & IoT], [ESP32/Arduino, KiCad PCB Design, Proteus 8, PySpice/LTspice, MicroPython, Sensor Systems (BPW34, PT100, DHT22)])
+  #skill-row([Reporting & Research], [Quarto/R Markdown, LaTeX, Excel, Zotero, Reproducible Pipelines, Technical Report Writing, Plotly/Leaflet])
+  #skill-row([Engineering & Domain], [ArcSWAT, QGIS, AutoCAD, Systems Thinking, Process Automation, Sustainability Modeling, Impact Analysis, Experimental Design])
+  #skill-row([Project Management], [Site inspection & supervision, BOQ validation, Milestone reporting, Stakeholder documentation, Field logistics])
+]
 
 #section[Professional Affiliations]
 
 #grid(
   columns: (1fr, auto),
   align: (left, right),
-  text(size: 9pt)[*Registered Graduate Engineer* - Engineers Board of Kenya (ERB), Reg. No. B16657],
-  text(fill: rgb("#E84C3D"), size: 8pt)[2019 -- Present],
+  text(size: 9pt)[*Registered Graduate Engineer* -- Engineers Board of Kenya (ERB), Reg. No. B16657],
+  text(fill: accent, weight: "semibold", size: 7.5pt)[2019 -- Present],
 )
 
 #section[References]
 
 #v(2pt)
-#text(size: 8.5pt)[
-*Eng. Prof. Duncan Mbuge* - Assoc. Dean, School of Engineering, University of Nairobi - #link("mailto:duncan.mbuge@uonbi.ac.ke")[duncan.mbuge\@uonbi.ac.ke] \
-*Eng. Jonah Kebeney* - Project Manager, SIVAP, Ministry of Agriculture - #link("mailto:kebeneyjonah21@gmail.com")[kebeneyjonah21\@gmail.com] \
-*Eng. Raymond Bebora* - Regional Manager, Kupata Technologies - #link("mailto:rmwalauzi@gmail.com")[rmwalauzi\@gmail.com]
-]
+#grid(
+  columns: (1fr, 1fr, 1fr),
+  column-gutter: 10pt,
+  block(
+    width: 100%,
+    fill: light-bg,
+    radius: 3pt,
+    inset: 7pt,
+  )[
+    #text(weight: "bold", size: 8pt, fill: primary)[Eng. Prof. Duncan Mbuge] \
+    #text(size: 7pt, fill: muted)[Assoc. Dean, School of Engineering \ University of Nairobi] \
+    #v(2pt)
+    #text(size: 7pt)[+254 725 949096] \
+    #text(size: 7pt, fill: accent)[#link("mailto:duncan.mbuge@uonbi.ac.ke")[duncan.mbuge\@uonbi.ac.ke]]
+  ],
+  block(
+    width: 100%,
+    fill: light-bg,
+    radius: 3pt,
+    inset: 7pt,
+  )[
+    #text(weight: "bold", size: 8pt, fill: primary)[Eng. Jonah Kebeney] \
+    #text(size: 7pt, fill: muted)[Project Manager, SIVAP \ Ministry of Agriculture] \
+    #v(2pt)
+    #text(size: 7pt)[+254 720 837775] \
+    #text(size: 7pt, fill: accent)[#link("mailto:kebeneyjonah21@gmail.com")[kebeneyjonah21\@gmail.com]]
+  ],
+  block(
+    width: 100%,
+    fill: light-bg,
+    radius: 3pt,
+    inset: 7pt,
+  )[
+    #text(weight: "bold", size: 8pt, fill: primary)[Eng. Raymond Bebora] \
+    #text(size: 7pt, fill: muted)[Regional Manager \ Kupata Technologies] \
+    #v(2pt)
+    #text(size: 7pt)[+254 720 422249] \
+    #text(size: 7pt, fill: accent)[#link("mailto:rmwalauzi@gmail.com")[rmwalauzi\@gmail.com]]
+  ],
+)
 ```

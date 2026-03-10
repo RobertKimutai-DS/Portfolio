@@ -4,8 +4,7 @@ description: "Articles and tutorials on data science, machine learning, engineer
 page-layout: full
 toc: false
 listing:
-  contents:
-    - "classification_vs_clustering.qmd"
+  contents: "*.qmd"
   type: default
   sort: "date desc"
   categories: true

@@ -33,6 +33,49 @@ SHA needed a system that could handle three distinct insurance funds (SHIF, PHC,
 
 I designed a 4-package architecture with clean separation of concerns:
 
+```{mermaid}
+%%| fig-width: 8
+%%| fig-alt: "SHA system 4-package architecture diagram"
+flowchart TB
+    subgraph Frontend["Frontend Layer"]
+        PWA["<b>shaMobile</b><br/>React 18 PWA<br/>Bilingual EN/SW"]
+        Dashboard["<b>shaApp</b><br/>Golem/Shiny<br/>9 Role-Gated Modules"]
+    end
+
+    subgraph API["API Layer"]
+        REST["<b>shaAPI</b><br/>Plumber REST<br/>28 JWT Endpoints"]
+        USSD["USSD Access<br/>Feature Phones"]
+    end
+
+    subgraph Core["Business Logic"]
+        BIZ["<b>shaSystem</b><br/>R Package"]
+        CLAIMS["6-Gate Claims<br/>Adjudication"]
+        FRAUD["Isolation Forest<br/>Fraud Detection"]
+        SPATIAL["Spatial Intelligence<br/>sf / PostGIS"]
+    end
+
+    subgraph Data["Data Layer"]
+        DB[("PostgreSQL<br/>PostGIS")]
+        MPESA["M-Pesa<br/>Payments"]
+    end
+
+    PWA -->|"HTTPS"| REST
+    Dashboard -->|"HTTPS"| REST
+    USSD -->|"HTTPS"| REST
+    REST -->|"Delegates"| BIZ
+    BIZ --- CLAIMS
+    BIZ --- FRAUD
+    BIZ --- SPATIAL
+    BIZ -->|"DBI/pool"| DB
+    BIZ -->|"Callback"| MPESA
+
+    style Frontend fill:#1a1a2e,stroke:#3498db,color:#e0e0e0
+    style API fill:#1a1a2e,stroke:#E84C3D,color:#e0e0e0
+    style Core fill:#1a1a2e,stroke:#2ecc71,color:#e0e0e0
+    style Data fill:#1a1a2e,stroke:#f39c12,color:#e0e0e0
+```
+
+
 **1. `shaSystem` - R Business Logic Package**
 
 - Pure R package - the only component that touches the database

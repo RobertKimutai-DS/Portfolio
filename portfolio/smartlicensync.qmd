@@ -34,6 +34,52 @@ Kericho County needed a unified digital platform to replace manual workflows and
 
 I designed and built a **deployment-ready Golem/Shiny application** with **11 integrated modules**:
 
+```{mermaid}
+%%| fig-width: 8
+%%| fig-alt: "SmartLicenSync system architecture diagram"
+flowchart TB
+    subgraph UI["Golem/Shiny Application"]
+        direction LR
+        EXEC["Executive<br/>Dashboard"]
+        REG["Business<br/>Registration"]
+        PAY["Payment<br/>Processing"]
+        COMP["Compliance<br/>Engine"]
+        MAP["GIS<br/>Mapping"]
+        RPT["Reports &<br/>Analytics"]
+    end
+
+    subgraph Auth["Access Control"]
+        RBAC["Role-Based<br/>Access Control"]
+        AUDIT["Audit Logger<br/>JSONB Snapshots"]
+    end
+
+    subgraph Backend["Backend Infrastructure"]
+        DB[("PostgreSQL 15<br/>PostGIS")]
+        POOL["DBI / pool<br/>Connection Pooling"]
+        MIG["Migration<br/>System"]
+    end
+
+    subgraph External["External Services"]
+        MPESA["M-Pesa<br/>Daraja API"]
+        BANK["Bank &<br/>Cash Payments"]
+    end
+
+    UI -->|"bs4Dash"| RBAC
+    RBAC --> POOL
+    POOL --> DB
+    MIG --> DB
+    PAY -->|"STK Push"| MPESA
+    PAY -->|"Receipt"| BANK
+    AUDIT -->|"INSERT/UPDATE/DELETE"| DB
+    MAP -->|"Leaflet"| DB
+
+    style UI fill:#1a1a2e,stroke:#3498db,color:#e0e0e0
+    style Auth fill:#1a1a2e,stroke:#E84C3D,color:#e0e0e0
+    style Backend fill:#1a1a2e,stroke:#2ecc71,color:#e0e0e0
+    style External fill:#1a1a2e,stroke:#f39c12,color:#e0e0e0
+```
+
+
 **Core Modules:**
 
 - **Executive Dashboard** - KPI boxes for total revenue, active businesses, compliance rate, growth rate
