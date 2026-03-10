@@ -7,7 +7,7 @@
 
 /.quarto/
 _site/
-site_libs/
+/site_libs/
 Resume_RobertKimutai.pdf
 jobpost.qmd
 CLAUDE.md
