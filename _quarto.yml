@@ -11,7 +11,7 @@ execute:
 
 website:
   title: "Robert Kimutai"
-  site-url: https://robertkimutai.netlify.app
+  site-url: https://robertkimutai-ds.github.io/Portfolio
   description: "Engineer | Data Scientist | Researcher | Developer"
   favicon: assets/images/favicon.png
 

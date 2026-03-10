@@ -1,1 +1,1 @@
-Sitemap: https://robertkimutai.netlify.app/sitemap.xml
+Sitemap: https://robertkimutai-ds.github.io/Portfolio/sitemap.xml

@@ -77,81 +77,11 @@
     "text": "Environmental, Economic, Social, and Health Interplay Analysis App\nExplore how environmental, economic, social, and health data interact through our interactive app here."
   },
   {
-    "objectID": "mpya/resume.html",
-    "href": "mpya/resume.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Robert Kimutai",
     "section": "",
-    "text": "Transforming Complex Challenges into Data-Driven Solutions\n\n robert.kimutai.ds@gmail.com |  +254 723 493 122 |  Nairobi, Kenya\n LinkedIn |  GitHub |  Portfolio"
-  },
-  {
-    "objectID": "mpya/resume.html#professional-summary",
-    "href": "mpya/resume.html#professional-summary",
-    "title": "Robert Kimutai",
-    "section": "Professional Summary",
-    "text": "Professional Summary\nInnovative researcher and full-stack data scientist with 3+ years of experience bridging environmental engineering, data science, and systems development. Expert in developing IoT-enabled solutions, machine learning models with 90%+ accuracy, and scalable web applications. Currently leading three high-impact projects: a solar cooker evaluation platform (ASAE S580.1 compliant), tax reform impact analysis for Kenya, and county revenue digitization system for Kericho County."
-  },
-  {
-    "objectID": "mpya/resume.html#core-competencies",
-    "href": "mpya/resume.html#core-competencies",
-    "title": "Robert Kimutai",
-    "section": "Core Competencies",
-    "text": "Core Competencies\n\nData Science & ML: R • Python • Tidymodels • XGBoost • Time Series • SHAP/DALEX • Statistical Modeling • Predictive Analytics\nDevelopment: Shiny • Quarto • REST APIs • Docker • Git/GitHub • Cloud Deployment • Database Design (SQL/PostgreSQL)\nEngineering: Arduino/C++ • IoT Systems • Sensor Integration • Proteus Simulation • Solar PV Design • QGIS • AutoCAD\nResearch: Experimental Design • Impact Assessment • Technical Writing • Data Visualization • Reproducible Research"
-  },
-  {
-    "objectID": "mpya/resume.html#current-projects",
-    "href": "mpya/resume.html#current-projects",
-    "title": "Robert Kimutai",
-    "section": "Current Projects",
-    "text": "Current Projects\n\nSolar Cooker Performance Evaluation Platform | Lead Developer | 2021-Present\n- Developed IoT system with Arduino sensors (DS18B20, BPW34) for real-time performance monitoring\n- Built Shiny web application integrating environmental, health, and socioeconomic impact calculators\n- Implemented ASAE S580.1 testing standards achieving 95% measurement accuracy\n- Technologies: Arduino, R/Shiny, Proteus, SQLite, Plotly, Real-time APIs\n\n\nTax Reform Impact Analysis on Income Distribution | Research Data Scientist | KESRA | 2021\n- Analyzed 15+ years of tax policy data using advanced statistical methods\n- Developed ML models to predict income distribution changes with 87% accuracy\n- Created interactive dashboards for policy makers using Shiny and Plotly\n- Technologies: R, Tidymodels, ggplot2, Quarto, SQL, Time Series Analysis\n\n\nCounty Revenue Collection Digital Platform | Systems Architect | Kericho County | 2024-Present\n- Designing end-to-end revenue management system starting with single business permits\n- Implementing real-time analytics reducing revenue leakages by projected 30%\n- Building scalable microservices architecture supporting 10,000+ transactions daily\n- Technologies: R/Shiny, PostgreSQL, REST APIs, Docker, AWS/Cloud"
-  },
-  {
-    "objectID": "mpya/resume.html#professional-experience",
-    "href": "mpya/resume.html#professional-experience",
-    "title": "Robert Kimutai",
-    "section": "Professional Experience",
-    "text": "Professional Experience\n\nGraduate Research Assistant | University of Nairobi | 2021-Present\n- Design and implement sensor-integrated renewable energy testing platforms\n- Develop reproducible research workflows using Quarto and GitHub Actions\n- Create interactive dashboards for real-time performance monitoring\n- Publish findings in peer-reviewed journals (3 papers, 2 under review)\n\n\nData Science Virtual Intern | Boston Consulting Group (BCG) | 2024\n- Built customer churn prediction model achieving 90%+ AUC using ensemble methods\n- Analyzed 100K+ customer records identifying key churn drivers\n- Created interpretable ML visualizations using SHAP values\n- Delivered C-suite presentation with actionable retention strategies\n\n\nClerk of Works - Water & Solar Infrastructure | SIVAP Kenya | 2022-2023\n- Supervised construction of 5 earth dams and 12 solarized boreholes\n- Managed solar pumping installations totaling 150kW capacity\n- Coordinated with stakeholders impacting 2,000+ farmers\n- Ensured 100% compliance with technical specifications\n\n\nSales Engineer | Kupata Technologies Ltd | 2019-2022\n- Designed solar water pumping and irrigation systems for 50+ clients\n- Conducted technical assessments and feasibility studies\n- Increased sales revenue by 35% through data-driven proposals\n- Trained 100+ farmers on system operation and maintenance"
-  },
-  {
-    "objectID": "mpya/resume.html#education",
-    "href": "mpya/resume.html#education",
-    "title": "Robert Kimutai",
-    "section": "Education",
-    "text": "Education\n\nMSc Environmental and Biosystems Engineering | University of Nairobi | 2021-Present\nThesis: Development of Low-Cost Solar Cooker Performance Evaluation System with Impact Analysis\nRelevant Coursework: Renewable Energy Systems, Environmental Monitoring, Scientific Computing, Statistical Analysis\n\n\nBSc Agricultural Engineering | JKUAT | 2013-2018\nThesis: Automated Irrigation Scheduling System for Smallholder Farmers\nAchievement: Developed Arduino-based controller achieving 40% water savings"
-  },
-  {
-    "objectID": "mpya/resume.html#achievements-impact",
-    "href": "mpya/resume.html#achievements-impact",
-    "title": "Robert Kimutai",
-    "section": "Achievements & Impact",
-    "text": "Achievements & Impact\n\n\n90%+ Model Accuracy: BCG churn prediction model implementation\n\n40% Water Savings: Smart irrigation system deployment\n\n2,000+ Farmers: Impacted through water infrastructure projects\n\n150kW Solar Capacity: Supervised installation across 3 counties\n\n15 Years Data Analysis: Tax reform research insights\n\n3 Active Platforms: Solar cooker, dairy management, revenue systems"
-  },
-  {
-    "objectID": "mpya/resume.html#certifications-professional-development",
-    "href": "mpya/resume.html#certifications-professional-development",
-    "title": "Robert Kimutai",
-    "section": "Certifications & Professional Development",
-    "text": "Certifications & Professional Development\n\nAdvanced Diploma in Data Science with R - Alison (2024)\n\nMachine Learning with R Studio - Alison (2023)\n\nStatistical Data Analysis Using R - RUFORUM (2022)\n\nRegistered Graduate Engineer - Engineers Board of Kenya (EBK)\n\nGraduate Member - Institution of Engineers of Kenya (IEK)"
-  },
-  {
-    "objectID": "mpya/resume.html#additional-projects",
-    "href": "mpya/resume.html#additional-projects",
-    "title": "Robert Kimutai",
-    "section": "Additional Projects",
-    "text": "Additional Projects\n\nZero-Grazing Dairy Management Platform | 2021-Present\nFull-stack Shiny application with modules for herd management, milk production tracking, inventory control, and labor management. Integrated SQLite database with role-based access control.\nEnergy Sector Churn Analysis | BCG Virtual Internship | 2024\nDeveloped comprehensive customer retention strategy using machine learning, achieving 90%+ prediction accuracy and identifying $2M+ revenue protection opportunity."
-  },
-  {
-    "objectID": "mpya/resume.html#leadership-community",
-    "href": "mpya/resume.html#leadership-community",
-    "title": "Robert Kimutai",
-    "section": "Leadership & Community",
-    "text": "Leadership & Community\n\nTech Lead: R Users Group Kenya - Monthly workshops on data science applications\n\nMentor: University coding bootcamp - Training 20+ students annually\n\nVolunteer: Church youth programs - Leadership development and STEM education\n\nAthletics: Swimming, Taekwondo (discipline & wellness), Chess (strategic thinking)\n\n\n\nReferences available upon request | Updated: r format(Sys.Date(), \"%B %Y\")"
-  },
-  {
-    "objectID": "blog/index.html",
-    "href": "blog/index.html",
-    "title": "Blog",
-    "section": "",
-    "text": "Blog\n  Tutorials, deep dives, and lessons from building real systems.\n\n\n\n\n\n\n\n\n\n\nUnderstanding Classification and Clustering: Decision Trees, Random Forests, SVM, Naive Bayes, and K-Means with Iris Data\n\n\n\nMachine Learning\n\nR\n\nTutorial\n\n\n\nA hands-on comparison of supervised classification and unsupervised clustering techniques using R and tidymodels.\n\n\n\n\n\nMay 10, 2025\n\n\nRobert Kimutai\n\n\n\n\n\nNo matching items"
+    "text": "Robert Kimutai\n  \n  I design and build end-to-end systems at the intersection of engineering, data science, and sustainable development - from a national health insurance platform architected for 54M citizens to IoT sensor networks that cost $100 instead of $10,000.\n  \n    \n      0\n      Full-Stack Systems\n    \n    \n      0\n      API Endpoints\n    \n    \n      0M\n      Citizens Targeted\n    \n    \n      $0\n      IoT Unit Cost\n    \n  \n  \n    View My Work\n    Resume\n  \n\n\n  Featured Projects\n  End-to-end systems I've designed and built.\n  \n    \n      🏥\n      \n        Designed for 54M Citizens • 28 Endpoints Private Repo\n        SHA Integrated Health System\n        Full-stack health insurance platform for Kenya's Social Health Authority - claims adjudication, ML fraud detection, spatial analytics, and a bilingual React PWA.\n        \n          R\n          Plumber API\n          Golem/Shiny\n          React\n          PostgreSQL\n          PostGIS\n          Docker\n        \n      \n    \n\n    \n      🏛\n      \n        11 Modules • 30 Wards Private Repo\n        SmartLicenSync - Revenue Optimizer\n        Business permit and license management system for Kericho County Government - digitizing registration, payments, compliance, and spatial mapping.\n        \n          R\n          Golem/Shiny\n          PostgreSQL\n          PostGIS\n          M-Pesa\n          Docker\n        \n      \n    \n\n    \n      ☀️\n      \n        Sub-$100 • ASAE S580.1 Private Repo\n        Solar Cooker IoT Testing Platform\n        MSc thesis - open-source IoT data acquisition unit replacing $10K+ lab equipment. ESP32 sensors, custom PCB, Python simulation pipeline, R Shiny dashboard.\n        \n          ESP32\n          Python\n          R Shiny\n          Plumber API\n          KiCad\n          PySpice\n        \n      \n    \n  \n\n\n  Technical Skills\n  \n    AI/ML & Data Science\n    \n      R\n      Python\n      tidymodels\n      XGBoost\n      Isolation Forest\n      DALEX\n      ggplot2\n      Feature Engineering\n    \n  \n  \n    Systems & Software Engineering\n    \n      Golem/Shiny\n      Plumber REST API\n      React / TypeScript\n      PostgreSQL / PostGIS\n      Docker\n      JWT / RBAC\n      Git / GitHub Actions\n      HTML / CSS / JS\n    \n  \n  \n    Hardware & IoT\n    \n      ESP32 / Arduino\n      KiCad PCB Design\n      Proteus 8\n      PySpice / LTspice\n      Sensor Systems\n      MicroPython\n    \n  \n  \n    Data, Reporting & Research\n    \n      Quarto / R Markdown\n      LaTeX\n      Excel\n      Zotero\n      Reproducible Pipelines\n      Technical Report Writing\n      Plotly / Leaflet\n    \n  \n  \n    Domain & Engineering\n    \n      Sustainability Modeling\n      Hydrological Modeling (ArcSWAT)\n      QGIS\n      AutoCAD\n      Impact Analysis\n      Experimental Design\n      Systems Thinking\n      Process Automation\n    \n  \n\n\n  Let's Work Together\n  I'm available for engineering roles, research collaborations, data science consulting, and custom software development.\n  \n    Email Me\n    Connect on LinkedIn"
   },
   {
     "objectID": "blog/classification_vs_clustering.html#decision-trees",
@@ -217,11 +147,11 @@
     "text": "Summary Table\n\n\nCode\nmodel_performance &lt;- bind_rows(\n  tree_metrics %&gt;% mutate(model = \"Decision Tree\"),\n  rf_metrics %&gt;% mutate(model = \"Random Forest\"),\n  svm_metrics %&gt;% mutate(model = \"SVM\"),\n  nb_metrics %&gt;% mutate(model = \"Naive Bayes\"),\n  knn_metrics %&gt;% mutate(model = \"KNN\")\n)\n\nmodel_performance %&gt;%\n  filter(.metric == \"accuracy\") %&gt;%\n  ggplot(aes(x = model, y = .estimate, fill = model)) +\n  geom_col(show.legend = FALSE) +\n  labs(title = \"Model Accuracy Comparison\", x = NULL, y = \"Accuracy\") +\n  theme_minimal()\n\n\n\n\n\n\n\n\n\n\nThe table below summarizes the key differences in modeling approaches explored in this post:\n\n\n\n\n\nComparison of Classification and Clustering Models\n\n\nModel\nType\nKey Idea\nStrengths\nWeaknesses\n\n\n\n\nDecision Tree\nSupervised\nRule-based split on features\nInterpretable, fast\nCan overfit\n\n\nRandom Forest\nSupervised\nEnsemble of decision trees\nHigh accuracy, handles variance\nLess interpretable\n\n\nSVM\nSupervised\nOptimal separating hyperplane\nGreat for complex boundaries\nSensitive to tuning\n\n\nNaive Bayes\nSupervised\nProbabilistic with independence assumption\nSimple, interpretable\nAssumes independence\n\n\nKNN\nSupervised\nMajority vote among k-nearest neighbors\nSimple, no training needed\nSensitive to scale and noise\n\n\nK-Means\nUnsupervised\nCentroid-based clustering\nFast, intuitive\nNeeds predefined k, sensitive to scaling\n\n\nHierarchical Clustering\nUnsupervised\nNested tree of similarities\nNo need to pre-specify k, interpretable dendrogram\nComputationally expensive for large datasets"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Robert Kimutai",
+    "objectID": "blog/index.html",
+    "href": "blog/index.html",
+    "title": "Blog",
     "section": "",
-    "text": "Robert Kimutai\n  \n  I design and build end-to-end systems at the intersection of engineering, data science, and sustainable development - from a national health insurance platform architected for 54M citizens to IoT sensor networks that cost $100 instead of $10,000.\n  \n    \n      0\n      Full-Stack Systems\n    \n    \n      0\n      API Endpoints\n    \n    \n      0M\n      Citizens Targeted\n    \n    \n      $0\n      IoT Unit Cost\n    \n  \n  \n    View My Work\n    Resume\n  \n\n\n  Featured Projects\n  End-to-end systems I've designed and built.\n  \n    \n      🏥\n      \n        Designed for 54M Citizens • 28 Endpoints Private Repo\n        SHA Integrated Health System\n        Full-stack health insurance platform for Kenya's Social Health Authority - claims adjudication, ML fraud detection, spatial analytics, and a bilingual React PWA.\n        \n          R\n          Plumber API\n          Golem/Shiny\n          React\n          PostgreSQL\n          PostGIS\n          Docker\n        \n      \n    \n\n    \n      🏛\n      \n        11 Modules • 30 Wards Private Repo\n        SmartLicenSync - Revenue Optimizer\n        Business permit and license management system for Kericho County Government - digitizing registration, payments, compliance, and spatial mapping.\n        \n          R\n          Golem/Shiny\n          PostgreSQL\n          PostGIS\n          M-Pesa\n          Docker\n        \n      \n    \n\n    \n      ☀️\n      \n        Sub-$100 • ASAE S580.1 Private Repo\n        Solar Cooker IoT Testing Platform\n        MSc thesis - open-source IoT data acquisition unit replacing $10K+ lab equipment. ESP32 sensors, custom PCB, Python simulation pipeline, R Shiny dashboard.\n        \n          ESP32\n          Python\n          R Shiny\n          Plumber API\n          KiCad\n          PySpice\n        \n      \n    \n  \n\n\n  Technical Skills\n  \n    AI/ML & Data Science\n    \n      R\n      Python\n      tidymodels\n      XGBoost\n      Isolation Forest\n      DALEX\n      ggplot2\n      Feature Engineering\n    \n  \n  \n    Systems & Software Engineering\n    \n      Golem/Shiny\n      Plumber REST API\n      React / TypeScript\n      PostgreSQL / PostGIS\n      Docker\n      JWT / RBAC\n      Git / GitHub Actions\n      HTML / CSS / JS\n    \n  \n  \n    Hardware & IoT\n    \n      ESP32 / Arduino\n      KiCad PCB Design\n      Proteus 8\n      PySpice / LTspice\n      Sensor Systems\n      MicroPython\n    \n  \n  \n    Data, Reporting & Research\n    \n      Quarto / R Markdown\n      LaTeX\n      Excel\n      Zotero\n      Reproducible Pipelines\n      Technical Report Writing\n      Plotly / Leaflet\n    \n  \n  \n    Domain & Engineering\n    \n      Sustainability Modeling\n      Hydrological Modeling (ArcSWAT)\n      QGIS\n      AutoCAD\n      Impact Analysis\n      Experimental Design\n      Systems Thinking\n      Process Automation\n    \n  \n\n\n  Let's Work Together\n  I'm available for engineering roles, research collaborations, data science consulting, and custom software development.\n  \n    Email Me\n    Connect on LinkedIn"
+    "text": "Blog\n  Tutorials, deep dives, and lessons from building real systems.\n\n\n\n\n\n\n\n\n\n\nUnderstanding Classification and Clustering: Decision Trees, Random Forests, SVM, Naive Bayes, and K-Means with Iris Data\n\n\n\nMachine Learning\n\nR\n\nTutorial\n\n\n\nA hands-on comparison of supervised classification and unsupervised clustering techniques using R and tidymodels.\n\n\n\n\n\nMay 10, 2025\n\n\nRobert Kimutai\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "portfolio/index.html",
