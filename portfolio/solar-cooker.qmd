@@ -1,81 +1,116 @@
 ---
-title: "Solar Cooker Performance Testing Platform"
+title: "Solar Cooker IoT Testing Platform"
+description: "MSc thesis - open-source, sub-$100 IoT data acquisition unit replacing $10K+ lab equipment for ASAE S580.1 solar cooker performance testing."
 format: html
 page-layout: full
+toc: false
 ---
 
-# 🌞 Solar Cooker Performance Testing Platform
+```{=html}
+<div class="case-study-header" data-aos="fade-up">
+  <span class="role-badge">MSc Research &bull; University of Nairobi</span>
+  <h1>Solar Cooker IoT Testing Platform</h1>
+  <p>A low-cost, open-source framework for linking standardized performance to the multidimensional impacts of solar cookers - replacing $10,000+ lab equipment with a sub-$100 IoT system.</p>
+  <span class="private-badge" style="margin-top: 1rem; font-size: 0.85rem;">&#128274; Private Repository</span>
+</div>
+```
 
-![Solar Cooker System](../assets/images/solar_cooker_diagram.jpg){.img-fluid .rounded .shadow-sm .mb-4}
+::: {.case-study-section data-aos="fade-up"}
+## Problem
 
-This project presents an **open-source, low-cost solar cooker testing system** aligned with the **ASAE S580.1** standard. It combines **sensor-based data acquisition**, **embedded electronics**, and a web-based **R Shiny dashboard** to standardize cooking power evaluation and quantify sustainability impacts.
+Solar cookers can significantly reduce fuel use, indoor air pollution, and CO&#8322; emissions in developing regions. But **validating their performance** requires expensive lab-grade instrumentation that most organizations can't afford.
 
----
+The ASAE S580.1 standard defines how to measure cooking power, but no affordable, field-ready testing system existed. This creates a **data vacuum** - innovators and institutions in the Global South cannot generate the verified performance evidence needed for results-based climate financing.
 
-## 🎯 Problem Statement
+**The cost barrier**: Reference-grade pyranometers and data loggers cost upwards of $10,000. My target: **under $100**.
+:::
 
-In many low-resource settings, solar cooking solutions lack **affordable**, **standardized testing equipment**, making it hard to validate performance or compare cookers. Traditional lab-grade equipment is **cost-prohibitive**, excluding local NGOs and researchers.
+::: {.case-study-section data-aos="fade-up"}
+## Solution
 
----
+I designed a complete testing system spanning hardware, simulation, and software:
 
-## 🛠️ System Overview
+**Hardware - ESP32-Based Sensor Node**
 
-- **Microcontroller**: Arduino Uno (ATmega328P)
-- **Sensors**:
-  - DS18B20 digital temperature sensors for ambient and water temperature
-  - BPW34 photodiode + PTFE cosine corrector for solar irradiance
-- **Data Logging**:
-  - SD Card module for timestamped logs
-  - RTC DS3232 for accurate timekeeping
-- **Display & Feedback**:
-  - 20x4 I2C LCD for real-time display
-  - HC-06 Bluetooth for wireless transmission
+- ESP32 microcontroller with MicroPython firmware
+- BPW34 silicon PIN photodiode with PTFE cosine corrector (irradiance measurement)
+- MCP6022 dual op-amp transimpedance amplifier (signal conditioning)
+- PT100 RTD + MAX31865 (water temperature)
+- DHT22 (ambient temperature/humidity)
+- Anemometer (wind speed)
+- SIM808 GSM module (telemetry), MicroSD (local storage)
+- **Custom PCB designed in KiCad** - BOM total ~$1.58 for the analog front-end
 
-> The system reads, logs, and transmits temperature and irradiance data in real-time while calculating **cooking power** and standardizing it to 700 W/m² per ASAE S580.1.
+**Simulation & Validation Pipeline (Python)**
 
----
+- SciPy - automated analog component optimization (E-series resistor snapping)
+- PySpice/Ngspice - multi-domain circuit simulation (DC, AC, transient, noise analysis)
+- **9-stage CI/CD hardware pipeline**: analytical design → E-series snap → circuit synthesis → SPICE simulation → KiCad PCB export → PCB layout (FreeRouting) → DRC/Gerber export → firmware generation → calibration validation
+- Feedback loop: re-optimizes analog design if SPICE results diverge from analytical predictions
 
-## 💻 Shiny Dashboard
+**Software - R Backend + Dashboard**
 
-![Shiny Dashboard Screenshot](../assets/images/shiny_dashboard.jpg){.img-fluid .rounded .shadow-sm .mb-3}
+- R Plumber REST API for data ingestion, querying, device management, test sessions, and ASAE S580.1 analysis
+- SQLite database with migration-based schema
+- Golem-structured Shiny dashboard for real-time visualization
+- Automatic standardization of cooking power to 700 W/m² per ASAE S580.1
+- Sustainability impact calculators: fuel savings (kg/year), CO&#8322; avoided (tonnes), health benefit proxies
+:::
 
-The **R Shiny dashboard** provides:
+::: {.case-study-section data-aos="fade-up"}
+## Results
 
-- 📈 **Real-time data visualization**
-- 📊 **Cooking power analysis**
-- 🌿 **Sustainability metrics** (fuel savings, CO₂ emissions avoided, health impact proxy)
-- 🧾 Downloadable reports in PDF or Excel
+::: {.result-card}
+**Delivered a field-ready testing system at a fraction of commercial equipment cost** - enabling standardized solar cooker evaluation where it was previously impossible.
+:::
 
----
+**Design Specifications:**
 
-## 🔁 Simulation & Validation
+- **Cost**: Sub-$100 (vs. $10,000+ for gold standard)
+- **ADC**: ESP32 12-bit, ENOB validated
+- **Bandwidth**: ≥ 100 kHz target
+- **Phase margin**: ≥ 60 degrees
+- **Noise floor**: < 1 ADC LSB (0.8 mV)
+- **Linearity error**: < 0.5%
+- **Calibration**: ISO 9847 + ASAE S580.1
 
-To ensure accuracy and repeatability:
+**Impact:**
 
-- **Proteus 8 Professional** was used to simulate DS18B20 and BPW34 sensor behavior
-- **Potentiometers** emulated dynamic temperature and irradiance in real time
-- System calibration ensured sensor readings aligned with empirical standards
+- Compliant with the **ASAE S580.1** international standard
+- Testing conducted at UoN's SCI-accredited Regional Testing and Knowledge Centre
+- Open-source design allows replication by researchers and NGOs
+- 6 GitHub Actions CI workflows: app, Docker, firmware, hardware, simulations, thesis
+:::
 
----
+::: {.case-study-section data-aos="fade-up"}
+## Tech Stack
 
-## 🌍 Impact & Benefits
+```{=html}
+<div class="skill-tags" style="margin-top: 0.5rem;">
+  <span class="skill-tag primary">ESP32</span>
+  <span class="skill-tag primary">MicroPython</span>
+  <span class="skill-tag primary">BPW34 Photodiode</span>
+  <span class="skill-tag primary">PT100 RTD</span>
+  <span class="skill-tag green">Python</span>
+  <span class="skill-tag green">SciPy</span>
+  <span class="skill-tag green">PySpice / Ngspice</span>
+  <span class="skill-tag green">KiCad</span>
+  <span class="skill-tag accent">R Plumber API</span>
+  <span class="skill-tag accent">Golem / Shiny</span>
+  <span class="skill-tag orange">Docker Compose</span>
+  <span class="skill-tag orange">GitHub Actions CI</span>
+  <span class="skill-tag orange">Quarto</span>
+</div>
+```
+:::
 
-- ⚡ Empowers communities and NGOs to validate solar cooking technology affordably
-- 🌱 Models environmental benefits (e.g., CO₂ reduction)
-- 👩‍🔬 Supports academic and policy research through replicable, open-source methodology
-
----
-
-## 🔗 Resources
-
-- 📦 GitHub Repository: *Coming soon*  
-- 📃 IEEE-Style Research Report: *To be published*  
-- 💡 Shiny App Demo: *Coming soon*
-
----
-
-### 📫 Interested in contributing or collaborating?
-
-> I welcome NGOs, researchers, or developers to contribute to this platform or deploy it in field environments. [Contact me](mailto:kimutairobert72@gmail.com) to learn more or request access to the source files.
-
-
+```{=html}
+<div class="contact-section" data-aos="fade-up">
+  <h2>Interested in collaborating or deploying this system?</h2>
+  <p>I welcome researchers, NGOs, and developers to contribute or adapt this platform for field use.</p>
+  <div class="contact-links">
+    <a href="mailto:robert.kimutai.ds@gmail.com" class="contact-link email">Contact Me</a>
+    <a href="index.html" class="contact-link linkedin">Back to Portfolio</a>
+  </div>
+</div>
+```

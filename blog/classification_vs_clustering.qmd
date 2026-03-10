@@ -1,11 +1,13 @@
 ---
 title: "Understanding Classification and Clustering: Decision Trees, Random Forests, SVM, Naive Bayes, and K-Means with Iris Data"
 author: "Robert Kimutai"
+date: "2025-05-10"
+description: "A hands-on comparison of supervised classification and unsupervised clustering techniques using R and tidymodels."
+categories: [Machine Learning, R, Tutorial]
 format:
   html:
     toc: true
     toc-location: left
-    theme: cosmo
     code-fold: true
     code-tools: true
     page-layout: full
@@ -22,17 +24,19 @@ editor: visual
 #| label: setup
 #| include: false
 
-required_packages <- c(
-  "tidyverse", "tidymodels", "kernlab", "e1071", "naivebayes","discrim", 
-  "rpart.plot", "sjPlot", "sjmisc", "sjlabelled", "cluster", "factoextra", "kableExtra", "vip", "ranger", "kknn"
-)
-
-# Install any packages not yet installed
-new_packages <- required_packages[!(required_packages %in% installed.packages()[, "Package"])]
-if (length(new_packages)) install.packages(new_packages)
-
-# Load all packages
-lapply(required_packages, library, character.only = TRUE)
+library(tidyverse)
+library(tidymodels)
+library(kernlab)
+library(e1071)
+library(naivebayes)
+library(discrim)
+library(rpart.plot)
+library(cluster)
+library(factoextra)
+library(kableExtra)
+library(vip)
+library(ranger)
+library(kknn)
 
 # Global theme and options
 theme_set(theme_minimal())
@@ -225,7 +229,7 @@ rf_predictions %>%
 
 ```
 
-## Support Vector Machine(SVM)
+## Support Vector Machine (SVM)
 
 **Concept**: SVM finds an optimal hyperplane that separates classes with the largest margin in the feature space.
 
@@ -348,6 +352,8 @@ nb_predictions %>%
 ```
 
 ## KNN
+
+**Concept**: K-Nearest Neighbors classifies each observation by majority vote among its k closest training examples.
 
 ```{r}
 #| label: knn_analysis
@@ -499,6 +505,8 @@ fviz_silhouette(silhouette_score) +
 
 ## Hierarchical Clustering
 
+**Concept**: Hierarchical clustering builds a nested tree of clusters (dendrogram) by iteratively merging the most similar groups.
+
 ```{r}
 #| label: hierarchical_clustering
 #| message: false
@@ -575,16 +583,16 @@ table(True_Label = iris$Species, Cluster = iris_clustered$cluster) %>%
 
 ## Conclusion
 
-This exploration showcases how various machine learning models differ in their **assumptions**, **complexity**, and **ideal use cases**. There’s no single *"best"* model — the right choice depends on your **goals**, **data**, and **constraints**.
+This exploration showcases how various machine learning models differ in their **assumptions**, **complexity**, and **ideal use cases**. There's no single *"best"* model — the right choice depends on your **goals**, **data**, and **constraints**.
 
-Here’s a practical guide:
+Here's a practical guide:
 
 -   **Use Decision Trees** when interpretability and clear rules are a priority.
 -   **Use Random Forests** for higher accuracy, especially when variance is a concern.
 -   **Use Support Vector Machines (SVMs)** when decision boundaries are complex or nonlinear.
 -   **Use Naive Bayes** when you need a fast, simple, and often surprisingly effective baseline.
 -   **Use K-Nearest Neighbors (KNN)** for intuitive distance-based predictions — but be cautious with scaling and noisy features.
--   **Use K-Means or Hierarchical Clustering** when your data is unlabeled, but you suspect structure or groupings.K-Means is fast and intuitive, but assumes spherical clusters while Hierarchical Clustering gives a dendrogram you can interpret visually, useful for small to medium datasets.
+-   **Use K-Means or Hierarchical Clustering** when your data is unlabeled, but you suspect structure or groupings. K-Means is fast and intuitive, but assumes spherical clusters while Hierarchical Clustering gives a dendrogram you can interpret visually, useful for small to medium datasets.
 
 ## Summary Table
 

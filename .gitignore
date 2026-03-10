@@ -6,3 +6,8 @@
 .quarto
 
 /.quarto/
+_site/
+site_libs/
+Resume_RobertKimutai.pdf
+jobpost.qmd
+CLAUDE.md

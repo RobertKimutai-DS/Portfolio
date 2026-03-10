@@ -1,0 +1,199 @@
+---
+title: "Robert Kimutai"
+subtitle: "Researcher • Data Scientist • Systems Developer"
+author: ""
+date: today
+date-format: "MMMM YYYY"
+format:
+  html:
+    toc: false
+    page-layout: article
+    css: [resume-styles.css]
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    include-after-body:
+      - file: resume-scripts.js
+  pdf:
+    documentclass: article
+    papersize: a4
+    geometry:
+      - top=20mm
+      - bottom=20mm
+      - left=20mm
+      - right=20mm
+    fontsize: 10pt
+    colorlinks: true
+    linkcolor: blue
+    urlcolor: blue
+    include-in-header:
+      - text: |
+          \usepackage{fontawesome5}
+          \usepackage{xcolor}
+          \usepackage{sectsty}
+          \usepackage{titlesec}
+          \usepackage{fancyhdr}
+          \usepackage{lastpage}
+          \definecolor{primarycolor}{RGB}{102,126,234}
+          \definecolor{secondarycolor}{RGB}{118,75,162}
+          \definecolor{textgray}{RGB}{113,128,150}
+          \sectionfont{\color{primarycolor}}
+          \subsectionfont{\color{primarycolor}}
+          \pagestyle{fancy}
+          \fancyhf{}
+          \fancyfoot[C]{\thepage}
+          \renewcommand{\headrulewidth}{0pt}
+          \titlespacing*{\section}{0pt}{12pt}{6pt}
+          \titlespacing*{\subsection}{0pt}{10pt}{4pt}
+---
+
+::: {.header-section}
+# Robert Kimutai {.no-toc}
+
+**Transforming Complex Challenges into Data-Driven Solutions**
+
+::: {.contact-row}
+<i class="fas fa-envelope"></i> robert.kimutai.ds@gmail.com | 
+<i class="fas fa-phone"></i> +254 723 493 122 | 
+<i class="fas fa-map-marker-alt"></i> Nairobi, Kenya
+
+<i class="fab fa-linkedin"></i> [LinkedIn](https://www.linkedin.com/in/robert-kimutai-921608330/) | 
+<i class="fab fa-github"></i> [GitHub](https://github.com/RobertKimutai-DS) | 
+<i class="fas fa-globe"></i> [Portfolio](#)
+:::
+:::
+
+::: {.summary-section}
+## Professional Summary
+
+Innovative researcher and full-stack data scientist with 3+ years of experience bridging environmental engineering, data science, and systems development. Expert in developing IoT-enabled solutions, machine learning models with 90%+ accuracy, and scalable web applications. Currently leading three high-impact projects: a solar cooker evaluation platform (ASAE S580.1 compliant), tax reform impact analysis for Kenya, and county revenue digitization system for Kericho County.
+:::
+
+## Core Competencies
+
+::: {.skills-container}
+**Data Science & ML:** R • Python • Tidymodels • XGBoost • Time Series • SHAP/DALEX • Statistical Modeling • Predictive Analytics
+
+**Development:** Shiny • Quarto • REST APIs • Docker • Git/GitHub • Cloud Deployment • Database Design (SQL/PostgreSQL)
+
+**Engineering:** Arduino/C++ • IoT Systems • Sensor Integration • Proteus Simulation • Solar PV Design • QGIS • AutoCAD
+
+**Research:** Experimental Design • Impact Assessment • Technical Writing • Data Visualization • Reproducible Research
+:::
+
+## Current Projects
+
+::: {.project-item}
+**Solar Cooker Performance Evaluation Platform** | *Lead Developer* | 2021-Present  
+- Developed IoT system with Arduino sensors (DS18B20, BPW34) for real-time performance monitoring  
+- Built Shiny web application integrating environmental, health, and socioeconomic impact calculators  
+- Implemented ASAE S580.1 testing standards achieving 95% measurement accuracy  
+- Technologies: Arduino, R/Shiny, Proteus, SQLite, Plotly, Real-time APIs
+:::
+
+::: {.project-item}
+**Tax Reform Impact Analysis on Income Distribution** | *Research Data Scientist* | KESRA | 2021  
+- Analyzed 15+ years of tax policy data using advanced statistical methods  
+- Developed ML models to predict income distribution changes with 87% accuracy  
+- Created interactive dashboards for policy makers using Shiny and Plotly  
+- Technologies: R, Tidymodels, ggplot2, Quarto, SQL, Time Series Analysis
+:::
+
+::: {.project-item}
+**County Revenue Collection Digital Platform** | *Systems Architect* | Kericho County | 2024-Present  
+- Designing end-to-end revenue management system starting with single business permits  
+- Implementing real-time analytics reducing revenue leakages by projected 30%  
+- Building scalable microservices architecture supporting 10,000+ transactions daily  
+- Technologies: R/Shiny, PostgreSQL, REST APIs, Docker, AWS/Cloud
+:::
+
+## Professional Experience
+
+::: {.experience-item}
+**Graduate Research Assistant** | University of Nairobi | 2021-Present  
+- Design and implement sensor-integrated renewable energy testing platforms  
+- Develop reproducible research workflows using Quarto and GitHub Actions  
+- Create interactive dashboards for real-time performance monitoring  
+- Publish findings in peer-reviewed journals (3 papers, 2 under review)
+:::
+
+::: {.experience-item}
+**Data Science Virtual Intern** | Boston Consulting Group (BCG) | 2024  
+- Built customer churn prediction model achieving 90%+ AUC using ensemble methods  
+- Analyzed 100K+ customer records identifying key churn drivers  
+- Created interpretable ML visualizations using SHAP values  
+- Delivered C-suite presentation with actionable retention strategies
+:::
+
+::: {.experience-item}
+**Clerk of Works - Water & Solar Infrastructure** | SIVAP Kenya | 2022-2023  
+- Supervised construction of 5 earth dams and 12 solarized boreholes  
+- Managed solar pumping installations totaling 150kW capacity  
+- Coordinated with stakeholders impacting 2,000+ farmers  
+- Ensured 100% compliance with technical specifications
+:::
+
+::: {.experience-item}
+**Sales Engineer** | Kupata Technologies Ltd | 2019-2022  
+- Designed solar water pumping and irrigation systems for 50+ clients  
+- Conducted technical assessments and feasibility studies  
+- Increased sales revenue by 35% through data-driven proposals  
+- Trained 100+ farmers on system operation and maintenance
+:::
+
+## Education
+
+::: {.education-item}
+**MSc Environmental and Biosystems Engineering** | University of Nairobi | 2021-Present  
+*Thesis:* Development of Low-Cost Solar Cooker Performance Evaluation System with Impact Analysis  
+*Relevant Coursework:* Renewable Energy Systems, Environmental Monitoring, Scientific Computing, Statistical Analysis
+:::
+
+::: {.education-item}
+**BSc Agricultural Engineering** | JKUAT | 2013-2018  
+*Thesis:* Automated Irrigation Scheduling System for Smallholder Farmers  
+*Achievement:* Developed Arduino-based controller achieving 40% water savings
+:::
+
+## Achievements & Impact
+
+::: {.achievements-container}
+- **90%+ Model Accuracy:** BCG churn prediction model implementation  
+- **40% Water Savings:** Smart irrigation system deployment  
+- **2,000+ Farmers:** Impacted through water infrastructure projects  
+- **150kW Solar Capacity:** Supervised installation across 3 counties  
+- **15 Years Data Analysis:** Tax reform research insights  
+- **3 Active Platforms:** Solar cooker, dairy management, revenue systems
+:::
+
+## Certifications & Professional Development
+
+- **Advanced Diploma in Data Science with R** - Alison (2024)  
+- **Machine Learning with R Studio** - Alison (2023)  
+- **Statistical Data Analysis Using R** - RUFORUM (2022)  
+- **Registered Graduate Engineer** - Engineers Board of Kenya (EBK)  
+- **Graduate Member** - Institution of Engineers of Kenya (IEK)
+
+## Additional Projects
+
+::: {.additional-projects}
+**Zero-Grazing Dairy Management Platform** | 2021-Present  
+Full-stack Shiny application with modules for herd management, milk production tracking, inventory control, and labor management. Integrated SQLite database with role-based access control.
+
+**Energy Sector Churn Analysis** | BCG Virtual Internship | 2024  
+Developed comprehensive customer retention strategy using machine learning, achieving 90%+ prediction accuracy and identifying $2M+ revenue protection opportunity.
+:::
+
+## Leadership & Community
+
+- **Tech Lead:** R Users Group Kenya - Monthly workshops on data science applications  
+- **Mentor:** University coding bootcamp - Training 20+ students annually  
+- **Volunteer:** Church youth programs - Leadership development and STEM education  
+- **Athletics:** Swimming, Taekwondo (discipline & wellness), Chess (strategic thinking)
+
+---
+
+::: {.footer-note}
+*References available upon request* | *Updated: `r format(Sys.Date(), "%B %Y")`*
+:::

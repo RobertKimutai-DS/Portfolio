@@ -1,16 +1,19 @@
 project:
   type: website
-  output-dir: docs  # Keeps GitHub Pages compatibility
+  output-dir: docs
+
+execute:
+  freeze: auto
 
 website:
   title: "Robert Kimutai"
-  site-url: https://robertkimutai.netlify.app  # Replace with your actual deployed URL
-  description: "Data Scientist | Systems Thinker | Software Developer"
+  site-url: https://robertkimutai.netlify.app
+  description: "Engineer | Data Scientist | Researcher | Developer"
   favicon: assets/images/favicon.png
 
   navbar:
     pinned: true
-    background: light
+    background: dark
     logo: assets/images/profile_pic.jpg
     left:
       - text: "Home"
@@ -20,42 +23,47 @@ website:
       - text: "Resume"
         file: resume/index.qmd
       - text: "Blog"
-        file: blog/index.qmd  # section for posts, tutorials, thought leadership
+        file: blog/index.qmd
     right:
       - icon: github
         href: https://github.com/RobertKimutai-DS
-      - icon: kaggle
-        href: https://www.kaggle.com/kimutairobert
       - icon: linkedin
         href: https://www.linkedin.com/in/robert-kimutai-921608330/
-      - icon: facebook
-        href: https://www.facebook.com/profile.php?id=61576319121772
       - icon: envelope
         aria-label: email
-        href: "mailto:kimutairobert72@gmail.com"
+        href: "mailto:robert.kimutai.ds@gmail.com"
 
   page-footer:
     left: |
-      © 2025 Robert Kimutai · Built with [Quarto](https://quarto.org)
+      &copy; 2026 Robert Kimutai &middot; Built with [Quarto](https://quarto.org)
     right: |
-      [GitHub](https://github.com/RobertKimutai-DS) · [LinkedIn](https://www.linkedin.com/in/robert-kimutai-921608330/) · [Kaggle](https://www.kaggle.com/kimutairobert)
+      [GitHub](https://github.com/RobertKimutai-DS) &middot; [LinkedIn](https://www.linkedin.com/in/robert-kimutai-921608330/) &middot; [Kaggle](https://www.kaggle.com/kimutairobert)
 
 format:
   html:
     theme:
-      light: flatly
-      dark: darkly
-    css: assets/css/styles.css  # Add custom tweaks here (colors, spacing, fonts)
-    toc: true
-    toc-location: left
+      light: [flatly, assets/css/styles.scss]
+      dark: [darkly, assets/css/styles.scss]
+    toc: false
     mainfont: "Segoe UI"
     monofont: "Fira Code"
     highlight-style: github
     code-copy: true
-    smooth-scroll: true
     page-layout: full
     grid:
-      sidebar-width: 250px
-      body-width: 900px
+      sidebar-width: 0px
+      body-width: 1200px
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    include-after-body:
+      - text: |
+          <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+          <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.12.0/tsparticles.slim.bundle.min.js"></script>
+          <script src="https://unpkg.com/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+          <script src="/assets/javascript/main.js"></script>
 
 editor: visual

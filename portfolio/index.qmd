@@ -1,75 +1,81 @@
 ---
 title: "Portfolio"
-format: html
 page-layout: full
+toc: false
 ---
 
-# 🚀 Project Portfolio
+```{=html}
+<div class="page-hero">
+  <h1 data-aos="fade-up">Portfolio</h1>
+  <p data-aos="fade-up" data-aos-delay="100">End-to-end systems I've designed and built - from national-scale health platforms to county government infrastructure.</p>
+</div>
+```
 
-Welcome to my project portfolio. These highlights showcase my ability to integrate **research**, **data science**, and **software development** in creating real-world solutions that prioritize **sustainability**, **intelligence**, and **impact**.
+```{=html}
+<div class="content-section">
+  <div class="filter-bar" data-aos="fade-up">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="r">R</button>
+    <button class="filter-btn" data-filter="python">Python</button>
+    <button class="filter-btn" data-filter="shiny">Shiny</button>
+    <button class="filter-btn" data-filter="iot">IoT</button>
+    <button class="filter-btn" data-filter="api">API</button>
+    <button class="filter-btn" data-filter="docker">Docker</button>
+  </div>
 
-Each project is a reflection of my values — blending **innovation**, **rigor**, and **systems thinking**.
+  <div class="projects-grid">
+    <div class="project-card tilt-card" data-aos="fade-up" data-tags="r shiny api docker react postgresql postgis">
+      <div class="project-card-icon" style="font-size: 2.5rem;">&#x1F3E5;</div>
+      <div class="project-card-body">
+        <div class="metric">Designed for 54M Citizens &bull; 28 Endpoints <span class="private-badge">Private Repo</span></div>
+        <h3><a href="sha-system.html">SHA Integrated Health System</a></h3>
+        <p>Full-stack health insurance platform for Kenya's Social Health Authority. 4-package architecture: R business logic, Plumber REST API, Golem/Shiny dashboard, React PWA. Isolation Forest fraud detection, PostGIS spatial analytics, M-Pesa integration.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">R</span>
+          <span class="tech-tag">Plumber API</span>
+          <span class="tech-tag">Golem/Shiny</span>
+          <span class="tech-tag green">React / TypeScript</span>
+          <span class="tech-tag green">PostgreSQL / PostGIS</span>
+          <span class="tech-tag orange">Docker</span>
+          <span class="tech-tag orange">JWT / RBAC</span>
+        </div>
+      </div>
+    </div>
 
-------------------------------------------------------------------------
+    <div class="project-card tilt-card" data-aos="fade-up" data-aos-delay="150" data-tags="r shiny docker postgresql postgis api">
+      <div class="project-card-icon" style="font-size: 2.5rem;">&#x1F3DB;</div>
+      <div class="project-card-body">
+        <div class="metric">11 Modules &bull; 30 Wards &bull; KES Revenue Optimization <span class="private-badge">Private Repo</span></div>
+        <h3><a href="smartlicensync.html">SmartLicenSync - Revenue Optimizer</a></h3>
+        <p>Business permit and license management system for Kericho County Government. Golem/Shiny with bs4Dash, PostgreSQL/PostGIS backend, M-Pesa payment processing, full audit trails, and role-based access control.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">R</span>
+          <span class="tech-tag">Golem/Shiny</span>
+          <span class="tech-tag">bs4Dash</span>
+          <span class="tech-tag green">PostgreSQL / PostGIS</span>
+          <span class="tech-tag green">M-Pesa</span>
+          <span class="tech-tag orange">Docker</span>
+        </div>
+      </div>
+    </div>
 
-## 🔬 Featured Projects
-
-::: card-deck
-### 🌞 Solar Cooker Performance Testing Platform
-
-![Solar Cooker Performance Testing Platform](../assets/images/solar_cooker.jpg){.card-img-top .rounded .shadow-sm .mb-2}
-
-**Role:** Researcher \| Embedded Systems Developer \| Data Scientist\
-**Technologies:** Arduino, R, Shiny, Proteus, DS18B20, BPW34, ggplot2, lubridate
-
-A flagship research project focused on developing a low-cost, open-source solar cooker performance testing platform, built to comply with the ASAE S580.1 standard.
-
-**Key components:**
-
--   📡 Sensor-based data acquisition using DS18B20 (temperature) and BPW34 (irradiance) via Arduino\
--   📊 Shiny web application for visualizing cooking power, standardizing results to 700 W/m², and modeling environmental/health benefits\
--   🛠️ Simulation & calibration using Proteus 8 Professional for validation prior to hardware deployment\
--   🌱 Impact-driven: Quantifies fuel savings, CO₂ reduction, and public health benefits for NGOs and field partners
-
-This system empowers stakeholders in energy, development, and sustainability to perform affordable, standardized testing in low-resource settings.
-
-🔗 [View project details →](solar-cooker.qmd)
-
-### ⚡ Churn Analysis in the Energy Sector
-
-![Churn Prediction Model](../assets/images/churn_dashboard.jpg){.card-img-top .rounded .shadow-sm .mb-2}
-
-**Role:** Data Scientist (Intern, BCG)\
-**Technologies:** R, tidymodels, xgboost, ggstatsplot, vip
-
-Built a churn prediction model for an energy company to reduce customer attrition. Delivered actionable insights and a reusable modeling pipeline using the tidyverse ecosystem.
-
-**Highlights:**
-
--   📈 Feature engineering across 12-month customer histories\
--   🧠 XGBoost model with AUC of 0.91\
--   🔍 Top predictors: price volatility, service interactions, clean energy preferences\
--   📊 Business insights delivered to stakeholders with interpretable visuals
-
-🔗 [View project details →](churn-analysis.qmd)
-
-------------------------------------------------------------------------
-
-### 🐄 Zero-Grazing Dairy Farm Management App
-
-![Dairy App Dashboard](../assets/images/dairy_dashboard.jpg){.card-img-top .rounded .shadow-sm .mb-2}
-
-**Role:** Full Stack Developer \| Systems Designer\
-**Technologies:** R, Shiny, SQLite, shinymanager, DT, plotly, gganimate
-
-Designed and deployed a modular SaaS-style Shiny app for dairy farmers, supporting operational efficiency and sustainable livestock management.
-
-**Features:**
-
--   🐄 Herd health tracking, milk production logs, and medication history\
--   📋 Inventory, labor, and feed management modules\
--   📈 Interactive dashboards and PDF reports\
--   🔐 User login and tiered subscriptions
-
-🔗 [View project details →](dairy-app.qmd)
-:::
+    <div class="project-card tilt-card" data-aos="fade-up" data-aos-delay="300" data-tags="r python shiny api iot docker">
+      <div class="project-card-icon" style="font-size: 2.5rem;">&#9728;&#65039;</div>
+      <div class="project-card-body">
+        <div class="metric">Sub-$100 &bull; ASAE S580.1 Compliant <span class="private-badge">Private Repo</span></div>
+        <h3><a href="solar-cooker.html">Solar Cooker IoT Testing Platform</a></h3>
+        <p>MSc thesis - open-source IoT data acquisition unit that replaces $10K+ lab-grade equipment. ESP32 with custom PCB, Python circuit simulation pipeline, R Plumber API, and Shiny dashboard for real-time performance analysis.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">ESP32</span>
+          <span class="tech-tag">MicroPython</span>
+          <span class="tech-tag">Python / PySpice</span>
+          <span class="tech-tag green">R Shiny</span>
+          <span class="tech-tag green">Plumber API</span>
+          <span class="tech-tag orange">KiCad</span>
+          <span class="tech-tag orange">Docker</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```

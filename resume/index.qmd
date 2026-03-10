@@ -1,144 +1,329 @@
 ---
-title: "Robert Kimutai"
-author: "Researcher | Data Scientist | Developer"
-date: "September 15, 2024"
+title: "Robert Kimutai - Resume"
+description: "Engineer, Data Scientist, Researcher, and Developer."
+author: "Robert Kimutai"
 format:
   html:
-    toc: true
-    toc-location: left
-    theme: cosmo
-    css: "assets/css/resume.css"
+    toc: false
     number-sections: false
     page-layout: full
     include-in-header:
       - text: |
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    include-after-body:
-      - text: |
-          <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-          <script src="assets/javascript/resume.js"></script>
-  pdf:
-    output: pagedpdf
-    css: "assets/css/resume.css"
-    number-sections: false
-    toc: false
-    keep-md: true
-    keep-html: true
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer">
 ---
 
-::: resume-section
-# 📇 Contact Information
+```{=html}
+<style>
+  .resume-wrap { max-width: 860px; margin: 0 auto; padding: 0 1rem; }
+  .resume-wrap .section-heading { font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.3rem; }
+  .resume-wrap .timeline { margin: 0.4rem auto; padding: 0.3rem 0; }
+  .resume-wrap .timeline-item { padding: 0.35rem 1.5rem; }
+  .resume-wrap .timeline-item:nth-child(odd) { padding-right: 2rem; }
+  .resume-wrap .timeline-item:nth-child(even) { padding-left: 2rem; }
+  .resume-wrap .timeline-content { padding: 0.5rem 0.7rem; }
+  .resume-wrap .timeline-content h3 { font-size: 0.78rem; margin-bottom: 0.1rem; }
+  .resume-wrap .timeline-content h4 { font-size: 0.68rem; margin-bottom: 0.15rem; }
+  .resume-wrap .timeline-content li { font-size: 0.68rem; line-height: 1.35; }
+  .resume-wrap .timeline-content ul { padding-left: 0.9rem; margin: 0.1rem 0 0; }
+  .resume-wrap .timeline-date { font-size: 0.65rem; }
+  .resume-wrap .timeline-item::before { width: 10px; height: 10px; }
+  .resume-wrap .case-study-section { padding: 0.6rem 0.9rem; margin: 0.3rem auto; }
+  .resume-wrap .case-study-section p { font-size: 0.75rem; line-height: 1.45; margin: 0; }
+  .resume-wrap .skill-category { padding: 0.4rem 0.7rem; margin-bottom: 0.3rem; }
+  .resume-wrap .skill-category h3 { font-size: 0.72rem; margin-bottom: 0.2rem; }
+  .resume-wrap .skill-tag { font-size: 0.62rem; padding: 0.1rem 0.45rem; }
+  .resume-wrap .skill-tags { gap: 0.25rem; }
+  .resume-wrap .referees-grid { gap: 0.6rem; }
+  .resume-wrap .referee-card { padding: 0.5rem 0.7rem; }
+  .resume-wrap .referee-card h4 { font-size: 0.72rem; }
+  .resume-wrap .referee-card .referee-title,
+  .resume-wrap .referee-card .referee-org,
+  .resume-wrap .referee-card a { font-size: 0.65rem; }
+  .resume-header { text-align: center; padding: 1.2rem 1rem 0.5rem; }
+  .resume-header h1 { font-size: 1.5rem; margin-bottom: 0.15rem; }
+  .resume-header .subtitle { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.5rem; }
+  .resume-header .contact-row { display: flex; flex-wrap: wrap; gap: 0.8rem; font-size: 0.72rem; color: var(--text-secondary); justify-content: center; }
+  .resume-header .contact-row a { color: #E84C3D; }
+  .resume-header .dl-btn { margin-top: 0.8rem; }
+  @media (max-width: 768px) {
+    .resume-wrap .timeline-item { width: 100%; left: 0 !important; text-align: left !important; padding-left: 2.2rem !important; padding-right: 0.3rem !important; }
+    .resume-wrap .timeline-item::before { left: 10px !important; right: auto !important; }
+    .resume-wrap .timeline::before { left: 14px; }
+    .resume-header h1 { font-size: 1.3rem; }
+    .resume-header .subtitle { font-size: 0.75rem; }
+    .resume-header .contact-row { gap: 0.5rem; font-size: 0.65rem; }
+    .resume-wrap .referees-grid { grid-template-columns: 1fr; }
+  }
+  @media (max-width: 480px) {
+    .resume-header { padding: 0.8rem 0.5rem 0.4rem; }
+    .resume-header h1 { font-size: 1.1rem; }
+    .resume-header .contact-row { flex-direction: column; gap: 0.25rem; }
+    .resume-wrap { padding: 0 0.5rem; }
+    .resume-wrap .section-heading { font-size: 0.95rem; margin-top: 1rem; }
+    .resume-wrap .timeline-content h3 { font-size: 0.7rem; }
+    .resume-wrap .timeline-content li { font-size: 0.62rem; }
+    .resume-wrap .skill-tag { font-size: 0.55rem; }
+  }
+</style>
 
--   <i class="fas fa-home"></i> **Address**: Box 16029-00509 Galleria, Nairobi\
--   <i class="fas fa-phone"></i> **Phone**: +254 723 493122\
--   <i class="fas fa-envelope"></i> **Email**: [robert.kimutai.ds\@gmail.com](mailto:robert.kimutai.ds@gmail.com)\
--   <i class="fab fa-linkedin"></i> **LinkedIn**: [linkedin.com/in/robert-kimutai](https://www.linkedin.com/in/robert-kimutai-921608330/)\
--   <i class="fab fa-github"></i> **GitHub**: [github.com/RobertKimutai-DS](https://github.com/RobertKimutai-DS)
-:::
+<div class="resume-header" data-aos="fade-up">
+  <h1>Robert Kimutai</h1>
+  <div class="subtitle">Engineer &bull; Data Scientist &bull; Researcher &bull; Developer</div>
+  <div class="contact-row">
+    <span><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</span>
+    <span><i class="fas fa-phone"></i> +254 723 493122</span>
+    <span><i class="fas fa-envelope"></i> <a href="mailto:robert.kimutai.ds@gmail.com">robert.kimutai.ds@gmail.com</a></span>
+    <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/robert-kimutai-921608330/">LinkedIn</a></span>
+    <span><i class="fab fa-github"></i> <a href="https://github.com/RobertKimutai-DS">GitHub</a></span>
+    <span><i class="fas fa-globe"></i> <a href="https://robertkimutai-ds.github.io/Portfolio">Portfolio</a></span>
+  </div>
+  <div class="dl-btn">
+    <a href="resume-pdf.pdf" class="btn-primary-custom" download><i class="fas fa-download"></i> Download PDF</a>
+  </div>
+</div>
 
-------------------------------------------------------------------------
+<div class="resume-wrap">
 
-# 🎯 Professional Summary
+  <h2 class="section-heading" data-aos="fade-up">Professional Summary</h2>
+  <div class="case-study-section" data-aos="fade-up">
+    <p>Software engineer with a technical background in environmental, water, and renewable energy systems. I design and build complete platforms end-to-end: from a national health insurance system architected for 54M citizens (28 API endpoints) to county government revenue tools and IoT sensor networks. My approach combines systems thinking with automation at every layer, whether that means architecting multi-package R backends with CI/CD pipelines, automating hardware design validation through 9-stage simulation workflows, or building self-healing data ingestion systems. I work primarily in R, Python, and TypeScript, and I use AI-augmented development as standard daily practice.</p>
+  </div>
 
-A mission-driven **Researcher**, **Data Scientist**, and **Developer** with a unique blend of skills in **sustainability modeling**, **statistical machine learning**, and **end-to-end software system development**.\
-I specialize in turning complex environmental and socio-technical challenges into scalable, data-driven solutions.
+  <!-- WORK EXPERIENCE -->
+  <h2 class="section-heading" data-aos="fade-up">Work Experience</h2>
+  <div class="timeline" data-aos="fade-up">
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">Jan 2025 – Present</span>
+        <h3>Freelance Researcher / Data Scientist / Developer</h3>
+        <h4>Self-employed, Nairobi</h4>
+        <ul>
+          <li>Designed the SHA Integrated Health System - 4-package R architecture (Plumber REST API, Golem/Shiny dashboard, React PWA) with Isolation Forest fraud detection, PostGIS spatial analytics, and 28 JWT-authenticated endpoints targeting 54M citizens</li>
+          <li>Built SmartLicenSync - Golem/Shiny revenue optimization platform for Kericho County Government with 11 modules, PostgreSQL/PostGIS backend, M-Pesa payment integration, and automated audit logging</li>
+          <li>Continuing MSc research: developing ESP32-based IoT sensor node with custom KiCad PCB, Python/PySpice simulation pipeline, and R Plumber API for ASAE S580.1-compliant solar cooker testing</li>
+          <li>Producing reproducible research reports and dashboards using Quarto, R Markdown, and GitHub-based version control</li>
+          <li>Building all systems using AI-augmented workflows (Claude Code + Quarto + R) as standard daily practice</li>
+        </ul>
+      </div>
+    </div>
 
-Projects such as the **Solar Cooker Performance Testing Platform**, **Energy Churn Prediction Model**, and **Zero-Grazing Dairy Web App** demonstrate my ability to integrate **research rigor**, **machine learning**, and **full-stack engineering** in service of impact.
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">Feb 2022 – Nov 2024</span>
+        <h3>Clerk of Works - Water & Solar Infrastructure</h3>
+        <h4>SIVAP, Ministry of Agriculture</h4>
+        <ul>
+          <li>Supervised construction of earth dams, solarized boreholes, and fencing works across multiple counties</li>
+          <li>Ensured contractor compliance with technical specs, BOQs, and project timelines</li>
+          <li>Oversaw installation of solar pumping systems, tanks, and gravity-fed water distribution networks</li>
+          <li>Maintained structured progress reports, site inspection logs, and milestone verification documents for government stakeholders</li>
+          <li>Compiled field data and produced summary reports using Excel, AutoCAD layouts, and standardized reporting templates</li>
+        </ul>
+      </div>
+    </div>
 
-------------------------------------------------------------------------
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">May 2019 – Dec 2021</span>
+        <h3>Design Engineer</h3>
+        <h4>Kupate Technologies, Nairobi</h4>
+        <ul>
+          <li>Designed solar water pumping and drip irrigation systems using AutoCAD for technical layouts and site planning</li>
+          <li>Performed technical site assessments including soil, water source, and solar resource evaluation</li>
+          <li>Developed proposals, system layouts, and BOQs for smallholder and institutional clients</li>
+          <li>Produced technical data sheets, system performance projections, and client training materials</li>
+        </ul>
+      </div>
+    </div>
 
-# 🔍 Core Competencies
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">Feb 2015 – Mar 2016</span>
+        <h3>Bakery Manager</h3>
+        <h4>Mini Bakeries Limited</h4>
+        <ul>
+          <li>Managed bakery operations including production planning, quality control, and staff supervision</li>
+          <li>Tracked production volumes, inventory levels, and sales data to optimize workflows and reduce waste</li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
--   **Research & Impact Analysis**: Experimental design, survey analysis, sustainability indicators\
--   **Data Science & ML**: Supervised learning, churn modeling, time series, interpretability tools\
--   **Software Engineering**: R & Python development, Shiny apps, APIs, modular codebases\
--   **Hardware Integration**: Arduino + sensor systems (e.g., DS18B20, BPW34, SD logging)\
--   **Visualization & Storytelling**: Quarto, ggplot2, plotly, reporting dashboards\
--   **Soft Skills**: Systems thinking, communication, client engagement, project management
+  <!-- EDUCATION -->
+  <h2 class="section-heading" data-aos="fade-up">Education</h2>
+  <div class="timeline" data-aos="fade-up">
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">Sept 2023 – Present</span>
+        <h3>MSc Environmental and Biosystems Engineering</h3>
+        <h4>University of Nairobi</h4>
+        <ul>
+          <li>Thesis: A Low-Cost, IoT-Based Framework for Linking Standardized Performance to the Multidimensional Impacts of Solar Cookers</li>
+          <li>Supervisors: Prof. Duncan Mbuge (UoN), Dr. Peter Musau (SEKU)</li>
+        </ul>
+      </div>
+    </div>
 
-------------------------------------------------------------------------
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">2016 – 2018</span>
+        <h3>Double Degree Program - Agricultural Engineering</h3>
+        <h4>JKUAT</h4>
+      </div>
+    </div>
 
-# 🎓 Education
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">2009 – 2014</span>
+        <h3>BSc Biomechanical and Processing Engineering</h3>
+        <h4>JKUAT</h4>
+        <ul>
+          <li>Thesis: Development of an Automated Irrigation System Based on Crop Water Stress Index</li>
+        </ul>
+      </div>
+    </div>
 
-**MSc – Environmental and Biosystems Engineering**\
-University of Nairobi (2021–Present)\
-*Thesis: Development of a Solar Cooker Testing Platform using ASAE S580.1 Standards*
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">2003 – 2007</span>
+        <h3>Sacho High School</h3>
+        <ul><li>KCSE: A-</li></ul>
+      </div>
+    </div>
+  </div>
 
-**BSc – Agricultural Engineering**\
-JKUAT (2013–2018)\
-*Thesis: Automated Irrigation Scheduling System for Smallholder Farmers*
+  <!-- TRAINEESHIPS & CERTIFICATIONS -->
+  <h2 class="section-heading" data-aos="fade-up">Traineeships & Certifications</h2>
+  <div class="timeline" data-aos="fade-up">
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">Oct – Dec 2025</span>
+        <h3>Erasmus Mobility Traineeship</h3>
+        <h4>&Ccedil;ukurova University, Turkey</h4>
+        <ul>
+          <li>Hydrological Modeling and Precision Agriculture</li>
+          <li>Calibration of ArcSWAT parameters via Remote Sensing and Hydrochemical Analysis</li>
+        </ul>
+      </div>
+    </div>
 
-**Diploma – Machine Learning with R Studio**\
-Alison (2023)
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">2024</span>
+        <h3>Advanced Diploma in Data Science with R</h3>
+        <h4>Alison (Online)</h4>
+      </div>
+    </div>
 
-------------------------------------------------------------------------
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">2023</span>
+        <h3>Diploma in Machine Learning with R Studio</h3>
+        <h4>Alison (Online)</h4>
+      </div>
+    </div>
 
-# 📜 Certifications
+    <div class="timeline-item">
+      <div class="timeline-content">
+        <span class="timeline-date">2022</span>
+        <h3>Statistical Data Analysis Using R</h3>
+        <h4>RUFORUM (Regional Universities Forum)</h4>
+      </div>
+    </div>
+  </div>
 
--   **Statistical Data Analysis Using R** – RUFORUM (2022)\
--   **Machine Learning with R Studio** – Alison (2023)
+  <!-- PROFESSIONAL AFFILIATIONS -->
+  <h2 class="section-heading" data-aos="fade-up">Professional Affiliations</h2>
+  <div class="case-study-section" data-aos="fade-up">
+    <p><strong>Registered Graduate Engineer</strong> - Engineers Board of Kenya (ERB), Registration No. B16657 <span class="timeline-date">2019 – Present</span></p>
+  </div>
 
-------------------------------------------------------------------------
+  <!-- SKILLS -->
+  <h2 class="section-heading" data-aos="fade-up">Technical Skills</h2>
+  <div>
+    <div class="skill-category" data-aos="fade-up">
+      <h3>AI/ML & Data Science</h3>
+      <div class="skill-tags">
+        <span class="skill-tag primary">R</span>
+        <span class="skill-tag primary">Python</span>
+        <span class="skill-tag primary">tidymodels</span>
+        <span class="skill-tag primary">XGBoost</span>
+        <span class="skill-tag primary">Isolation Forest</span>
+        <span class="skill-tag primary">DALEX</span>
+        <span class="skill-tag primary">ggplot2</span>
+      </div>
+    </div>
+    <div class="skill-category" data-aos="fade-up">
+      <h3>Systems & Software Engineering</h3>
+      <div class="skill-tags">
+        <span class="skill-tag green">Golem/Shiny</span>
+        <span class="skill-tag green">Plumber REST API</span>
+        <span class="skill-tag green">React / TypeScript</span>
+        <span class="skill-tag green">PostgreSQL / PostGIS</span>
+        <span class="skill-tag green">Docker</span>
+        <span class="skill-tag green">JWT / RBAC</span>
+        <span class="skill-tag green">Git / GitHub Actions</span>
+      </div>
+    </div>
+    <div class="skill-category" data-aos="fade-up">
+      <h3>Hardware & IoT</h3>
+      <div class="skill-tags">
+        <span class="skill-tag orange">ESP32 / Arduino</span>
+        <span class="skill-tag orange">KiCad PCB Design</span>
+        <span class="skill-tag orange">Proteus 8</span>
+        <span class="skill-tag orange">PySpice / LTspice</span>
+        <span class="skill-tag orange">MicroPython</span>
+      </div>
+    </div>
+    <div class="skill-category" data-aos="fade-up">
+      <h3>Data, Reporting & Research</h3>
+      <div class="skill-tags">
+        <span class="skill-tag accent">Quarto / R Markdown</span>
+        <span class="skill-tag accent">LaTeX</span>
+        <span class="skill-tag accent">Excel / Spreadsheets</span>
+        <span class="skill-tag accent">Zotero</span>
+        <span class="skill-tag accent">Reproducible Pipelines</span>
+        <span class="skill-tag accent">Technical Report Writing</span>
+        <span class="skill-tag accent">Plotly / Leaflet</span>
+      </div>
+    </div>
+    <div class="skill-category" data-aos="fade-up">
+      <h3>Engineering & Domain</h3>
+      <div class="skill-tags">
+        <span class="skill-tag accent">ArcSWAT</span>
+        <span class="skill-tag accent">QGIS</span>
+        <span class="skill-tag accent">AutoCAD</span>
+        <span class="skill-tag accent">Sustainability Modeling</span>
+        <span class="skill-tag accent">Impact Analysis</span>
+        <span class="skill-tag accent">Experimental Design</span>
+        <span class="skill-tag accent">Systems Thinking</span>
+        <span class="skill-tag accent">Process Automation</span>
+      </div>
+    </div>
+  </div>
 
-# 🧪 Research Experience
+  <!-- REFERENCES -->
+  <h2 class="section-heading" data-aos="fade-up">References</h2>
+  <div class="referees-grid" data-aos="fade-up">
+    <div class="referee-card">
+      <h4>Eng. Prof. Duncan Mbuge</h4>
+      <div class="referee-title">Associate Dean, School of Engineering</div>
+      <div class="referee-org">University of Nairobi</div>
+      <a href="mailto:duncan.mbuge@uonbi.ac.ke"><i class="fas fa-envelope"></i> duncan.mbuge@uonbi.ac.ke</a>
+    </div>
+    <div class="referee-card">
+      <h4>Eng. Jonah Kebeney</h4>
+      <div class="referee-title">Project Manager, SIVAP</div>
+      <div class="referee-org">Ministry of Agriculture, Livestock and Fisheries</div>
+      <a href="mailto:kebeneyjonah21@gmail.com"><i class="fas fa-envelope"></i> kebeneyjonah21@gmail.com</a>
+    </div>
+    <div class="referee-card">
+      <h4>Eng. Raymond Bebora</h4>
+      <div class="referee-title">Regional Manager</div>
+      <div class="referee-org">Kupata Technologies</div>
+      <a href="mailto:rmwalauzi@gmail.com"><i class="fas fa-envelope"></i> rmwalauzi@gmail.com</a>
+    </div>
+  </div>
 
-### University of Nairobi – Graduate Research Assistant (2021–Present)
-
--   Designed and tested a solar cooker performance platform using Arduino, Shiny, and Proteus\
--   Conducted environmental, health, and economic impact modeling\
--   Authored technical papers and contributed to sustainability-focused policy briefs
-
-### KESRA – Researcher (2021)
-
--   Analyzed 15 years of tax reform and income distribution data using R\
--   Developed models to evaluate tax policy effectiveness\
--   Delivered findings to stakeholders at Kenya School of Revenue Administration
-
-------------------------------------------------------------------------
-
-# 💻 Key Projects
-
-### 🌞 Solar Cooker Testing Platform
-
-**Role**: Researcher & Developer \| 2021–Present\
-- Built a standards-compliant system for measuring solar cooking performance\
-- Developed a web-based Shiny dashboard with impact calculators\
-- Simulated the system in Proteus and deployed with Arduino hardware
-
-### ⚡ Churn Analysis for Energy Sector (BCG Internship)
-
-**Role**: Data Scientist \| 2024\
-- Created a churn prediction model with 90%+ AUC using `tidymodels` and `xgboost`\
-- Delivered actionable insights to reduce customer attrition\
-- Visualized feature importance and model outputs with `vip` and `ggstatsplot`
-
-### 🐄 Zero-Grazing Dairy Management Web App
-
-**Role**: Full Stack R Developer \| 2021–Present\
-- Designed a Shiny SaaS platform with modules for herd, milk, inventory, and labor\
-- Integrated SQLite, DT, and `shinymanager` for access control\
-- Led architecture and dashboard design, increasing client productivity
-
-------------------------------------------------------------------------
-
-# ⚙️ Technical Skills
-
--   **Programming**: R, Python (via reticulate), SQL, Arduino (C/C++)\
--   **Web Dev & UI**: Shiny, Quarto, HTML/CSS, JS\
--   **Modeling & Analytics**: tidymodels, caret, DALEX, ggplot2, gganimate\
--   **Simulation Tools**: Proteus, MATLAB\
--   **Data Handling**: RSQLite, MySQL, REST APIs, `httr`, `jsonlite`\
--   **Toolchains**: Git, RStudio, VS Code, Netlify
-
-------------------------------------------------------------------------
-
-# 🧘 Personal Interests
-
-Passionate about **community leadership**, **health and wellness**, and **youth empowerment**.\
-Active in swimming, Taekwondo, chess, and organizing church-based initiatives that nurture holistic youth development.
-
-------------------------------------------------------------------------
-
-# 📁 References
-
-Available upon request.
+</div>
+```

@@ -1,16 +1,20 @@
 ---
-title: "index"
-format: html
+title: "Blog"
+description: "Articles and tutorials on data science, machine learning, engineering, and sustainable systems."
+page-layout: full
+toc: false
+listing:
+  contents:
+    - "classification_vs_clustering.qmd"
+  type: default
+  sort: "date desc"
+  categories: true
+  fields: [title, author, date, description, categories]
 ---
 
-# Blog
-
-🔗 [Understanding Classification and Clustering Techniques →](classification_vs_clustering.qmd)
-
-This space will host more articles, tutorials, and reflections on:
-
--   Research methods and experimental design\
--   R and Python analytics workflows\
--   Sustainable systems, IoT, and open-source development
-
-Stay tuned for future posts!
+```{=html}
+<div class="page-hero">
+  <h1 data-aos="fade-up">Blog</h1>
+  <p data-aos="fade-up" data-aos-delay="100">Tutorials, deep dives, and lessons from building real systems.</p>
+</div>
+```

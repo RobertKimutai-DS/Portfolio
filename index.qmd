@@ -1,108 +1,177 @@
 ---
 title: "Robert Kimutai"
+description: "Engineer, Data Scientist, Researcher, and Developer building end-to-end systems that solve real problems."
 image: assets/images/profile_pic.jpg
-about:
-  template: jolla
-  links:
-    - icon: github
-      text: GitHub
-      href: https://github.com/RobertKimutai-DS
-    - icon: kaggle
-      text: Kaggle
-      href: https://www.kaggle.com/kimutairobert
-    - icon: linkedin
-      text: LinkedIn
-      href: https://www.linkedin.com/in/robert-kimutai-921608330/
-    - icon: facebook
-      text: Facebook
-      href: https://www.facebook.com/profile.php?id=61576319121772
-    - icon: envelope
-      text: Email
-      href: "mailto:kimutairobert72@gmail.com"
-includes:
-  before_body: |
-    <script src="assets/javascript/contact_form.js"></script>
+page-layout: full
+toc: false
 ---
 
-::: about-container
-# 👋 Welcome
-
-Hello! I’m **Robert Kimutai** — a **Researcher**, **Data Scientist**, and **Software Developer** passionate about building **sustainable, intelligent systems** that address real-world problems through **data**, **technology**, and **systems thinking**.
-
-------------------------------------------------------------------------
-
-## 🧬 About Me
-
-With an academic background in **Environmental and Biosystems Engineering** and a professional focus on **data science**, **software development**, and **impact modeling**, I specialize in delivering tools and insights that support **sustainability**, **efficiency**, and **decision-making**.
-
-I’ve designed and delivered projects ranging from a **zero-grazing dairy farm web app** to a **solar cooker testing platform** and **churn analysis models for the energy sector** — each one integrating innovation and measurable value.
-
-------------------------------------------------------------------------
-
-## 💡 Core Values
-
-<ul class="values-list">
-
-<li><strong>Integrity</strong>: Transparency and trust in every project and partnership.</li>
-
-<li><strong>Innovation</strong>: Embracing new ideas and unconventional solutions.</li>
-
-<li><strong>Sustainability</strong>: Designing for long-term environmental and societal impact.</li>
-
-</ul>
-
-------------------------------------------------------------------------
-
-## 🧠 Core Skills & Expertise
-
-<ul class="skills-list">
-
-<li><strong>Data Science</strong>: EDA, ML modeling, feature engineering, and visual storytelling.</li>
-
-<li><strong>Software Development</strong>: R, Shiny apps, modular dashboards, RESTful APIs, Python (reticulate).</li>
-
-<li><strong>Environmental Analytics</strong>: Sensor-based data systems, sustainability metrics, impact modeling.</li>
-
-<li><strong>Project Management</strong>: Systems design, Agile, end-user-focused delivery.</li>
-
-<li><strong>Technical Stack</strong>: R, Python, SQL, Arduino, QGIS, MATLAB, Proteus, Git.</li>
-
-</ul>
-
-------------------------------------------------------------------------
-
-## 🎯 Why Work with Me?
-
--   **Multidisciplinary Approach**: Bridging research, software, and sustainability.
--   **Proven Results**:
-    -   Built the **Zero-Grazing Dairy Management Web App**
-    -   Led the **Solar Cooker Performance Platform** for academic and NGO use
-    -   Delivered churn modeling insights during my **BCG internship**
--   **Client-Centered Design**: Solutions grounded in real needs, data, and usability.
-
-------------------------------------------------------------------------
-
-## 🤝 Let’s Collaborate
-
-I’m open to **research collaborations**, **consulting projects**, or **custom software development** engagements. Whether you’re a government agency, nonprofit, or business, I’m ready to help you translate ideas into systems that **work and scale**.
+```{=html}
+<div class="hero-section">
+  <div id="particles-js"></div>
+  <h1>Robert Kimutai</h1>
+  <div class="typed-tagline"><span id="typed-tagline"></span></div>
+  <p class="hero-bio">I design and build end-to-end systems at the intersection of engineering, data science, and sustainable development - from a national health insurance platform architected for 54M citizens to IoT sensor networks that cost $100 instead of $10,000.</p>
+  <div class="hero-stats">
+    <div class="stat" data-aos="fade-up" data-aos-delay="0">
+      <span class="stat-number" data-target="3" data-suffix="">0</span>
+      <span class="stat-label">Full-Stack Systems</span>
+    </div>
+    <div class="stat" data-aos="fade-up" data-aos-delay="100">
+      <span class="stat-number" data-target="28" data-suffix="">0</span>
+      <span class="stat-label">API Endpoints</span>
+    </div>
+    <div class="stat" data-aos="fade-up" data-aos-delay="200">
+      <span class="stat-number" data-target="54" data-suffix="M">0M</span>
+      <span class="stat-label">Citizens Targeted</span>
+    </div>
+    <div class="stat" data-aos="fade-up" data-aos-delay="300">
+      <span class="stat-number" data-target="100" data-prefix="$">$0</span>
+      <span class="stat-label">IoT Unit Cost</span>
+    </div>
+  </div>
+  <div class="hero-cta">
+    <a href="portfolio/index.html" class="btn-primary-custom">View My Work</a>
+    <a href="resume/index.html" class="btn-outline-custom">Resume</a>
+  </div>
+</div>
+```
 
 ```{=html}
-<form id="contactForm" onsubmit="return validateForm()">
-  <div class="form-group">
-    <label for="name"><i class="fas fa-user"></i> Name:</label>
-    <input type="text" id="name" name="name" placeholder="Enter your name" required class="form-control">
+<div class="content-section">
+  <h2 class="section-heading" data-aos="fade-up">Featured Projects</h2>
+  <p class="section-subheading" data-aos="fade-up" data-aos-delay="100">End-to-end systems I've designed and built.</p>
+  <div class="projects-grid">
+    <div class="project-card tilt-card" data-aos="fade-up" data-aos-delay="0">
+      <div class="project-card-icon" style="font-size: 2.5rem;">&#x1F3E5;</div>
+      <div class="project-card-body">
+        <div class="metric">Designed for 54M Citizens &bull; 28 Endpoints <span class="private-badge">Private Repo</span></div>
+        <h3><a href="portfolio/sha-system.html">SHA Integrated Health System</a></h3>
+        <p>Full-stack health insurance platform for Kenya's Social Health Authority - claims adjudication, ML fraud detection, spatial analytics, and a bilingual React PWA.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">R</span>
+          <span class="tech-tag">Plumber API</span>
+          <span class="tech-tag">Golem/Shiny</span>
+          <span class="tech-tag green">React</span>
+          <span class="tech-tag green">PostgreSQL</span>
+          <span class="tech-tag green">PostGIS</span>
+          <span class="tech-tag orange">Docker</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card tilt-card" data-aos="fade-up" data-aos-delay="150">
+      <div class="project-card-icon" style="font-size: 2.5rem;">&#x1F3DB;</div>
+      <div class="project-card-body">
+        <div class="metric">11 Modules &bull; 30 Wards <span class="private-badge">Private Repo</span></div>
+        <h3><a href="portfolio/smartlicensync.html">SmartLicenSync - Revenue Optimizer</a></h3>
+        <p>Business permit and license management system for Kericho County Government - digitizing registration, payments, compliance, and spatial mapping.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">R</span>
+          <span class="tech-tag">Golem/Shiny</span>
+          <span class="tech-tag green">PostgreSQL</span>
+          <span class="tech-tag green">PostGIS</span>
+          <span class="tech-tag green">M-Pesa</span>
+          <span class="tech-tag orange">Docker</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card tilt-card" data-aos="fade-up" data-aos-delay="300">
+      <div class="project-card-icon" style="font-size: 2.5rem;">&#9728;&#65039;</div>
+      <div class="project-card-body">
+        <div class="metric">Sub-$100 &bull; ASAE S580.1 <span class="private-badge">Private Repo</span></div>
+        <h3><a href="portfolio/solar-cooker.html">Solar Cooker IoT Testing Platform</a></h3>
+        <p>MSc thesis - open-source IoT data acquisition unit replacing $10K+ lab equipment. ESP32 sensors, custom PCB, Python simulation pipeline, R Shiny dashboard.</p>
+        <div class="tech-tags">
+          <span class="tech-tag">ESP32</span>
+          <span class="tech-tag">Python</span>
+          <span class="tech-tag green">R Shiny</span>
+          <span class="tech-tag green">Plumber API</span>
+          <span class="tech-tag orange">KiCad</span>
+          <span class="tech-tag orange">PySpice</span>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="form-group">
-    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
-    <input type="email" id="email" name="email" placeholder="Enter your email" required class="form-control">
-  </div>
-  <div class="form-group">
-    <label for="message"><i class="fas fa-comment"></i> Message:</label>
-    <textarea id="message" name="message" rows="4" placeholder="Your message" required class="form-control"></textarea>
-  </div>
-  <div>
-    <input type="submit" value="Contact Me" class="btn btn-primary">
-  </div>
-</form>
+</div>
 ```
-:::
+
+```{=html}
+<div class="skills-section" data-aos="fade-up">
+  <h2 class="section-heading">Technical Skills</h2>
+  <div class="skill-category" data-aos="fade-up" data-aos-delay="0">
+    <h3>AI/ML &amp; Data Science</h3>
+    <div class="skill-tags">
+      <span class="skill-tag primary">R</span>
+      <span class="skill-tag primary">Python</span>
+      <span class="skill-tag primary">tidymodels</span>
+      <span class="skill-tag primary">XGBoost</span>
+      <span class="skill-tag primary">Isolation Forest</span>
+      <span class="skill-tag primary">DALEX</span>
+      <span class="skill-tag primary">ggplot2</span>
+      <span class="skill-tag primary">Feature Engineering</span>
+    </div>
+  </div>
+  <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+    <h3>Systems &amp; Software Engineering</h3>
+    <div class="skill-tags">
+      <span class="skill-tag green">Golem/Shiny</span>
+      <span class="skill-tag green">Plumber REST API</span>
+      <span class="skill-tag green">React / TypeScript</span>
+      <span class="skill-tag green">PostgreSQL / PostGIS</span>
+      <span class="skill-tag green">Docker</span>
+      <span class="skill-tag green">JWT / RBAC</span>
+      <span class="skill-tag green">Git / GitHub Actions</span>
+      <span class="skill-tag green">HTML / CSS / JS</span>
+    </div>
+  </div>
+  <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+    <h3>Hardware &amp; IoT</h3>
+    <div class="skill-tags">
+      <span class="skill-tag orange">ESP32 / Arduino</span>
+      <span class="skill-tag orange">KiCad PCB Design</span>
+      <span class="skill-tag orange">Proteus 8</span>
+      <span class="skill-tag orange">PySpice / LTspice</span>
+      <span class="skill-tag orange">Sensor Systems</span>
+      <span class="skill-tag orange">MicroPython</span>
+    </div>
+  </div>
+  <div class="skill-category" data-aos="fade-up" data-aos-delay="300">
+    <h3>Data, Reporting &amp; Research</h3>
+    <div class="skill-tags">
+      <span class="skill-tag accent">Quarto / R Markdown</span>
+      <span class="skill-tag accent">LaTeX</span>
+      <span class="skill-tag accent">Excel</span>
+      <span class="skill-tag accent">Zotero</span>
+      <span class="skill-tag accent">Reproducible Pipelines</span>
+      <span class="skill-tag accent">Technical Report Writing</span>
+      <span class="skill-tag accent">Plotly / Leaflet</span>
+    </div>
+  </div>
+  <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+    <h3>Domain &amp; Engineering</h3>
+    <div class="skill-tags">
+      <span class="skill-tag accent">Sustainability Modeling</span>
+      <span class="skill-tag accent">Hydrological Modeling (ArcSWAT)</span>
+      <span class="skill-tag accent">QGIS</span>
+      <span class="skill-tag accent">AutoCAD</span>
+      <span class="skill-tag accent">Impact Analysis</span>
+      <span class="skill-tag accent">Experimental Design</span>
+      <span class="skill-tag accent">Systems Thinking</span>
+      <span class="skill-tag accent">Process Automation</span>
+    </div>
+  </div>
+</div>
+```
+
+```{=html}
+<div class="contact-section" data-aos="fade-up">
+  <h2>Let's Work Together</h2>
+  <p>I'm available for engineering roles, research collaborations, data science consulting, and custom software development.</p>
+  <div class="contact-links">
+    <a href="mailto:robert.kimutai.ds@gmail.com" class="contact-link email">Email Me</a>
+    <a href="https://www.linkedin.com/in/robert-kimutai-921608330/" class="contact-link linkedin">Connect on LinkedIn</a>
+  </div>
+</div>
+```

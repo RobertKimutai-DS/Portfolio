@@ -1,174 +1,44 @@
-/* General Body Styling */
-body {
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #222;
-  line-height: 1.6;
-  background-color: #f9f9f9;
-  padding: 2rem;
-  margin: 0;
-}
+/* Resume Stylesheet - inherits from main styles.css via _quarto.yml */
 
-/* Headings */
-h1, h2, h3 {
-  color: #0056b3;
-  margin-bottom: 10px;
-}
-
-h1 {
-  border-bottom: 2px solid #0056b3;
-  padding-bottom: 10px;
-}
-
-h3 {
-  color: #333;
-}
-
-/* Paragraphs and Links */
-p {
-  margin-bottom: 15px;
-}
-
-a {
-  color: #0056b3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-/* List Styling */
-ul {
-  margin-bottom: 15px;
-  padding-left: 20px;
-}
-
-/* Resume Sections */
-.resume-section {
-  background-color: #ffffff;
-  padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 2rem;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 40px; /* Add more space from the left */
-}
-
-/* Section Headings */
-.resume-section hr {
-  border-top: 1px solid #ddd;
-  margin: 20px 0;
-}
-
-.resume-section h2 {
-  margin-top: 25px;
-  font-size: 1.8rem;
-}
-
-/* Contact Information */
-.contact-info {
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-/* Accessibility Focus State */
-a:focus, button:focus {
-  outline: 2px solid #0056b3;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-  .resume-section {
-    padding: 1.5rem;
-  }
-
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  h2 {
-    font-size: 1.6rem;
-  }
-}
-
-@media (max-width: 576px) {
-  .resume-section h2 {
-    font-size: 1.4rem;
-  }
-
-  .resume-section {
-    padding: 1rem;
-  }
-}
-
-/* Paged.js Specific Styles */
-
-/* Set the page size and margins */
+/* Print-specific overrides */
 @page {
   size: A4;
-  margin: 1in;
+  margin: 0.75in;
 }
 
-/* Control page breaks */
 h1, h2 {
   page-break-before: avoid;
   page-break-after: avoid;
 }
 
-h1 {
-  page-break-before: always;
-}
-
-/* Avoid breaking paragraphs and lists across pages */
 p, ul, ol {
   orphans: 3;
   widows: 3;
   page-break-inside: avoid;
 }
 
-/* Running Header and Footer */
-@page {
-  @top-center {
-    content: element(header);
-  }
-  @bottom-center {
-    content: counter(page) " of " counter(pages);
-  }
-}
-
-header {
-  position: running(header);
-  text-align: center;
-  font-size: 12px;
-  color: #888;
-}
-
-/* Header Content */
-.header-content {
-  display: none;
-}
-
 @media print {
   body {
     background-color: #fff;
     padding: 0;
+    font-size: 11pt;
   }
-  
-  .resume-section {
+
+  .case-study-header {
+    background: #1e293b !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .case-study-section {
     box-shadow: none;
-    padding-left: 0;
-    padding-right: 0;
+    border: 1px solid #ddd;
+    break-inside: avoid;
   }
 
-  /* Show header content */
-  .header-content {
-    display: block;
-  }
-
-  /* Remove margins for print */
-  body {
-    margin: 0;
+  .skill-tag {
+    border: 1px solid #ccc !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
   }
 }

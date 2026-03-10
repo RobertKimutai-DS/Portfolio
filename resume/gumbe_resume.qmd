@@ -1,0 +1,121 @@
+---
+title: "Robert Kimutai"
+subtitle: "Curriculum Vitae"
+author: "MSc Candidate – Environmental and Biosystems Engineering"
+format:
+  pdf:
+    documentclass: article
+    fontsize: 11pt
+    mainfont: "Arial"
+    geometry: margin=1in
+    colorlinks: true
+    linkcolor: blue
+    keep-tex: true
+    toc: false
+    number-sections: false
+    latex-engine: xelatex
+    pdf-engine: xelatex
+    header-includes: |
+      \usepackage{enumitem}
+      \setlist[itemize]{noitemsep, topsep=0pt}
+---
+
+# Contact Information
+
+**Robert Kimutai**\
+Nairobi, Kenya\
+📧 robert.kimutai\@email.com \| 📞 +254 723 493 122\
+🔗 [GitHub](https://github.com/robertkimutai) \| 🔗 [LinkedIn](https://linkedin.com/in/robertkimutai)
+
+------------------------------------------------------------------------
+
+## Profile Summary
+
+Resourceful and impact-driven graduate engineer with strengths in **irrigation**, **renewable energy**, **environmental systems**, and **embedded monitoring technologies**. Skilled in integrating field-level engineering with scientific data workflows using **R**, **Quarto**, and **Shiny**. Experienced in managing solar water infrastructure projects, designing sensor systems, and creating reproducible research outputs for development impact.
+
+------------------------------------------------------------------------
+
+## Academic Background
+
+**MSc – Environmental and Biosystems Engineering**\
+*University of Nairobi* \| **2022 – Present**\
+**Thesis:** *Development of a Low-Cost Solar Cooker Performance Evaluation System Integrated with Impact Analysis Using a Shiny Web Application*\
+Focus: Irrigation Systems, Renewable Energy, Water Resources Engineering, Environmental Monitoring, Scientific Computing
+
+**BSc – Agricultural Engineering**\
+*JKUAT* \| **2013 – 2018**\
+**Thesis:** *Automated Irrigation Scheduling System for Smallholder Farmers*
+
+------------------------------------------------------------------------
+
+## Work Experience
+
+### Graduate Researcher
+
+*University of Nairobi*\
+**2022 – Present**\
+- Designed a sensor-integrated solar cooker evaluation system using ASAE S580.1 protocol.\
+- Built a real-time performance dashboard with **Shiny** and **R**.\
+- Conducted environmental and social impact analysis of solar cooking technologies.\
+- Produced automated research reports using **Quarto** and **GitHub**.
+
+### Clerk of Works – Water & Solar Infrastructure
+
+*Smallholder Irrigation Value Addition Project (SIVAP), Kenya*\
+**Feb 2022 – Mar 2023**\
+- Supervised construction of earth dams, solarized boreholes, and fencing works.\
+- Ensured contractor compliance with technical specs and timelines.\
+- Oversaw installation of solar pumping systems, tanks, and water distribution.\
+- Maintained progress reports and verified milestones for stakeholders.
+
+### Sales Engineer – Irrigation & Solar Technologies
+
+*Kupata Technologies Ltd, Nairobi*\
+**May 2019 – Dec 2022**\
+- Designed and sold solar water pumping and drip irrigation systems.\
+- Performed technical site assessments and client training.\
+- Developed proposals, layouts, and BOQs for smallholder and institutional clients.
+
+------------------------------------------------------------------------
+
+## Core Competencies
+
+-   ✅ Sustainable Infrastructure: Earth dams, solar water supply, irrigation systems\
+-   ✅ Scientific Computing: R, tidyverse, ggplot2, Shiny, Quarto, Markdown\
+-   ✅ Embedded Monitoring Systems: Arduino, BPW34, DS18B20, SD card logging\
+-   ✅ Reproducible Research: Quarto reports, Zotero integration, GitHub workflow\
+-   ✅ Field Supervision: Clerk of works, contractor coordination, inspection & reporting\
+-   ✅ Socio-technical Impact Assessment: Community-focused evaluation tools
+
+------------------------------------------------------------------------
+
+## Certifications
+
+-   **Advanced Diploma in Data Science with R** – Alison, **2024**\
+-   **Diploma in Machine Learning with R Studio** – Alison, **2023**\
+-   **Statistical Data Analysis Using R** – RUFORUM, **2022**
+
+------------------------------------------------------------------------
+
+## Tools & Technologies
+
+| Category           | Tools & Platforms                                    |
+|---------------------|---------------------------------------------------|
+| Programming        | R, tidyverse, Shiny, Markdown                        |
+| Reporting          | Quarto, Zotero, Git/GitHub                           |
+| Hardware           | Arduino, BPW34, DS18B20, RTC, SD Module              |
+| Engineering Tools  | AutoCAD (basic), QGIS, Proteus 8, LTspice            |
+| Project Management | Clerk of works logs, BOQ validation, field reporting |
+
+------------------------------------------------------------------------
+
+## Professional Affiliations
+
+-   ✅ Registered Graduate Engineer – **Engineers Board of Kenya (EBK)**\
+-   ✅ Graduate Member – **Institution of Engineers of Kenya (IEK)**
+
+------------------------------------------------------------------------
+
+## 📁 References
+
+Available upon request.

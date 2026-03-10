@@ -1,0 +1,507 @@
+// ===================================
+// CUSTOM SCSS - Professional Resume
+// Advanced styling with SCSS features
+// ===================================
+
+// ---- Color Palette ----
+$colors: (
+  primary: #667eea,
+  secondary: #764ba2,
+  accent: #4c51bf,
+  success: #48bb78,
+  warning: #ed8936,
+  danger: #f56565,
+  dark: #1a202c,
+  gray-900: #1a202c,
+  gray-800: #2d3748,
+  gray-700: #4a5568,
+  gray-600: #718096,
+  gray-500: #a0aec0,
+  gray-400: #cbd5e0,
+  gray-300: #e2e8f0,
+  gray-200: #edf2f7,
+  gray-100: #f7fafc,
+  white: #ffffff
+);
+
+// ---- Typography ----
+$font-families: (
+  main: ('Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif),
+  mono: ('Fira Code', 'Courier New', monospace)
+);
+
+$font-sizes: (
+  xs: 0.75rem,
+  sm: 0.875rem,
+  base: 1rem,
+  lg: 1.125rem,
+  xl: 1.25rem,
+  2xl: 1.5rem,
+  3xl: 1.875rem,
+  4xl: 2.25rem
+);
+
+$font-weights: (
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700
+);
+
+// ---- Spacing ----
+$spacing: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  3: 0.75rem,
+  4: 1rem,
+  5: 1.25rem,
+  6: 1.5rem,
+  8: 2rem,
+  10: 2.5rem,
+  12: 3rem,
+  16: 4rem
+);
+
+// ---- Breakpoints ----
+$breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  2xl: 1536px,
+  print: print
+);
+
+// ---- Shadows ----
+$shadows: (
+  sm: 0 1px 3px rgba(0, 0, 0, 0.12),
+  md: 0 4px 6px rgba(0, 0, 0, 0.1),
+  lg: 0 10px 15px rgba(0, 0, 0, 0.1),
+  xl: 0 20px 25px rgba(0, 0, 0, 0.1),
+  inner: inset 0 2px 4px rgba(0, 0, 0, 0.06),
+  none: none
+);
+
+// ---- Mixins ----
+@mixin transition($properties: all, $duration: 0.3s, $timing: ease) {
+  transition: $properties $duration $timing;
+}
+
+@mixin gradient($direction: 135deg, $from: map-get($colors, primary), $to: map-get($colors, secondary)) {
+  background: linear-gradient($direction, $from 0%, $to 100%);
+}
+
+@mixin card($padding: map-get($spacing, 4), $radius: 8px) {
+  background: map-get($colors, white);
+  padding: $padding;
+  border-radius: $radius;
+  box-shadow: map-get($shadows, sm);
+}
+
+@mixin hover-lift() {
+  @include transition(transform, 0.2s);
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: map-get($shadows, md);
+  }
+}
+
+@mixin text-gradient($from: map-get($colors, primary), $to: map-get($colors, secondary)) {
+  background: linear-gradient(135deg, $from, $to);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+// Responsive mixin
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);
+    @if $breakpoint == print {
+      @media print {
+        @content;
+      }
+    } @else {
+      @media (min-width: $value) {
+        @content;
+      }
+    }
+  }
+}
+
+@mixin respond-below($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $value: map-get($breakpoints, $breakpoint);
+    @media (max-width: $value) {
+      @content;
+    }
+  }
+}
+
+// ---- Utility Functions ----
+@function color($key) {
+  @return map-get($colors, $key);
+}
+
+@function space($key) {
+  @return map-get($spacing, $key);
+}
+
+@function font-size($key) {
+  @return map-get($font-sizes, $key);
+}
+
+// ---- Base Styles ----
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: map-get($font-families, main);
+  color: color(gray-900);
+  line-height: 1.6;
+  background: color(white);
+}
+
+// ---- Typography Styles ----
+h1, h2, h3, h4, h5, h6 {
+  font-weight: map-get($font-weights, semibold);
+  line-height: 1.25;
+  color: color(gray-900);
+}
+
+@for $i from 1 through 6 {
+  h#{$i} {
+    margin-bottom: space(2);
+  }
+}
+
+h1 {
+  font-size: font-size(3xl);
+  font-weight: map-get($font-weights, bold);
+  
+  @include respond-below(md) {
+    font-size: font-size(2xl);
+  }
+}
+
+h2 {
+  font-size: font-size(xl);
+  color: color(primary);
+  border-bottom: 2px solid color(primary);
+  padding-bottom: space(2);
+  margin-top: space(6);
+  margin-bottom: space(4);
+}
+
+// ---- Component Styles ----
+.header-section {
+  text-align: center;
+  padding-bottom: space(6);
+  margin-bottom: space(6);
+  border-bottom: 3px solid color(primary);
+  
+  h1 {
+    @include text-gradient();
+    margin-bottom: space(2);
+  }
+  
+  .contact-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: space(4);
+    font-size: font-size(sm);
+    
+    @include respond-below(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    i {
+      color: color(primary);
+      margin-right: space(1);
+    }
+    
+    a {
+      color: color(primary);
+      text-decoration: none;
+      @include transition();
+      
+      &:hover {
+        color: color(secondary);
+      }
+    }
+  }
+}
+
+.summary-section {
+  @include card();
+  background: color(gray-100);
+  margin-bottom: space(6);
+  
+  h2 {
+    border: none;
+    margin-top: 0;
+  }
+}
+
+.skills-container {
+  display: grid;
+  gap: space(3);
+  margin-bottom: space(6);
+  
+  strong {
+    color: color(primary);
+    font-weight: map-get($font-weights, semibold);
+  }
+}
+
+.project-item {
+  margin-bottom: space(6);
+  padding-left: space(6);
+  border-left: 3px solid color(primary);
+  position: relative;
+  @include transition();
+  
+  &:hover {
+    padding-left: space(8);
+    
+    &::before {
+      transform: scale(1.2);
+    }
+  }
+  
+  &::before {
+    content: '';
+    position: absolute;
+    left: -6px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: color(primary);
+    @include transition();
+  }
+  
+  strong {
+    font-size: font-size(lg);
+  }
+  
+  em {
+    color: color(gray-700);
+    font-style: normal;
+  }
+}
+
+.experience-item {
+  @include card();
+  background: color(gray-100);
+  margin-bottom: space(6);
+  @include hover-lift();
+  
+  strong {
+    font-size: font-size(lg);
+    display: block;
+    margin-bottom: space(1);
+  }
+}
+
+.education-item {
+  padding-left: space(4);
+  margin-bottom: space(6);
+  border-left: 2px solid color(gray-300);
+  
+  strong {
+    font-size: font-size(lg);
+  }
+  
+  em {
+    display: block;
+    color: color(gray-600);
+    margin: space(1) 0;
+  }
+}
+
+.achievements-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: space(4);
+  margin-bottom: space(6);
+  
+  li {
+    @include card(space(3), 6px);
+    list-style: none;
+    border-left: 3px solid color(success);
+    
+    strong {
+      color: color(primary);
+    }
+  }
+}
+
+// ---- Print Styles ----
+@include respond-to(print) {
+  body {
+    font-size: 10pt;
+    line-height: 1.4;
+    color: black !important;
+  }
+  
+  .header-section {
+    h1 {
+      color: black !important;
+      -webkit-text-fill-color: black !important;
+    }
+  }
+  
+  h2 {
+    color: black !important;
+    border-bottom-color: #333 !important;
+    page-break-after: avoid;
+  }
+  
+  .project-item,
+  .experience-item,
+  .education-item {
+    page-break-inside: avoid;
+  }
+  
+  .no-print {
+    display: none !important;
+  }
+  
+  a {
+    color: black !important;
+    text-decoration: none !important;
+    
+    &[href]:after {
+      content: " (" attr(href) ")";
+      font-size: 0.8em;
+    }
+    
+    &[href^="#"]:after,
+    &[href^="javascript:"]:after {
+      content: "";
+    }
+  }
+  
+  @page {
+    margin: 2cm;
+  }
+}
+
+// ---- Dark Mode Support ----
+[data-theme="dark"] {
+  background: color(gray-900);
+  color: color(gray-100);
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: color(white);
+  }
+  
+  .summary-section,
+  .experience-item {
+    background: color(gray-800);
+    color: color(gray-100);
+  }
+  
+  .project-item,
+  .education-item {
+    border-left-color: color(accent);
+  }
+  
+  a {
+    color: lighten(color(primary), 20%);
+    
+    &:hover {
+      color: lighten(color(secondary), 20%);
+    }
+  }
+}
+
+// ---- Animation Classes ----
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease forwards;
+}
+
+.animate-slideInLeft {
+  animation: slideInLeft 0.6s ease forwards;
+}
+
+// ---- Utility Classes ----
+@each $key, $value in $spacing {
+  .mt-#{$key} { margin-top: $value; }
+  .mb-#{$key} { margin-bottom: $value; }
+  .ml-#{$key} { margin-left: $value; }
+  .mr-#{$key} { margin-right: $value; }
+  .mx-#{$key} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+  .my-#{$key} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+  .pt-#{$key} { padding-top: $value; }
+  .pb-#{$key} { padding-bottom: $value; }
+  .pl-#{$key} { padding-left: $value; }
+  .pr-#{$key} { padding-right: $value; }
+  .px-#{$key} {
+    padding-left: $value;
+    padding-right: $value;
+  }
+  .py-#{$key} {
+    padding-top: $value;
+    padding-bottom: $value;
+  }
+}
+
+@each $key, $value in $colors {
+  .text-#{$key} { color: $value; }
+  .bg-#{$key} { background-color: $value; }
+}
+
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.text-right { text-align: right; }
+.font-bold { font-weight: map-get($font-weights, bold); }
+.font-semibold { font-weight: map-get($font-weights, semibold); }
+.font-medium { font-weight: map-get($font-weights, medium); }
+.hidden { display: none; }
+.block { display: block; }
+.inline-block { display: inline-block; }
+.flex { display: flex; }
+.grid { display: grid; }

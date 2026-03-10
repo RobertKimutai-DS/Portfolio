@@ -1,0 +1,205 @@
+---
+title: ""
+format:
+  typst:
+    margin:
+      top: 0.4in
+      bottom: 0.4in
+      left: 0.5in
+      right: 0.5in
+    font-size: 9pt
+    mainfont: "Segoe UI"
+---
+
+```{=typst}
+#set text(size: 9pt)
+#set par(justify: true, leading: 0.52em)
+#set list(indent: 0.3em, body-indent: 0.4em, spacing: 3.5pt)
+
+// Header
+#align(center)[
+  #text(size: 20pt, weight: "bold")[Robert Kimutai] \
+  #text(size: 9.5pt, fill: rgb("#666"))[Engineer · Data Scientist · Researcher · Developer] \
+  #v(2pt)
+  #text(size: 8pt)[
+    #link("mailto:robert.kimutai.ds@gmail.com")[robert.kimutai.ds\@gmail.com] ·
+    +254 723 493122 ·
+    #link("https://www.linkedin.com/in/robert-kimutai-921608330/")[LinkedIn] ·
+    #link("https://github.com/RobertKimutai-DS")[GitHub] ·
+    #link("https://robertkimutai-ds.github.io/Portfolio")[Portfolio] ·
+    Nairobi, Kenya
+  ]
+]
+
+#v(3pt)
+#line(length: 100%, stroke: 0.5pt + rgb("#E84C3D"))
+
+// Helpers
+#let section(title) = {
+  v(7pt)
+  text(size: 11pt, weight: "bold", fill: rgb("#E84C3D"))[#title]
+  v(-3pt)
+  line(length: 100%, stroke: 0.3pt + rgb("#ccc"))
+  v(3pt)
+}
+
+#let entry(title, subtitle, date, location: none, details: none) = {
+  grid(
+    columns: (1fr, auto),
+    align: (left, right),
+    text(weight: "bold", size: 9pt)[#title],
+    text(fill: rgb("#E84C3D"), size: 8pt)[#date],
+  )
+  if subtitle != none {
+    grid(
+      columns: (1fr, auto),
+      align: (left, right),
+      text(style: "italic", size: 8.5pt)[#subtitle],
+      if location != none { text(style: "italic", fill: rgb("#E84C3D"), size: 8pt)[#location] },
+    )
+  }
+  if details != none {
+    v(1pt)
+    details
+  }
+  v(5pt)
+}
+
+// ===================== CONTENT =====================
+
+#section[Professional Summary]
+
+#text(size: 8.5pt)[Software engineer with a technical background in environmental, water, and renewable energy systems. Designs and builds complete platforms end-to-end: a national health insurance system architected for 54M citizens (28 API endpoints), county government revenue tools, and IoT sensor networks. Combines systems thinking with automation at every layer, from multi-package R backends with CI/CD pipelines to 9-stage hardware simulation workflows. Works primarily in R, Python, and TypeScript with AI-augmented development as standard practice.]
+
+#section[Work Experience]
+
+#entry(
+  [Freelance Researcher / Data Scientist / Developer],
+  [Self-employed],
+  [Jan 2025 -- Present],
+  location: [Nairobi],
+  details: list(
+    [Architected SHA Health System - 4-package R platform (Plumber API, Golem/Shiny, React PWA) with Isolation Forest fraud detection, PostGIS spatial analytics, and 28 JWT endpoints targeting 54M citizens],
+    [Built SmartLicenSync - 11-module Golem/Shiny revenue platform for Kericho County with PostgreSQL/PostGIS, M-Pesa integration, and RBAC audit logging],
+    [Developing ESP32 IoT sensor node with custom KiCad PCB and Python/PySpice simulation pipeline for ASAE S580.1 solar cooker testing],
+    [Producing reproducible reports and dashboards using Quarto, R Markdown, and Git-based workflows],
+  )
+)
+
+#entry(
+  [Clerk of Works - Water & Solar Infrastructure],
+  [SIVAP, Ministry of Agriculture],
+  [Feb 2022 -- Nov 2024],
+  location: [Various Counties],
+  details: list(
+    [Supervised earth dams, solarized boreholes, solar pumping systems, and water distribution networks],
+    [Ensured contractor compliance with BOQs, technical specs, and project timelines],
+    [Compiled field data and produced progress reports using Excel, AutoCAD, and standardized templates],
+  )
+)
+
+#entry(
+  [Design Engineer],
+  [Kupate Technologies],
+  [May 2019 -- Dec 2021],
+  location: [Nairobi],
+  details: list(
+    [Designed solar water pumping and drip irrigation systems; produced AutoCAD layouts and BOQs],
+    [Performed site assessments (soil, water, solar resource) and delivered client training materials],
+  )
+)
+
+#entry(
+  [Bakery Manager],
+  [Mini Bakeries Limited],
+  [Feb 2015 -- Mar 2016],
+  details: list(
+    [Managed production planning, quality control, and inventory; tracked sales data to reduce waste],
+  )
+)
+
+#section[Education]
+
+#entry(
+  [MSc Environmental and Biosystems Engineering],
+  [University of Nairobi],
+  [Sept 2023 -- Present],
+  location: [Nairobi],
+  details: text(size: 8.5pt, style: "italic")[Thesis: A Low-Cost, IoT-Based Framework for Linking Standardized Performance to the Multidimensional Impacts of Solar Cookers]
+)
+
+#entry(
+  [BSc Agricultural Engineering (Double Degree Program)],
+  [JKUAT],
+  [2009 -- 2018],
+  location: [Juja],
+  details: text(size: 8.5pt, style: "italic")[Thesis: Development of an Automated Irrigation System Based on Crop Water Stress Index]
+)
+
+#section[Traineeships & Certifications]
+
+#entry(
+  [Erasmus Mobility Traineeship - Hydrological Modeling & Precision Agriculture],
+  [Çukurova University, Turkey],
+  [Oct -- Dec 2025],
+  details: list(
+    [Calibration of ArcSWAT parameters via Remote Sensing and Hydrochemical Analysis],
+    [Hands-on training in precision agriculture techniques and watershed delineation using GIS tools],
+  )
+)
+
+#entry(
+  [Advanced Diploma in Data Science with R],
+  [Alison (Online)],
+  [2024],
+  details: list(
+    [Data preparation and wrangling, predictive modeling, data visualization with real-world datasets],
+  )
+)
+
+#entry(
+  [Diploma in Machine Learning with R Studio],
+  [Alison (Online)],
+  [2023],
+  details: list(
+    [Supervised and unsupervised learning, decision trees, clustering, model validation using caret],
+  )
+)
+
+#entry(
+  [Statistical Data Analysis Using R],
+  [RUFORUM (Regional Universities Forum)],
+  [2022],
+  details: list(
+    [Descriptive/inferential statistics, regression analysis, hypothesis testing in agricultural research],
+  )
+)
+
+#section[Technical Skills]
+
+#v(2pt)
+*AI/ML & Data Science:* #text(size: 8.5pt)[R, Python, tidymodels, XGBoost, Isolation Forest, DALEX, ggplot2, Feature Engineering, Time Series Analysis] \
+*Systems & Software Engineering:* #text(size: 8.5pt)[Golem/Shiny, Plumber REST API, React/TypeScript, PostgreSQL/PostGIS, Docker Compose, JWT/RBAC, Git/GitHub Actions, nginx] \
+*Hardware & IoT:* #text(size: 8.5pt)[ESP32/Arduino, KiCad PCB Design, Proteus 8, PySpice/LTspice, MicroPython, Sensor Systems (BPW34, PT100, DHT22)] \
+*Data, Reporting & Research:* #text(size: 8.5pt)[Quarto/R Markdown, LaTeX, Excel, Zotero, Reproducible Pipelines, Technical Report Writing, Plotly/Leaflet] \
+*Engineering & Domain:* #text(size: 8.5pt)[ArcSWAT, QGIS, AutoCAD, Systems Thinking, Process Automation, Sustainability Modeling, Impact Analysis, Experimental Design] \
+*Project Management:* #text(size: 8.5pt)[Site inspection & supervision, BOQ validation, Milestone reporting, Stakeholder documentation, Field logistics]
+
+#section[Professional Affiliations]
+
+#grid(
+  columns: (1fr, auto),
+  align: (left, right),
+  text(size: 9pt)[*Registered Graduate Engineer* - Engineers Board of Kenya (ERB), Reg. No. B16657],
+  text(fill: rgb("#E84C3D"), size: 8pt)[2019 -- Present],
+)
+
+#section[References]
+
+#v(2pt)
+#text(size: 8.5pt)[
+*Eng. Prof. Duncan Mbuge* - Assoc. Dean, School of Engineering, University of Nairobi - #link("mailto:duncan.mbuge@uonbi.ac.ke")[duncan.mbuge\@uonbi.ac.ke] \
+*Eng. Jonah Kebeney* - Project Manager, SIVAP, Ministry of Agriculture - #link("mailto:kebeneyjonah21@gmail.com")[kebeneyjonah21\@gmail.com] \
+*Eng. Raymond Bebora* - Regional Manager, Kupata Technologies - #link("mailto:rmwalauzi@gmail.com")[rmwalauzi\@gmail.com]
+]
+```

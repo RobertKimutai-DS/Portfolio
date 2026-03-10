@@ -1,39 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://robertkimutai.netlify.app/resume/index.html</loc>
-    <lastmod>2025-05-09T15:32:54.273Z</lastmod>
+    <loc>https://robertkimutai.netlify.app/portfolio/smartlicensync.html</loc>
+    <lastmod>2026-03-10T00:17:36.084Z</lastmod>
   </url>
   <url>
     <loc>https://robertkimutai.netlify.app/portfolio/posts/welcome/index.html</loc>
-    <lastmod>2025-05-09T15:32:43.525Z</lastmod>
+    <lastmod>2024-09-18T16:12:35.108Z</lastmod>
   </url>
   <url>
     <loc>https://robertkimutai.netlify.app/portfolio/index.html</loc>
-    <lastmod>2025-05-09T15:32:41.414Z</lastmod>
+    <lastmod>2026-03-10T00:16:31.725Z</lastmod>
   </url>
   <url>
-    <loc>https://robertkimutai.netlify.app/portfolio/churn-analysis.html</loc>
-    <lastmod>2025-05-09T15:32:39.038Z</lastmod>
+    <loc>https://robertkimutai.netlify.app/jobpost.html</loc>
+    <lastmod>2026-03-09T22:10:54.964Z</lastmod>
+  </url>
+  <url>
+    <loc>https://robertkimutai.netlify.app/CLAUDE.html</loc>
+    <lastmod>2026-03-09T16:57:26.177Z</lastmod>
+  </url>
+  <url>
+    <loc>https://robertkimutai.netlify.app/blog/classification_vs_clustering.html</loc>
+    <lastmod>2026-03-09T19:39:59.932Z</lastmod>
   </url>
   <url>
     <loc>https://robertkimutai.netlify.app/blog/index.html</loc>
-    <lastmod>2025-05-09T15:32:36.617Z</lastmod>
+    <lastmod>2026-03-09T22:23:26.806Z</lastmod>
   </url>
   <url>
     <loc>https://robertkimutai.netlify.app/index.html</loc>
-    <lastmod>2025-05-09T15:32:37.819Z</lastmod>
+    <lastmod>2026-03-10T00:16:19.812Z</lastmod>
   </url>
   <url>
-    <loc>https://robertkimutai.netlify.app/portfolio/dairy-app.html</loc>
-    <lastmod>2025-05-09T15:32:40.245Z</lastmod>
+    <loc>https://robertkimutai.netlify.app/mpya/resume.html</loc>
+    <lastmod>2025-09-03T16:40:35.445Z</lastmod>
   </url>
   <url>
     <loc>https://robertkimutai.netlify.app/portfolio/posts/post-with-code/index.html</loc>
-    <lastmod>2025-05-09T15:32:42.468Z</lastmod>
+    <lastmod>2024-09-18T16:12:35.132Z</lastmod>
+  </url>
+  <url>
+    <loc>https://robertkimutai.netlify.app/portfolio/sha-system.html</loc>
+    <lastmod>2026-03-10T00:16:49.973Z</lastmod>
   </url>
   <url>
     <loc>https://robertkimutai.netlify.app/portfolio/solar-cooker.html</loc>
-    <lastmod>2025-05-09T15:32:44.617Z</lastmod>
+    <lastmod>2026-03-10T00:01:36.570Z</lastmod>
+  </url>
+  <url>
+    <loc>https://robertkimutai.netlify.app/resume/index.html</loc>
+    <lastmod>2026-03-10T00:34:20.299Z</lastmod>
   </url>
 </urlset>

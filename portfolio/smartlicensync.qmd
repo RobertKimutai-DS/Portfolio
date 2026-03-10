@@ -1,0 +1,101 @@
+---
+title: "SmartLicenSync - Revenue Optimizer"
+description: "Business permit and license management system for Kericho County Government - digitizing registration, payments, compliance, and spatial mapping."
+format: html
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="case-study-header" data-aos="fade-up">
+  <span class="role-badge">Full Stack Developer &bull; Systems Designer</span>
+  <h1>SmartLicenSync</h1>
+  <p>A comprehensive business permit and license management platform built for the Kericho County Government - digitizing own-source revenue collection across 30 wards and 6 sub-counties.</p>
+  <span class="private-badge" style="margin-top: 1rem; font-size: 0.85rem;">&#128274; Private Repository</span>
+</div>
+```
+
+::: {.case-study-section data-aos="fade-up"}
+## Problem
+
+County governments in Kenya face persistent challenges with own-source revenue:
+
+- **Manual permit processing** - paper-based systems prone to errors, fraud, and revenue leakage
+- **No compliance tracking** - no way to monitor which businesses have valid permits or are overdue
+- **No spatial visibility** - county officials cannot map business distribution or identify underserved wards
+- **Fragmented payments** - M-Pesa, bank transfers, and cash payments tracked in separate systems
+- **No audit trail** - impossible to trace who approved what, when, and why
+
+Kericho County needed a unified digital platform to replace manual workflows and optimize revenue collection.
+:::
+
+::: {.case-study-section data-aos="fade-up"}
+## Solution
+
+I designed and built a **deployment-ready Golem/Shiny application** with **11 integrated modules**:
+
+**Core Modules:**
+
+- **Executive Dashboard** - KPI boxes for total revenue, active businesses, compliance rate, growth rate
+- **Business Registration** - Full portal with Kenya-specific validations (KRA PIN, phone format, Kericho County GPS bounds)
+- **Payment Integration** - M-Pesa, bank transfers, cash, cheque, and online payments with receipt validation
+- **Compliance Engine** - Monitors compliant, overdue, expiring, and violated businesses by ward and status
+- **Business Mapping** - GIS/geospatial view of business locations via PostGIS + Leaflet
+- **Reports & Analytics** - Revenue YTD, monthly averages, growth rate, compliance rate
+
+**Platform Architecture:**
+
+- **Golem framework** - production-grade Shiny app structure with modular architecture
+- **bs4Dash** - Bootstrap 4 admin dashboard UI with sidebar navigation
+- **PostgreSQL 15 with PostGIS** - spatially-enabled database, containerized via Docker Compose
+- **Connection pooling** via DBI + pool, with migration system, health checks, and backup utilities
+- **Full audit logging** - INSERT/UPDATE/DELETE with before/after JSONB snapshots, IP, and user agent tracking
+- **Role-based access control** - system, administrative, financial, analytical, and data entry roles
+:::
+
+::: {.case-study-section data-aos="fade-up"}
+## Domain-Specific Design
+
+::: {.result-card}
+**Built for Kericho County**: 30 wards across 6 sub-counties (Kipkelion East/West, Ainamoi, Bureti, Sigowet/Soin, Kericho), with 24 Kenya-specific business categories including duka/kiosk, matatu operations, boda boda, M-Pesa agent, SACCO, tea processing, and dairy/milk collection.
+:::
+
+- Auto-generated registration numbers: `KER{YEAR}{SEQUENCE}`
+- Fee structures from KES 1,000 (small duka) to KES 20,000 (large manufacturing)
+- M-Pesa receipt validation and callback integration
+- KRA PIN regex validation (`^[A-Z][0-9]{9}[A-Z]$`)
+- Kenyan phone number format (`^254[0-9]{9}$`)
+- GPS coordinate bounds locked to Kericho County
+:::
+
+::: {.case-study-section data-aos="fade-up"}
+## Tech Stack
+
+```{=html}
+<div class="skill-tags" style="margin-top: 0.5rem;">
+  <span class="skill-tag primary">R</span>
+  <span class="skill-tag primary">Golem</span>
+  <span class="skill-tag primary">Shiny</span>
+  <span class="skill-tag primary">bs4Dash</span>
+  <span class="skill-tag green">PostgreSQL 15</span>
+  <span class="skill-tag green">PostGIS</span>
+  <span class="skill-tag green">DBI / pool</span>
+  <span class="skill-tag green">Leaflet</span>
+  <span class="skill-tag green">M-Pesa API</span>
+  <span class="skill-tag orange">Docker Compose</span>
+  <span class="skill-tag orange">testthat</span>
+  <span class="skill-tag orange">reactable / DT</span>
+</div>
+```
+:::
+
+```{=html}
+<div class="contact-section" data-aos="fade-up">
+  <h2>Need a government or revenue management platform?</h2>
+  <p>I build systems designed for real institutions - with domain-specific validations, audit trails, and robust infrastructure.</p>
+  <div class="contact-links">
+    <a href="mailto:robert.kimutai.ds@gmail.com" class="contact-link email">Get in Touch</a>
+    <a href="index.html" class="contact-link linkedin">Back to Portfolio</a>
+  </div>
+</div>
+```

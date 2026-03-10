@@ -1,0 +1,110 @@
+---
+title: "SHA Integrated Health System"
+description: "Full-stack health insurance platform for Kenya's Social Health Authority - claims adjudication, ML fraud detection, spatial analytics, and bilingual React PWA."
+format: html
+page-layout: full
+toc: false
+---
+
+```{=html}
+<div class="case-study-header" data-aos="fade-up">
+  <span class="role-badge">Full Stack Engineer &bull; Systems Architect</span>
+  <h1>SHA Integrated Health System</h1>
+  <p>A health insurance platform designed and architected for Kenya's Social Health Authority (SHA) - targeting 54 million citizens across 47 counties and 13,000+ health facilities.</p>
+  <span class="private-badge" style="margin-top: 1rem; font-size: 0.85rem;">&#128274; Private Repository</span>
+</div>
+```
+
+::: {.case-study-section data-aos="fade-up"}
+## Problem
+
+When Kenya transitioned from the National Health Insurance Fund (NHIF) to the Social Health Authority under the Social Health Insurance Act 2023, the new agency inherited critical systemic failures:
+
+- **Broken member registration** - fragmented records across multiple legacy systems
+- **Slow claims processing** - 60–90 day payment cycles crippling healthcare providers
+- **Massive fraud losses** - estimated at KES 8–10 billion per year
+- **No spatial intelligence** - no way to identify coverage gaps or optimize facility distribution across 47 counties
+
+SHA needed a system that could handle three distinct insurance funds (SHIF, PHC, ECCIF), process claims in real time, and detect fraud before payments are made.
+:::
+
+::: {.case-study-section data-aos="fade-up"}
+## Architecture
+
+I designed a 4-package architecture with clean separation of concerns:
+
+**1. `shaSystem` - R Business Logic Package**
+
+- Pure R package - the only component that touches the database
+- Member registration with state machine lifecycle management
+- **6-gate claims adjudication engine**: schema validation, member eligibility, facility verification, benefit package lookup (ICD-10 code + facility level + fund type), amount ceiling enforcement, and duplicate detection
+- **Isolation Forest ML fraud detection** with feedback loop - confirmed fraud upweighted 3x, false positives downweighted 0.5x
+- Spatial intelligence via sf/PostGIS: nearest facility search, Voronoi catchment computation, county coverage scoring
+
+**2. `shaAPI` - Plumber REST API**
+
+- **28 JWT-authenticated endpoints** covering auth, members, claims, anomaly detection, spatial queries, and USSD access
+- Zero business logic - every route delegates to `shaSystem`
+- Idempotency keys, rate limiting, httpOnly cookie authentication
+- USSD endpoints for feature phone access (critical for rural Kenya)
+
+**3. `shaApp` - Golem/Shiny Dashboard**
+
+- **9 role-gated modules**: overview KPIs, registration, claims queue, payments, anomaly case management, analytics (4 leaflet maps + plotly charts), admin, interoperability, and ops
+- bslib v5 with SHA brand theming
+- 8 RBAC roles with granular permissions
+
+**4. `shaMobile` - React 18 TypeScript PWA**
+
+- Tailwind CSS, offline-ready with claim drafts
+- Bilingual (English/Swahili)
+- Digital health card with QR code
+- 44px touch targets for mobile-first design
+:::
+
+::: {.case-study-section data-aos="fade-up"}
+## Key Features
+
+::: {.result-card}
+**Auto-approval pipeline**: Outpatient SHIF/PHC claims under KES 5,000 with anomaly score below 0.65 are automatically approved - reducing processing time from weeks to seconds.
+:::
+
+- **ML Fraud Detection**: Isolation Forest model scoring claim amount z-scores, facility volume ratios (Poisson-expected), settlement ratios, diagnosis rarity, and member frequency. Batch scoring processes up to 1,000 claims per run.
+- **Spatial Intelligence**: PostGIS-backed nearest facility search, population-within-distance analysis, Voronoi catchments for 47 counties using rKenyaCensus polygons.
+- **Kenya-specific design**: M-Pesa payment integration, KMHFR facility registry seeding, ICD-10/ICD-11 mapping weighted to Kenya's disease burden, compliance with Kenya's Data Protection Act 2019.
+- **Argon2id password hashing** via sodium package for secure authentication.
+:::
+
+::: {.case-study-section data-aos="fade-up"}
+## Tech Stack
+
+```{=html}
+<div class="skill-tags" style="margin-top: 0.5rem;">
+  <span class="skill-tag primary">R</span>
+  <span class="skill-tag primary">Plumber</span>
+  <span class="skill-tag primary">Golem/Shiny</span>
+  <span class="skill-tag primary">isotree</span>
+  <span class="skill-tag primary">sf / PostGIS</span>
+  <span class="skill-tag primary">leaflet</span>
+  <span class="skill-tag green">React 18</span>
+  <span class="skill-tag green">TypeScript</span>
+  <span class="skill-tag green">Tailwind CSS</span>
+  <span class="skill-tag green">PostgreSQL</span>
+  <span class="skill-tag green">JWT / RBAC</span>
+  <span class="skill-tag orange">Docker Compose</span>
+  <span class="skill-tag orange">nginx</span>
+  <span class="skill-tag orange">M-Pesa API</span>
+</div>
+```
+:::
+
+```{=html}
+<div class="contact-section" data-aos="fade-up">
+  <h2>Building a health system or claims platform?</h2>
+  <p>I design end-to-end systems that handle national-scale complexity with clean architecture and real-world constraints.</p>
+  <div class="contact-links">
+    <a href="mailto:robert.kimutai.ds@gmail.com" class="contact-link email">Get in Touch</a>
+    <a href="index.html" class="contact-link linkedin">Back to Portfolio</a>
+  </div>
+</div>
+```
