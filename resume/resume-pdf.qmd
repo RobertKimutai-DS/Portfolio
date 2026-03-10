@@ -26,7 +26,7 @@ format:
     +254 723 493122 ·
     #link("https://www.linkedin.com/in/robert-kimutai-921608330/")[LinkedIn] ·
     #link("https://github.com/RobertKimutai-DS")[GitHub] ·
-    #link("https://robertkimutai-ds.github.io/Portfolio")[Portfolio] ·
+    #link("https://robertkimutai-ds.github.io/Portfolio")[Portfolio Website] ·
     Nairobi, Kenya
   ]
 ]
