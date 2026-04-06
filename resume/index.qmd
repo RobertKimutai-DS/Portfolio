@@ -95,12 +95,13 @@ format:
     <div class="timeline-item">
       <div class="timeline-content">
         <span class="timeline-date">Jan 2025 – Present</span>
-        <h3>Freelance Researcher / Data Scientist / Developer</h3>
-        <h4>Self-employed, Nairobi</h4>
+        <h3>Data Science Intern</h3>
+        <h4>@iLabAfrica Research & Innovation Centre, Strathmore University</h4>
         <ul>
+          <li>Working under Dr. John Olukuru (Head, Data Science and Analytics) on applied data science research in fraud detection, revenue analytics, and AI-driven governance solutions</li>
+          <li>Participated in the Innovate254 Hackathon (Aug 2025, Homa Bay County) - a 48-hour civic tech challenge organized by @iLabAfrica, Konza Technopolis, and Tom Mboya University, co-creating AI and cybersecurity solutions for digital public service across Kenya's 47 counties</li>
+          <li>Built SmartLicenSync - Golem/Shiny revenue optimization platform for Kericho County Government with 11 modules, PostgreSQL/PostGIS backend, M-Pesa payment integration, and automated audit logging; originated from the Innovate254 hackathon</li>
           <li>Designed the SHA Integrated Health System - 4-package R architecture (Plumber REST API, Golem/Shiny dashboard, React PWA) with Isolation Forest fraud detection, PostGIS spatial analytics, and 28 JWT-authenticated endpoints targeting 54M citizens</li>
-          <li>Built SmartLicenSync - Golem/Shiny revenue optimization platform for Kericho County Government with 11 modules, PostgreSQL/PostGIS backend, M-Pesa payment integration, and automated audit logging</li>
-          <li>Continuing MSc research: developing ESP32-based IoT sensor node with custom KiCad PCB, Python/PySpice simulation pipeline, and R Plumber API for ASAE S580.1-compliant solar cooker testing</li>
           <li>Producing reproducible research reports and dashboards using Quarto, R Markdown, and GitHub-based version control</li>
           <li>Building all systems using AI-augmented workflows (Claude Code + Quarto + R) as standard daily practice</li>
         </ul>
@@ -242,15 +243,43 @@ format:
   <h2 class="section-heading" data-aos="fade-up">Technical Skills</h2>
   <div>
     <div class="skill-category" data-aos="fade-up">
-      <h3>AI/ML & Data Science</h3>
+      <h3>Data Analysis & Wrangling</h3>
       <div class="skill-tags">
         <span class="skill-tag primary">R</span>
         <span class="skill-tag primary">Python</span>
+        <span class="skill-tag primary">tidyverse</span>
+        <span class="skill-tag primary">dplyr</span>
+        <span class="skill-tag primary">data.table</span>
+        <span class="skill-tag primary">pandas</span>
+        <span class="skill-tag primary">SQL</span>
+        <span class="skill-tag primary">Excel</span>
+      </div>
+    </div>
+    <div class="skill-category" data-aos="fade-up">
+      <h3>Machine Learning & Statistical Modeling</h3>
+      <div class="skill-tags">
         <span class="skill-tag primary">tidymodels</span>
         <span class="skill-tag primary">XGBoost</span>
         <span class="skill-tag primary">Isolation Forest</span>
         <span class="skill-tag primary">DALEX</span>
+        <span class="skill-tag primary">caret</span>
+        <span class="skill-tag primary">Feature Engineering</span>
+        <span class="skill-tag primary">Time Series Analysis</span>
+        <span class="skill-tag primary">Statistical Inference</span>
+      </div>
+    </div>
+    <div class="skill-category" data-aos="fade-up">
+      <h3>Data Visualization & Dashboards</h3>
+      <div class="skill-tags">
+        <span class="skill-tag primary">Tableau</span>
+        <span class="skill-tag primary">Power BI</span>
         <span class="skill-tag primary">ggplot2</span>
+        <span class="skill-tag primary">Plotly</span>
+        <span class="skill-tag primary">Leaflet</span>
+        <span class="skill-tag primary">Shiny Dashboards</span>
+        <span class="skill-tag primary">flexdashboard</span>
+        <span class="skill-tag primary">gt / reactable</span>
+        <span class="skill-tag primary">bs4Dash</span>
       </div>
     </div>
     <div class="skill-category" data-aos="fade-up">
@@ -276,15 +305,13 @@ format:
       </div>
     </div>
     <div class="skill-category" data-aos="fade-up">
-      <h3>Data, Reporting & Research</h3>
+      <h3>Reporting & Reproducible Research</h3>
       <div class="skill-tags">
         <span class="skill-tag accent">Quarto / R Markdown</span>
         <span class="skill-tag accent">LaTeX</span>
-        <span class="skill-tag accent">Excel / Spreadsheets</span>
         <span class="skill-tag accent">Zotero</span>
         <span class="skill-tag accent">Reproducible Pipelines</span>
         <span class="skill-tag accent">Technical Report Writing</span>
-        <span class="skill-tag accent">Plotly / Leaflet</span>
       </div>
     </div>
     <div class="skill-category" data-aos="fade-up">
@@ -310,6 +337,12 @@ format:
       <div class="referee-title">Associate Dean, School of Engineering</div>
       <div class="referee-org">University of Nairobi</div>
       <a href="mailto:duncan.mbuge@uonbi.ac.ke"><i class="fas fa-envelope"></i> duncan.mbuge@uonbi.ac.ke</a>
+    </div>
+    <div class="referee-card">
+      <h4>Dr. John Olukuru, PhD</h4>
+      <div class="referee-title">Head, Data Science and Analytics</div>
+      <div class="referee-org">@iLabAfrica, Strathmore University</div>
+      <a href="mailto:jolukuru@strathmore.edu"><i class="fas fa-envelope"></i> jolukuru@strathmore.edu</a>
     </div>
     <div class="referee-card">
       <h4>Eng. Jonah Kebeney</h4>

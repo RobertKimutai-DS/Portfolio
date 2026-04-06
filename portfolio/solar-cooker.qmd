@@ -30,6 +30,63 @@ The ASAE S580.1 standard defines how to measure cooking power, but no affordable
 
 I designed a complete testing system spanning hardware, simulation, and software:
 
+```{mermaid}
+%%| fig-width: 9
+%%| fig-alt: "Solar cooker IoT testing platform architecture"
+flowchart LR
+    subgraph Hardware["Sensor Node"]
+        ESP["ESP32<br/>MicroPython"]
+        BPW["BPW34<br/>Photodiode"]
+        PT["PT100 RTD<br/>MAX31865"]
+        DHT["DHT22<br/>Temp/Humidity"]
+        WIND["Anemometer"]
+        AMP["MCP6022<br/>Op-Amp TIA"]
+        PCB["Custom PCB<br/>KiCad"]
+    end
+
+    subgraph Simulation["Design Validation Pipeline"]
+        direction TB
+        OPT["SciPy<br/>Component Optimization"]
+        SPICE["PySpice / Ngspice<br/>Circuit Simulation"]
+        KICAD["KiCad Export<br/>PCB Layout"]
+        DRC["DRC / Gerber<br/>Fabrication"]
+        OPT --> SPICE --> KICAD --> DRC
+    end
+
+    subgraph Comms["Telemetry"]
+        GSM["SIM808<br/>GSM Module"]
+        SD["MicroSD<br/>Local Storage"]
+    end
+
+    subgraph Software["Software Stack"]
+        API["R Plumber API<br/>Data Ingestion"]
+        DB[("SQLite")]
+        DASH["Golem/Shiny<br/>Dashboard"]
+        ASAE["ASAE S580.1<br/>Standardization"]
+        IMPACT["Sustainability<br/>Impact Calculator"]
+    end
+
+    BPW --> AMP --> ESP
+    PT --> ESP
+    DHT --> ESP
+    WIND --> ESP
+    ESP --> PCB
+    ESP --> GSM
+    ESP --> SD
+    GSM -->|"HTTP POST"| API
+    API --> DB
+    DB --> DASH
+    DASH --- ASAE
+    DASH --- IMPACT
+    DRC -.->|"Validates"| PCB
+
+    style Hardware fill:#1a1a2e,stroke:#f39c12,color:#e0e0e0
+    style Simulation fill:#1a1a2e,stroke:#2ecc71,color:#e0e0e0
+    style Comms fill:#1a1a2e,stroke:#3498db,color:#e0e0e0
+    style Software fill:#1a1a2e,stroke:#E84C3D,color:#e0e0e0
+```
+
+
 **Hardware - ESP32-Based Sensor Node**
 
 - ESP32 microcontroller with MicroPython firmware

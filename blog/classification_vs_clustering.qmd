@@ -583,7 +583,7 @@ table(True_Label = iris$Species, Cluster = iris_clustered$cluster) %>%
 
 ## Conclusion
 
-This exploration showcases how various machine learning models differ in their **assumptions**, **complexity**, and **ideal use cases**. There's no single *"best"* model — the right choice depends on your **goals**, **data**, and **constraints**.
+This exploration showcases how various machine learning models differ in their **assumptions**, **complexity**, and **ideal use cases**. There's no single *"best"* model - the right choice depends on your **goals**, **data**, and **constraints**.
 
 Here's a practical guide:
 
@@ -591,7 +591,7 @@ Here's a practical guide:
 -   **Use Random Forests** for higher accuracy, especially when variance is a concern.
 -   **Use Support Vector Machines (SVMs)** when decision boundaries are complex or nonlinear.
 -   **Use Naive Bayes** when you need a fast, simple, and often surprisingly effective baseline.
--   **Use K-Nearest Neighbors (KNN)** for intuitive distance-based predictions — but be cautious with scaling and noisy features.
+-   **Use K-Nearest Neighbors (KNN)** for intuitive distance-based predictions - but be cautious with scaling and noisy features.
 -   **Use K-Means or Hierarchical Clustering** when your data is unlabeled, but you suspect structure or groupings. K-Means is fast and intuitive, but assumes spherical clusters while Hierarchical Clustering gives a dendrogram you can interpret visually, useful for small to medium datasets.
 
 ## Summary Table

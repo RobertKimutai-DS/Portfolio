@@ -16,52 +16,70 @@ format:
 #set par(justify: true, leading: 0.52em)
 #set list(indent: 0.3em, body-indent: 0.4em, spacing: 3.5pt)
 
-// Header
-#align(center)[
-  #text(size: 20pt, weight: "bold")[Robert Kimutai] \
-  #text(size: 9.5pt, fill: rgb("#666"))[Engineer · Data Scientist · Researcher · Developer] \
-  #v(2pt)
-  #text(size: 8pt)[
-    #link("mailto:robert.kimutai.ds@gmail.com")[robert.kimutai.ds\@gmail.com] ·
-    +254 723 493122 ·
-    #link("https://www.linkedin.com/in/robert-kimutai-921608330/")[LinkedIn] ·
-    #link("https://github.com/RobertKimutai-DS")[GitHub] ·
-    #link("https://robertkimutai-ds.github.io/Portfolio/")[Portfolio Website] ·
-    Nairobi, Kenya
+// Color scheme
+#let accent = rgb("#3D7EA6")
+#let header-bg = rgb("#2C3E50")
+#let header-light = rgb("#34495E")
+#let text-muted = rgb("#666")
+
+// Header - dark blue banner
+#block(
+  width: 100%,
+  fill: header-bg,
+  inset: (x: 20pt, top: 18pt, bottom: 14pt),
+  radius: 0pt,
+)[
+  #align(center)[
+    #text(size: 22pt, weight: "bold", fill: white)[Robert Kimutai] \
+    #v(2pt)
+    #text(size: 9.5pt, fill: rgb("#CBD5E1"))[Engineer · Data Scientist · Researcher · Developer] \
+    #v(4pt)
+    #text(size: 8pt, fill: rgb("#94A3B8"))[
+      #link("mailto:robert.kimutai.ds@gmail.com")[robert.kimutai.ds\@gmail.com] ·
+      +254 723 493122 ·
+      #link("https://www.linkedin.com/in/robert-kimutai-921608330/")[LinkedIn] ·
+      #link("https://github.com/RobertKimutai-DS")[GitHub] ·
+      #link("https://robertkimutai-ds.github.io/Portfolio/")[Portfolio Website] ·
+      Nairobi, Kenya
+    ]
   ]
 ]
 
 #v(3pt)
-#line(length: 100%, stroke: 0.5pt + rgb("#E84C3D"))
 
 // Helpers
 #let section(title) = {
-  v(7pt)
-  text(size: 11pt, weight: "bold", fill: rgb("#E84C3D"))[#title]
+  v(8pt)
+  text(size: 11pt, weight: "bold", tracking: 0.5pt)[#upper(title)]
   v(-3pt)
-  line(length: 100%, stroke: 0.3pt + rgb("#ccc"))
+  line(length: 100%, stroke: 0.5pt + rgb("#ccc"))
   v(3pt)
 }
 
 #let entry(title, subtitle, date, location: none, details: none) = {
-  grid(
-    columns: (1fr, auto),
-    align: (left, right),
-    text(weight: "bold", size: 9pt)[#title],
-    text(fill: rgb("#E84C3D"), size: 8pt)[#date],
-  )
-  if subtitle != none {
-    grid(
+  block(
+    inset: (left: 8pt),
+    stroke: (left: 2.5pt + accent),
+  )[
+    #grid(
       columns: (1fr, auto),
       align: (left, right),
-      text(style: "italic", size: 8.5pt)[#subtitle],
-      if location != none { text(style: "italic", fill: rgb("#E84C3D"), size: 8pt)[#location] },
+      text(weight: "bold", size: 9pt)[#title],
+      text(fill: accent, size: 8pt)[#date],
     )
-  }
-  if details != none {
-    v(1pt)
-    details
-  }
+    #if subtitle != none {
+      grid(
+        columns: (1fr, auto),
+        align: (left, right),
+        text(style: "italic", size: 8.5pt)[#subtitle],
+        if location != none { text(style: "italic", fill: accent, size: 8pt)[#location] },
+      )
+    }
+    #if details != none {
+      v(1pt)
+      details
+    }
+  ]
   v(5pt)
 }
 
@@ -74,14 +92,15 @@ format:
 #section[Work Experience]
 
 #entry(
-  [Freelance Researcher / Data Scientist / Developer],
-  [Self-employed],
+  [Data Science Intern],
+  [\@iLabAfrica Research & Innovation Centre, Strathmore University],
   [Jan 2025 -- Present],
   location: [Nairobi],
   details: list(
+    [Working under Dr. John Olukuru (Head, Data Science and Analytics) on applied research in fraud detection, revenue analytics, and AI-driven governance solutions],
+    [Participated in Innovate254 Hackathon (Aug 2025, Homa Bay County) - 48-hour civic tech challenge organized by \@iLabAfrica, Konza Technopolis, and Tom Mboya University for AI/cybersecurity solutions across Kenya's 47 counties],
+    [Built SmartLicenSync - 11-module Golem/Shiny revenue platform for Kericho County with PostgreSQL/PostGIS, M-Pesa integration, and RBAC audit logging; originated from the Innovate254 hackathon],
     [Architected SHA Health System - 4-package R platform (Plumber API, Golem/Shiny, React PWA) with Isolation Forest fraud detection, PostGIS spatial analytics, and 28 JWT endpoints targeting 54M citizens],
-    [Built SmartLicenSync - 11-module Golem/Shiny revenue platform for Kericho County with PostgreSQL/PostGIS, M-Pesa integration, and RBAC audit logging],
-    [Developing ESP32 IoT sensor node with custom KiCad PCB and Python/PySpice simulation pipeline for ASAE S580.1 solar cooker testing],
     [Producing reproducible reports and dashboards using Quarto, R Markdown, and Git-based workflows],
   )
 )
@@ -178,12 +197,29 @@ format:
 #section[Technical Skills]
 
 #v(2pt)
-*AI/ML & Data Science:* #text(size: 8.5pt)[R, Python, tidymodels, XGBoost, Isolation Forest, DALEX, ggplot2, Feature Engineering, Time Series Analysis] \
-*Systems & Software Engineering:* #text(size: 8.5pt)[Golem/Shiny, Plumber REST API, React/TypeScript, PostgreSQL/PostGIS, Docker Compose, JWT/RBAC, Git/GitHub Actions, nginx] \
-*Hardware & IoT:* #text(size: 8.5pt)[ESP32/Arduino, KiCad PCB Design, Proteus 8, PySpice/LTspice, MicroPython, Sensor Systems (BPW34, PT100, DHT22)] \
-*Data, Reporting & Research:* #text(size: 8.5pt)[Quarto/R Markdown, LaTeX, Excel, Zotero, Reproducible Pipelines, Technical Report Writing, Plotly/Leaflet] \
-*Engineering & Domain:* #text(size: 8.5pt)[ArcSWAT, QGIS, AutoCAD, Systems Thinking, Process Automation, Sustainability Modeling, Impact Analysis, Experimental Design] \
-*Project Management:* #text(size: 8.5pt)[Site inspection & supervision, BOQ validation, Milestone reporting, Stakeholder documentation, Field logistics]
+#let skill-row(label, items, bg: white) = {
+  block(
+    width: 100%,
+    fill: bg,
+    inset: (x: 8pt, y: 4pt),
+  )[
+    #grid(
+      columns: (130pt, 1fr),
+      gutter: 8pt,
+      text(weight: "bold", size: 8.5pt)[#label],
+      text(size: 8.5pt)[#items],
+    )
+  ]
+}
+
+#skill-row([Data Analysis & Wrangling], [R, Python, tidyverse, dplyr, data.table, pandas, SQL, Excel], bg: rgb("#F1F5F9"))
+#skill-row([ML & Statistical Modeling], [tidymodels, XGBoost, Isolation Forest, DALEX, caret, Feature Engineering, Time Series Analysis, Statistical Inference])
+#skill-row([Visualization & Dashboards], [Tableau, Power BI, ggplot2, Plotly, Leaflet, Shiny Dashboards, flexdashboard, gt/reactable, bs4Dash], bg: rgb("#F1F5F9"))
+#skill-row([Systems & Software], [Golem/Shiny, Plumber REST API, React/TypeScript, PostgreSQL/PostGIS, Docker Compose, JWT/RBAC, Git/GitHub Actions, nginx])
+#skill-row([Hardware & IoT], [ESP32/Arduino, KiCad PCB Design, Proteus 8, PySpice/LTspice, MicroPython, Sensor Systems (BPW34, PT100, DHT22)], bg: rgb("#F1F5F9"))
+#skill-row([Reporting & Research], [Quarto/R Markdown, LaTeX, Zotero, Reproducible Pipelines, Technical Report Writing])
+#skill-row([Engineering & Domain], [ArcSWAT, QGIS, AutoCAD, Systems Thinking, Process Automation, Sustainability Modeling, Impact Analysis, Experimental Design], bg: rgb("#F1F5F9"))
+#skill-row([Project Management], [Site inspection & supervision, BOQ validation, Milestone reporting, Stakeholder documentation, Field logistics])
 
 #section[Professional Affiliations]
 
@@ -191,13 +227,14 @@ format:
   columns: (1fr, auto),
   align: (left, right),
   text(size: 9pt)[*Registered Graduate Engineer* - Engineers Board of Kenya (ERB), Reg. No. B16657],
-  text(fill: rgb("#E84C3D"), size: 8pt)[2019 -- Present],
+  text(fill: accent, size: 8pt)[2019 -- Present],
 )
 
 #section[References]
 
 #v(2pt)
-#text(size: 8.5pt)[
+#text(size: 7.5pt)[
+*Dr. John Olukuru, PhD* - Head, Data Science and Analytics, \@iLabAfrica, Strathmore University - #link("mailto:jolukuru@strathmore.edu")[jolukuru\@strathmore.edu] \
 *Eng. Prof. Duncan Mbuge* - Assoc. Dean, School of Engineering, University of Nairobi - #link("mailto:duncan.mbuge@uonbi.ac.ke")[duncan.mbuge\@uonbi.ac.ke] \
 *Eng. Jonah Kebeney* - Project Manager, SIVAP, Ministry of Agriculture - #link("mailto:kebeneyjonah21@gmail.com")[kebeneyjonah21\@gmail.com] \
 *Eng. Raymond Bebora* - Regional Manager, Kupata Technologies - #link("mailto:rmwalauzi@gmail.com")[rmwalauzi\@gmail.com]

@@ -38,6 +38,16 @@ toc: false
 ```
 
 ```{=html}
+<div class="content-section" style="text-align: center; padding-bottom: 0;">
+  <img src="assets/images/profile_pic.jpg" class="about-photo-sm" alt="Robert Kimutai" data-aos="fade-up" />
+  <p class="hero-bio" data-aos="fade-up" data-aos-delay="100" style="margin: 0 auto;">
+    Engineer turned data scientist, building production systems for public health and local government in Kenya.
+    <a href="about.html" style="color: #E84C3D; font-weight: 600;">Read my story &rarr;</a>
+  </p>
+</div>
+```
+
+```{=html}
 <div class="content-section">
   <h2 class="section-heading" data-aos="fade-up">Featured Projects</h2>
   <p class="section-subheading" data-aos="fade-up" data-aos-delay="100">End-to-end systems I've designed and built.</p>

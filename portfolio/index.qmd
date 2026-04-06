@@ -29,7 +29,7 @@ toc: false
       <div class="project-card-body">
         <div class="metric">Designed for 54M Citizens &bull; 28 Endpoints <span class="private-badge">Private Repo</span></div>
         <h3><a href="sha-system.html">SHA Integrated Health System</a></h3>
-        <p>Full-stack health insurance platform for Kenya's Social Health Authority. 4-package architecture: R business logic, Plumber REST API, Golem/Shiny dashboard, React PWA. Isolation Forest fraud detection, PostGIS spatial analytics, M-Pesa integration.</p>
+        <p>Full-stack health insurance platform for Kenya's Social Health Authority, built during Data Science internship at @iLabAfrica, Strathmore University. 4-package architecture: R business logic, Plumber REST API, Golem/Shiny dashboard, React PWA. Isolation Forest fraud detection, PostGIS spatial analytics, M-Pesa integration.</p>
         <div class="tech-tags">
           <span class="tech-tag">R</span>
           <span class="tech-tag">Plumber API</span>
@@ -47,7 +47,7 @@ toc: false
       <div class="project-card-body">
         <div class="metric">11 Modules &bull; 30 Wards &bull; KES Revenue Optimization <span class="private-badge">Private Repo</span></div>
         <h3><a href="smartlicensync.html">SmartLicenSync - Revenue Optimizer</a></h3>
-        <p>Business permit and license management system for Kericho County Government. Golem/Shiny with bs4Dash, PostgreSQL/PostGIS backend, M-Pesa payment processing, full audit trails, and role-based access control.</p>
+        <p>Business permit and license management system for Kericho County Government, originated from the Innovate254 Hackathon (Homa Bay County). Built during Data Science internship at @iLabAfrica. Golem/Shiny with bs4Dash, PostgreSQL/PostGIS backend, M-Pesa payment processing, full audit trails, and role-based access control.</p>
         <div class="tech-tags">
           <span class="tech-tag">R</span>
           <span class="tech-tag">Golem/Shiny</span>
